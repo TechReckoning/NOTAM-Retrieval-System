@@ -27,6 +27,7 @@ export {
   normalizeDesignator,
   type ZoneIndex,
 } from './zones.js';
+export { bucketByAreas, type AreaPolygon, type BucketResult } from './spatial.js';
 
 /** Human-readable labels for the model enums (shared by UI). */
 export const AREA_TYPE_LABELS: Record<string, string> = {

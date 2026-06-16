@@ -19,6 +19,8 @@
     "tma": "tsx scripts/build-tma.ts"
   },
   "dependencies": {
+    "@turf/boolean-intersects": "^7.1.0",
+    "@turf/helpers": "^7.1.0",
     "@turf/turf": "^7.1.0",
     "mammoth": "^1.8.0"
   },

@@ -29,6 +29,7 @@ export function Filters(): JSX.Element {
   const areaPresetId = useStore((s) => s.areaPresetId);
   const drawMode = useStore((s) => s.drawMode);
   const resetFilters = useStore((s) => s.resetFilters);
+  const viewMode = useStore((s) => s.viewMode);
 
   const activeTma = areaPresetId ? findTma(areaPresetId) : undefined;
 
@@ -110,6 +111,9 @@ export function Filters(): JSX.Element {
         </div>
       </section>
 
+      {/* Spatial controls only apply to Map View; List View buckets by TMA itself. */}
+      {viewMode === 'map' && (
+        <>
       <section>
         <h3>Airspace area (TMA)</h3>
         <div className="chips">
@@ -144,6 +148,8 @@ export function Filters(): JSX.Element {
         </div>
         {areaPresetId === 'custom' && <div className="aoi-note">Custom drawn area active</div>}
       </section>
+        </>
+      )}
 
       <button className="btn reset" onClick={resetFilters}>
         Reset all filters

@@ -10,9 +10,13 @@ export interface BulletinMeta {
   source: string | null;
 }
 
+export type ViewMode = 'map' | 'list';
+
 interface AppState {
   notams: LoadedNotam[];
   meta: BulletinMeta | null;
+  /** Map View (map + synchronized list) or List View (per-TMA briefing lists). */
+  viewMode: ViewMode;
   filters: FilterState;
   selectedUid: string | null;
   hoveredUid: string | null;
@@ -22,6 +26,7 @@ interface AppState {
   areaPresetId: string | null;
 
   setData: (notams: LoadedNotam[], meta: BulletinMeta) => void;
+  setViewMode: (mode: ViewMode) => void;
   select: (uid: string | null) => void;
   hover: (uid: string | null) => void;
   toggleAreaType: (t: AreaType) => void;
@@ -45,6 +50,7 @@ function toggle<T>(set: Set<T>, value: T): Set<T> {
 export const useStore = create<AppState>((set) => ({
   notams: [],
   meta: null,
+  viewMode: 'map',
   filters: defaultFilters(),
   selectedUid: null,
   hoveredUid: null,
@@ -52,6 +58,7 @@ export const useStore = create<AppState>((set) => ({
   areaPresetId: null,
 
   setData: (notams, meta) => set({ notams, meta, selectedUid: null }),
+  setViewMode: (mode) => set({ viewMode: mode }),
   select: (uid) => set({ selectedUid: uid }),
   hover: (uid) => set({ hoveredUid: uid }),
 
