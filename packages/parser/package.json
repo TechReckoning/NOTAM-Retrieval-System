@@ -23,7 +23,6 @@
     "mammoth": "^1.8.0"
   },
   "devDependencies": {
-    "docx": "^8.5.0",
     "tsx": "^4.16.2",
     "vitest": "^1.6.0"
   }

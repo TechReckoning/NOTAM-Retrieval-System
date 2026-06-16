@@ -88,15 +88,18 @@ By default (no basemap configured) it uses online OpenStreetMap tiles for develo
 
 The app ingests **`.docx`** bulletins. If you have the legacy binary **`.doc`**,
 open it in Word and *Save As → .docx* (this preserves the table structure that the
-parser reads); macOS `textutil` and `soffice --headless --convert-to docx` also work.
-The included `data/samples/BNZ327.docx` is a faithful, table-structured demo
-transcribed from the real bulletin (see `packages/parser/scripts/build-sample.ts`).
+parser reads); `soffice --headless --convert-to docx` also works. (`textutil`
+flattens the table and is **not** suitable.)
+
+The bundled demo `data/samples/BNZ327.docx` is the real *BAZA NOTAM NR. 327 /
+17.06.2026* bulletin (177 NOTAMs). `npm run sample` re-parses it into the
+`bnz327.json` snapshot the app loads as its demo.
 
 ## Status
 
 Core platform complete and verified end-to-end:
 
-- ✅ Parser (`@notam/parser`) — 42 unit tests passing
+- ✅ Parser (`@notam/parser`) — 53 unit tests; parses the full 177-NOTAM bulletin
 - ✅ Map + synchronized list with bidirectional selection
 - ✅ Filters: flight level, time window, activity, NOTAM type, draw-area
 - ✅ Ingest/review screen with per-record validation flags
