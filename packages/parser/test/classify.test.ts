@@ -15,6 +15,12 @@ describe('classifyAreaType', () => {
     ['ZONA PERIC.', 'DANGER'],
     ['ZONA AVERTISM.', 'WARNING'],
     ['something else', 'UNKNOWN'],
+    // Real-document quirks: mammoth glues runs, and the bulletin has a typo.
+    ['ZONATEMP.REZ.C9528', 'TEMP_RESERVED'],
+    ['ZONA TEM. P REZ.', 'TEMP_RESERVED'],
+    ['ZONAPERIC.', 'DANGER'],
+    ['ZONAAVERTISM.', 'WARNING'],
+    ['ZONAAVERTIS.F6021', 'WARNING'],
   ])('%s => %s', (raw, expected) => {
     expect(classifyAreaType(raw)).toBe(expected);
   });
@@ -42,6 +48,13 @@ describe('extractZoneRefs', () => {
   });
   it('handles LRD and no-space suffix', () => {
     expect(extractZoneRefs('LRD 100 A and LRD 106A')).toEqual(['LRD 100 A', 'LRD 106 A']);
+  });
+  it('recovers run-glued designators (mammoth)', () => {
+    expect(extractZoneRefs('LRTRA 29 GLRTRA 29 LLRTRA 29 M')).toEqual([
+      'LRTRA 29 G',
+      'LRTRA 29 L',
+      'LRTRA 29 M',
+    ]);
   });
 });
 

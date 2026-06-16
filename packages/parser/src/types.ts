@@ -29,7 +29,7 @@ export type Activity =
 
 /** A vertical limit, normalized to feet (AMSL) for range filtering. */
 export interface VerticalLimit {
-  kind: 'GND' | 'FL' | 'FT_AMSL' | 'UNLIMITED' | 'UNKNOWN';
+  kind: 'GND' | 'FL' | 'FT_AMSL' | 'FT_AGL' | 'UNLIMITED' | 'UNKNOWN';
   /** Raw text as printed, e.g. "FL 280", "3.000 FT AMSL", "GND". */
   raw: string;
   /** Normalized altitude in feet AMSL. GND = 0. NaN if unknown. */

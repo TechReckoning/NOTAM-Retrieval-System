@@ -5,13 +5,21 @@
 
 import type { Activity, AreaType } from './types.js';
 
-/** Map the "Tip" column text to an AreaType. */
+/**
+ * Map the "Tip" column text to an AreaType.
+ *
+ * Word/mammoth glues adjacent runs without spaces ("ZONATEMP.REZ.") and the
+ * source bulletin contains punctuation typos ("TEM. P REZ."), so we match against
+ * the letters-only form, which is robust to both.
+ */
 export function classifyAreaType(raw: string): AreaType {
-  const t = raw.toUpperCase();
-  if (/TEMP\.?\s*SEG/.test(t)) return 'TEMP_SEGREGATED';
-  if (/TEMP\.?\s*REZ/.test(t)) return 'TEMP_RESERVED';
+  const t = raw.toUpperCase().replace(/[^A-Z]/g, '');
+  if (/TEMPSEG/.test(t)) return 'TEMP_SEGREGATED';
+  if (/TEMPREZ/.test(t)) return 'TEMP_RESERVED';
   if (/PERIC/.test(t)) return 'DANGER';
-  if (/AVERTISM/.test(t)) return 'WARNING';
+  // "AVERTISMENT" warning area — the bulletin abbreviates it inconsistently
+  // ("AVERTISM.", "AVERTIS."), so match the shared stem.
+  if (/AVERTIS/.test(t)) return 'WARNING';
   return 'UNKNOWN';
 }
 
@@ -40,7 +48,9 @@ const ZONE_RE = /\bLR[A-Z]{1,4}\s*\d+\s*[A-Z]?\b/g;
  */
 export function extractZoneRefs(text: string): string[] {
   const refs = new Set<string>();
-  const matches = text.toUpperCase().match(ZONE_RE) ?? [];
+  // Re-insert spaces where Word runs were glued (e.g. "29 GLRTRA 29 L").
+  const spaced = text.toUpperCase().replace(/([A-Z0-9])(LR[A-Z]{2})/g, '$1 $2');
+  const matches = spaced.match(ZONE_RE) ?? [];
   for (const raw of matches) {
     const m = /^(LR[A-Z]{1,4})\s*(\d+)\s*([A-Z])?$/.exec(raw.replace(/\s+/g, ' ').trim());
     if (!m) continue;

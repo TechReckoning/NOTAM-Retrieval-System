@@ -72,6 +72,14 @@ interface BulletinMeta {
   bulletinDate: string | null;
 }
 
+/** Derive a short label from a description's first line (up to the coords/comma). */
+function nameLabel(desc: string): string | undefined {
+  const first = desc.split(/\r?\n/)[0] ?? '';
+  const cut = first.split(/,|de coordonate|R\s*=/i)[0];
+  const label = cut.replace(/\s+/g, ' ').trim().slice(0, 40).trim();
+  return label || undefined;
+}
+
 /**
  * Build a Notam from a row, or return null when the row is clearly not a NOTAM
  * (header, footer, blank). `meta` supplies bulletin number/date for scheduling.
@@ -131,9 +139,20 @@ export function assembleNotam(row: RawRow, cols: ColumnMap, meta: BulletinMeta):
     ? firstLine.replace(new RegExp(`\\b${idInfo.id}\\b`), '').trim()
     : firstLine.trim();
 
+  // Some bulletin rows carry no NOTAM number — they are identified only by a zone
+  // designator (e.g. "LRD 04 A") or an area name. Fall back to that rather than
+  // showing "UNKNOWN", and flag it for review.
+  let id = idInfo?.id;
+  const series = idInfo?.series ?? '';
+  if (!id) {
+    id = zoneRefs[0] ?? nameLabel(descCell);
+    if (id) warnings.push('no NOTAM number in bulletin — labelled by zone/name');
+    else id = 'UNKNOWN';
+  }
+
   return {
-    id: idInfo?.id ?? 'UNKNOWN',
-    series: idInfo?.series ?? '',
+    id,
+    series,
     bulletinNr: meta.bulletinNr,
     bulletinDate: meta.bulletinDate,
     areaType,

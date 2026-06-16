@@ -32,7 +32,12 @@ export function parseVerticalLimit(rawInput: string): VerticalLimit {
     // Strip thousands separators ("3.000" -> 3000, "3,000" -> 3000).
     const digits = ft[1].replace(/[.,]/g, '');
     const feet = Number(digits);
-    if (Number.isFinite(feet)) return { kind: 'FT_AMSL', raw, feet };
+    if (Number.isFinite(feet)) {
+      // "FT AGL" (above ground) vs "FT AMSL" (above mean sea level). mammoth may
+      // glue the suffix ("910 FTAMSL"), so test the whole string.
+      const kind = /AGL/.test(upper) ? 'FT_AGL' : 'FT_AMSL';
+      return { kind, raw, feet };
+    }
   }
 
   return { kind: 'UNKNOWN', raw, feet: Number.NaN };

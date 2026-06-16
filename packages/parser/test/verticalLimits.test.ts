@@ -28,6 +28,16 @@ describe('parseVerticalLimit', () => {
     expect(parseVerticalLimit('5.500 FT AMSL').feet).toBe(5500);
   });
 
+  it('1.500 FT AGL => 1500 ft, kind FT_AGL', () => {
+    const v = parseVerticalLimit('1.500 FT AGL');
+    expect(v.kind).toBe('FT_AGL');
+    expect(v.feet).toBe(1500);
+  });
+
+  it('run-glued 910 FTAMSL => 910 ft', () => {
+    expect(parseVerticalLimit('910 FTAMSL').feet).toBe(910);
+  });
+
   it('unknown text => NaN', () => {
     expect(Number.isNaN(parseVerticalLimit('???').feet)).toBe(true);
   });
