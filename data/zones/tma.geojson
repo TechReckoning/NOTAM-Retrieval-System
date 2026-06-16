@@ -1,26 +1,51 @@
 {
   "type": "FeatureCollection",
-  "_comment": "Terminal Control Area (TMA) boundaries used as predefined coordinate filters. IMPORTANT: the polygons below are APPROXIMATE placeholders traced from the AIP enroute/VFR charts (ENR 6-2, NAPOC TMA VFR) so the filter feature is functional. They are NOT operational boundaries. Replace each geometry with the authoritative vertex list from AIP ENR 2.1 (TMA NAPOC / TMA BUCURESTI). Keep properties.id stable; set approximate=false once authoritative coordinates are in.",
+  "_comment": "TMA boundaries from AIP Romania ENR 2.1 lateral limits, parsed from published DMS. Used as predefined coordinate filters. Regenerate with: npm run tma -w packages/parser.",
   "features": [
     {
       "type": "Feature",
       "properties": {
         "id": "TMA_NAPOC",
         "name": "TMA NAPOC",
-        "approximate": true,
-        "source": "approx. from AIP ENR 6-70 (NAPOC TMA VFR, AIRAC 04/25)"
+        "approximate": false,
+        "source": "AIP ENR 2.1"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [22.9, 47.55],
-            [24.3, 47.6],
-            [26.0, 46.8],
-            [25.6, 45.55],
-            [24.0, 45.4],
-            [22.8, 46.2],
-            [22.9, 47.55]
+            [
+              24.049722,
+              47.298889
+            ],
+            [
+              25,
+              46.47
+            ],
+            [
+              25,
+              45.633333
+            ],
+            [
+              23.55,
+              45.633333
+            ],
+            [
+              23.196111,
+              46.004167
+            ],
+            [
+              22.854167,
+              46.995833
+            ],
+            [
+              23.135833,
+              47.250278
+            ],
+            [
+              24.049722,
+              47.298889
+            ]
           ]
         ]
       }
@@ -30,20 +55,45 @@
       "properties": {
         "id": "TMA_BUCURESTI",
         "name": "TMA BUCUREȘTI",
-        "approximate": true,
-        "source": "approx. from AIP ENR 6-2 (Romania enroute chart, AIRAC 07/21)"
+        "approximate": false,
+        "source": "AIP ENR 2.1"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [25.2, 45.0],
-            [26.5, 45.2],
-            [27.2, 44.6],
-            [26.6, 43.85],
-            [25.4, 43.95],
-            [25.0, 44.5],
-            [25.2, 45.0]
+            [
+              25.191667,
+              45.076111
+            ],
+            [
+              26.454167,
+              45.076111
+            ],
+            [
+              26.966944,
+              44.889722
+            ],
+            [
+              27,
+              44.333333
+            ],
+            [
+              25.666667,
+              44
+            ],
+            [
+              25.253056,
+              44.079722
+            ],
+            [
+              25.149444,
+              44.626944
+            ],
+            [
+              25.191667,
+              45.076111
+            ]
           ]
         ]
       }

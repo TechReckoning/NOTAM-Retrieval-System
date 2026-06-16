@@ -15,7 +15,8 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "sample": "tsx scripts/build-sample.ts"
+    "sample": "tsx scripts/build-sample.ts",
+    "tma": "tsx scripts/build-tma.ts"
   },
   "dependencies": {
     "@turf/turf": "^7.1.0",

@@ -213,6 +213,24 @@ export function MapView({ visible }: Props): JSX.Element {
     else src?.setData(emptyFc());
   }, [drawnArea]);
 
+  // Fly to a predefined area (TMA) when it is selected.
+  const areaPresetId = useStore((s) => s.areaPresetId);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !loadedRef.current) return;
+    const area = useStore.getState().filters.drawnArea;
+    if (areaPresetId && areaPresetId !== 'custom' && area) {
+      const [minX, minY, maxX, maxY] = bbox(area);
+      map.fitBounds(
+        [
+          [minX, minY],
+          [maxX, maxY],
+        ],
+        { padding: 60, duration: 700 },
+      );
+    }
+  }, [areaPresetId]);
+
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !loadedRef.current) return;
