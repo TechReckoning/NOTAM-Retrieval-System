@@ -1,0 +1,26 @@
+{
+  "name": "notam-retrieval-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Parse Romanian BAZA NOTAM bulletins and display them on an interactive, filterable map + synchronized list. Offline-capable, built for aviation operational use.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/parser && npm run build -w apps/web",
+    "test": "npm run test -w packages/parser",
+    "dev": "npm run dev -w apps/web",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "sample": "npm run sample -w packages/parser"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5"
+  }
+}

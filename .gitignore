@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build output
+dist/
+build/
+*.tsbuildinfo
+
+# offline basemap (large binary tiles — fetch via scripts, do not commit)
+basemap/*.pmtiles
+basemap/*.mbtiles
+
+# logs / env
+*.log
+npm-debug.log*
+.env
+.env.*
+!.env.example
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# test/coverage
+coverage/

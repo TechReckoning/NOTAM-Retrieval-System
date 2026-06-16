@@ -1,0 +1,5 @@
+{
+  "type": "FeatureCollection",
+  "_comment": "Airspace-zone gazetteer for Romania (LRTRA / LRD / LRTSA / ...). Populate each feature with the AIP polygon for its designator; the app resolves named-zone NOTAMs against this file. Empty until the authoritative source is supplied.",
+  "features": []
+}
