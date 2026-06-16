@@ -1,0 +1,19 @@
+{
+  "name": "@notam/cli",
+  "version": "0.1.0",
+  "description": "Command-line ingester: NOTAM bulletin (.docx) -> normalized JSON.",
+  "type": "module",
+  "bin": {
+    "notam-ingest": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@notam/parser": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2"
+  }
+}

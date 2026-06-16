@@ -6,7 +6,6 @@
  * header text, and {@link assembleNotam} normalizes each data row.
  */
 
-import mammoth from 'mammoth';
 import { htmlNonTableText, htmlTablesToRows } from './html.js';
 import { assembleNotam, detectColumns, type ColumnMap } from './notam.js';
 import type { Bulletin, Notam } from './types.js';
@@ -63,6 +62,9 @@ type DocxInput = ArrayBuffer | Uint8Array | Buffer;
 
 /** Parse a .docx (Word) bulletin into a Bulletin. */
 export async function parseDocx(input: DocxInput): Promise<Bulletin> {
+  // Dynamic import keeps mammoth (large) out of the main bundle until a file
+  // is actually parsed — callers that only need types/labels never load it.
+  const mammoth = (await import('mammoth')).default;
   const options =
     typeof Buffer !== 'undefined' && input instanceof Buffer
       ? { buffer: input }

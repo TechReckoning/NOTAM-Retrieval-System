@@ -60,6 +60,23 @@ npm run sample         # (re)generate the demo bulletin + JSON snapshot
 npm run dev            # launch the web app (Vite dev server)
 ```
 
+## Command-line ingester
+
+For batch/automation, the same parser is exposed as a CLI:
+
+```bash
+# print normalized JSON to stdout
+npx tsx packages/cli/src/index.ts data/samples/BNZ327.docx --pretty
+
+# write to a file, resolving named zones against a gazetteer
+npx tsx packages/cli/src/index.ts bulletin.docx -o out.json --zones data/zones/ro-airspace.geojson
+```
+
+## Offline basemap
+
+The map works offline from a single PMTiles file — see [`basemap/README.md`](basemap/README.md).
+By default (no basemap configured) it uses online OpenStreetMap tiles for development.
+
 ## Input format
 
 The app ingests **`.docx`** bulletins. If you have the legacy binary **`.doc`**,
@@ -70,8 +87,17 @@ transcribed from the real bulletin (see `packages/parser/scripts/build-sample.ts
 
 ## Status
 
-Under active development. See the phased plan and `CONTRIBUTING` conventions.
-The parser (Phase 1) is complete and unit-tested (42 assertions).
+Core platform complete and verified end-to-end:
+
+- ✅ Parser (`@notam/parser`) — 42 unit tests passing
+- ✅ Map + synchronized list with bidirectional selection
+- ✅ Filters: flight level, time window, activity, NOTAM type, draw-area
+- ✅ Ingest/review screen with per-record validation flags
+- ✅ `notam-ingest` CLI
+- ⏳ Airspace-zone gazetteer — wired and ready; awaiting the AIP coordinate source
+- ⏳ Offline PMTiles basemap — supported in code; basemap file fetched per-machine
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for conventions.
 
 ## License
 

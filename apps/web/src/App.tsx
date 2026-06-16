@@ -1,12 +1,16 @@
-import { useMemo, useState } from 'react';
+import { lazy, Suspense, useMemo, useState } from 'react';
 import { Filters } from './filters/Filters';
-import { IngestReview } from './ingest/IngestReview';
 import { AREA_COLORS } from './lib/colors';
 import { applyFilters } from './lib/filter';
 import { NotamList } from './list/NotamList';
 import { MapView } from './map/MapView';
 import { useStore } from './state/store';
 import { AREA_TYPE_LABELS } from '@notam/parser';
+
+// Lazy so the bulletin parser (mammoth) only loads when the user opens ingest.
+const IngestReview = lazy(() =>
+  import('./ingest/IngestReview').then((m) => ({ default: m.IngestReview })),
+);
 
 export function App(): JSX.Element {
   const notams = useStore((s) => s.notams);
@@ -56,7 +60,11 @@ export function App(): JSX.Element {
         </aside>
       </div>
 
-      {showIngest && <IngestReview onClose={() => setShowIngest(false)} />}
+      {showIngest && (
+        <Suspense fallback={null}>
+          <IngestReview onClose={() => setShowIngest(false)} />
+        </Suspense>
+      )}
     </div>
   );
 }
