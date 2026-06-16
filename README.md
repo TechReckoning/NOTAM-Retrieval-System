@@ -51,6 +51,13 @@ basemap/           Offline PMTiles basemap + style (fetched separately)
 
 See [`docs/`](docs) and inline module docs for details.
 
+## Live demo
+
+Published via GitHub Pages on every push to `main`:
+**https://techreckoning.github.io/NOTAM-Retrieval-System/**
+
+(One-time setup: in the repo, **Settings → Pages → Build and deployment → Source: GitHub Actions**.)
+
 ## Quick start
 
 ```bash
