@@ -18,6 +18,8 @@ interface AppState {
   hoveredUid: string | null;
   /** When true, the next map drag defines the area-of-interest rectangle. */
   drawMode: boolean;
+  /** Which area-of-interest is active: a TMA id, 'custom' (drawn), or null. */
+  areaPresetId: string | null;
 
   setData: (notams: LoadedNotam[], meta: BulletinMeta) => void;
   select: (uid: string | null) => void;
@@ -27,6 +29,8 @@ interface AppState {
   setFlRange: (min: number, max: number) => void;
   setTime: (from: string, to: string) => void;
   setDrawnArea: (poly: Polygon | null) => void;
+  /** Apply a predefined area-of-interest (e.g. a TMA) by id + geometry. */
+  setAreaPreset: (id: string, poly: Polygon) => void;
   setDrawMode: (on: boolean) => void;
   resetFilters: () => void;
 }
@@ -45,6 +49,7 @@ export const useStore = create<AppState>((set) => ({
   selectedUid: null,
   hoveredUid: null,
   drawMode: false,
+  areaPresetId: null,
 
   setData: (notams, meta) => set({ notams, meta, selectedUid: null }),
   select: (uid) => set({ selectedUid: uid }),
@@ -57,7 +62,13 @@ export const useStore = create<AppState>((set) => ({
   setFlRange: (min, max) => set((s) => ({ filters: { ...s.filters, flMin: min, flMax: max } })),
   setTime: (from, to) => set((s) => ({ filters: { ...s.filters, timeFrom: from, timeTo: to } })),
   setDrawnArea: (poly) =>
-    set((s) => ({ filters: { ...s.filters, drawnArea: poly }, drawMode: false })),
+    set((s) => ({
+      filters: { ...s.filters, drawnArea: poly },
+      drawMode: false,
+      areaPresetId: poly ? 'custom' : null,
+    })),
+  setAreaPreset: (id, poly) =>
+    set((s) => ({ filters: { ...s.filters, drawnArea: poly }, drawMode: false, areaPresetId: id })),
   setDrawMode: (on) => set({ drawMode: on }),
-  resetFilters: () => set({ filters: defaultFilters() }),
+  resetFilters: () => set({ filters: defaultFilters(), areaPresetId: null }),
 }));

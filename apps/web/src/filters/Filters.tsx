@@ -1,6 +1,7 @@
 import type { Activity, AreaType } from '@notam/parser';
 import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
 import { FL_CEILING, FL_FLOOR } from '../lib/filter';
+import { findTma, TMA_AREAS } from '../lib/tma';
 import { AREA_TYPES } from '../lib/types';
 import { useStore } from '../state/store';
 
@@ -24,8 +25,12 @@ export function Filters(): JSX.Element {
   const setTime = useStore((s) => s.setTime);
   const setDrawMode = useStore((s) => s.setDrawMode);
   const setDrawnArea = useStore((s) => s.setDrawnArea);
+  const setAreaPreset = useStore((s) => s.setAreaPreset);
+  const areaPresetId = useStore((s) => s.areaPresetId);
   const drawMode = useStore((s) => s.drawMode);
   const resetFilters = useStore((s) => s.resetFilters);
+
+  const activeTma = areaPresetId ? findTma(areaPresetId) : undefined;
 
   return (
     <div className="filters">
@@ -106,7 +111,29 @@ export function Filters(): JSX.Element {
       </section>
 
       <section>
-        <h3>Area of interest</h3>
+        <h3>Airspace area (TMA)</h3>
+        <div className="chips">
+          {TMA_AREAS.map((t) => (
+            <button
+              key={t.id}
+              className={`chip${areaPresetId === t.id ? ' on' : ''}`}
+              onClick={() =>
+                areaPresetId === t.id ? setDrawnArea(null) : setAreaPreset(t.id, t.geometry)
+              }
+              title={t.approximate ? 'Approximate boundary — pending authoritative AIP coordinates' : ''}
+            >
+              {t.name}
+              {t.approximate ? ' ≈' : ''}
+            </button>
+          ))}
+        </div>
+        {activeTma?.approximate && (
+          <div className="aoi-note">≈ {activeTma.name} boundary is approximate (placeholder)</div>
+        )}
+      </section>
+
+      <section>
+        <h3>Custom area</h3>
         <div className="aoi-row">
           <button className={`btn${drawMode ? ' on' : ''}`} onClick={() => setDrawMode(!drawMode)}>
             {drawMode ? 'Click-drag on map…' : 'Draw rectangle'}
@@ -115,6 +142,7 @@ export function Filters(): JSX.Element {
             Clear area
           </button>
         </div>
+        {areaPresetId === 'custom' && <div className="aoi-note">Custom drawn area active</div>}
       </section>
 
       <button className="btn reset" onClick={resetFilters}>
