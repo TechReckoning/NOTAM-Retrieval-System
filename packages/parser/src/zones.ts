@@ -11,9 +11,33 @@
 import type { FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson';
 import type { Notam, ZoneFeature } from './types.js';
 
-/** Canonicalize a designator for matching: uppercase, single-spaced. */
+/**
+ * Canonicalize a designator for matching: uppercase, single-spaced, and
+ * zero-pad-insensitive in the numeric part so a bulletin's "LRD 04 A" matches the
+ * AIP's "LRD 4 A" (and vice versa).
+ */
 export function normalizeDesignator(d: string): string {
-  return d.toUpperCase().replace(/\s+/g, ' ').trim();
+  return d
+    .toUpperCase()
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/ 0+(\d)/g, ' $1');
+}
+
+/**
+ * Turn a raw AIP designator ("LRTRA110B", "LRD04A", "LRTRA2 (IAŞI)") into the
+ * canonical "PREFIX NUMBER [SUFFIX]" form used as the gazetteer key
+ * (e.g. "LRTRA 110 B", "LRD 04 A", "LRTRA 2"). Returns null if unrecognizable.
+ */
+export function canonicalDesignator(raw: string): string | null {
+  const cleaned = raw
+    .toUpperCase()
+    .replace(/\(.*?\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const m = /^(LR[A-Z]+?)\s*(\d+)\s*([A-Z])?$/.exec(cleaned);
+  if (!m) return null;
+  return m[3] ? `${m[1]} ${m[2]} ${m[3]}` : `${m[1]} ${m[2]}`;
 }
 
 export type ZoneIndex = Map<string, ZoneFeature>;

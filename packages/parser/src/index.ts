@@ -25,6 +25,7 @@ export {
   resolveGeometry,
   buildZoneIndex,
   normalizeDesignator,
+  canonicalDesignator,
   type ZoneIndex,
 } from './zones.js';
 export { bucketByAreas, type AreaPolygon, type BucketResult } from './spatial.js';

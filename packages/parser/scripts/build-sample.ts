@@ -11,14 +11,20 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { parseDocx } from '../src/index.js';
+import { applyGazetteer, parseDocx } from '../src/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SAMPLES = resolve(__dirname, '../../../data/samples');
+const ZONES = resolve(__dirname, '../../../data/zones');
 
 async function main(): Promise<void> {
   const docxPath = resolve(SAMPLES, 'BNZ327.docx');
-  const bulletin = await parseDocx(readFileSync(docxPath));
+  const parsed = await parseDocx(readFileSync(docxPath));
+
+  // Resolve named-zone geometry from the gazetteer so the bundled demo ships with
+  // LRTRA/LRD shapes already attached.
+  const gazetteer = JSON.parse(readFileSync(resolve(ZONES, 'ro-airspace.geojson'), 'utf-8'));
+  const bulletin = { ...parsed, notams: applyGazetteer(parsed.notams, gazetteer) };
 
   const jsonPath = resolve(SAMPLES, 'bnz327.json');
   writeFileSync(jsonPath, JSON.stringify(bulletin, null, 2));

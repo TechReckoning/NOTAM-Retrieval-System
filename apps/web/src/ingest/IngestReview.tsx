@@ -1,6 +1,7 @@
 import { parseDocx, type Bulletin } from '@notam/parser';
 import { useState } from 'react';
 import demoBulletin from '../../../../data/samples/bnz327.json';
+import { resolveZones } from '../lib/gazetteer';
 import { withUids } from '../lib/types';
 import { useStore } from '../state/store';
 
@@ -21,7 +22,9 @@ export function IngestReview({ onClose }: Props): JSX.Element {
     try {
       const buf = await file.arrayBuffer();
       const parsed = await parseDocx(buf);
-      setBulletin(parsed);
+      // Resolve named-zone (LRTRA/LRD/…) geometry from the AIP gazetteer.
+      const notams = await resolveZones(parsed.notams);
+      setBulletin({ ...parsed, notams });
       setFileName(file.name);
       if (parsed.notams.length === 0) {
         setError(

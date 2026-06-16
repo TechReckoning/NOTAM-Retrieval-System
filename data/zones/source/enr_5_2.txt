@@ -1,0 +1,1879 @@
+AIP                                                                                                       ENR 5.2-1
+ROMANIA                                                                                                17 APR 2025
+
+                             ENR 5.2 MILITARY EXERCISE AND TRAINING AREAS
+
+                               AND AIR DEFENCE IDENTIFICATION ZONE (ADIZ)
+
+Temporary Reserved Area (TRA) is a defined                 Zonă Rezervată Temporar (TRA) - volum de spaţiu
+volume of airspace normally under the jurisdiction of      aerian cu dimensiuni definite, aflat în mod normal sub
+one aviation authority and temporarily reserved, by        jurisdicţia unei autorităţi de aviaţie, care este temporar
+common agreement, for the specific use by another          rezervat, prin acord comun, pentru utilizarea specifică
+aviation authority and through which other traffic may     de către o altă autoritate de aviaţie şi în care tranzitul
+be allowed to transit, only by ATC clearance, based        altui trafic decât cel pentru care s-a rezervat zona
+on a previous coordination between the concerned           poate fi permis numai cu autorizarea ATC, în baza
+ATS Units, according to pre-established procedures.        coordonării prealabile dintre unităţile ATS implicate,
+                                                           conform unor proceduri prestabilite.
+Temporary Segregated Area (TSA) is a defined               Zonă Segregată Temporar (TSA) - volum de spaţiu
+volume of airspace normally under the jurisdiction of      aerian cu dimensiuni definite, aflat în mod normal sub
+one aviation authority and temporarily segregated, by      jurisdicţia unei autorităţi de aviaţie, care este segregat
+common agreement, for the exclusive use by another         temporar, prin acord comun, pentru utilizarea
+aviation authority and through which other traffic will    exclusivă de către o altă autoritate de aviaţie şi în care
+not be allowed to transit.                                 tranzitul altui trafic nu va fi permis.
+In the context of the FUA Concept, all TRAs and TSAs       În contextul conceptului FUA (Utilizarea Flexibilă a
+are airspace reservations subject to management and        Spaţiului Aerian), toate zonele de tip TRA sau TSA
+allocation at ASM Level 2.                                 sunt    rezervări    de    spaţiu   aerian   supuse
+                                                           managementului şi alocării ASM Level 2.
+
+                                                                              Remarks
+                                                           Upper limit
+Identification, name and lateral limits                                       (time of activity, type of restriction,
+                                                           Lower limit
+                                                                              nature of hazard, risk of interception)
+                         1                                     2                                   3
+TEMPORARY RESERVED AREAS (TRA)
+LRTRA1G                                                                       Active: by NOTAM
+460413N 0213021E - 455833N 0215237E -                 4500 FT AMSL
+454952N 0213733E - 455414N 0212025E -                     GND
+460413N 0213021E
+LRTRA2 (IAŞI)                                                               Active: by NOTAM
+                                                 Vertical limits are issued
+Circle of 6 NM radius centred on point of                                   Airspace affected: Lower
+                                                        by NOTAM
+coordinates: 471000N 0273500E
+LRTRA2G                                                                       Active: by NOTAM
+454604N 0210750E - 454319N 0211849E -                 3500 FT AMSL
+452257N 0212807E - 453200N 0211000E -                     GND
+454604N 0210750E
+LRTRA2L                                                                       Active: by NOTAM
+454604N 0210750E - 454319N 0211849E -                    FL200
+452257N 0212807E - 453200N 0211000E -                 3500 FT AMSL
+454604N 0210750E
+LRTRA3G                                                                       Active: by NOTAM
+454319N 0211849E - 453954N 0213226E -                 5500 FT AMSL
+451500N 0214400E - 452257N 0212807E -                     GND
+454319N 0211849E
+LRTRA3L                                                                       Active: by NOTAM
+454319N 0211849E - 453954N 0213226E -                    FL200
+451500N 0214400E - 452257N 0212807E -                 5500 FT AMSL
+454319N 0211849E
+LRTRA4                                                                        Active: by ATC
+443350N 0260512E - 443409N 0262442E -                                         If LRTRA4 is activated, military
+443021N 0255635E - 443123N 0254558E -                                         helicopters training activity goes up
+443350N 0260512E                                                              to 1017FT MSL (310M MSL). The
+                                                          1017 FT MSL         flights are coordinated between civil
+                                                             GND              and military ATS UNITS. The
+                                                                              helipoint is located south of RWY
+                                                                              08R/26L.
+                                                                              Flights operating on RWY 08R/26L
+                                                                              are not affected.
+
+
+
+ROMATSA                                                                                     AIRAC AIP AMDT 04/25
+ENR 5.2-2                                                                          AIP
+17 APR 2025                                                                    ROMANIA
+
+                        1                        2                         3
+LRTRA4G                                                    Active: by NOTAM
+454615N 0213541E - 454459N 0213923E -       5500 FT AMSL
+452737N 0220252E - 451500N 0214400E -           GND
+453954N 0213226E - 454615N 0213541E
+LRTRA4L                                                    Active: by NOTAM
+454615N 0213541E - 454459N 0213923E -          FL200
+452737N 0220252E - 451500N 0214400E -       5500 FT AMSL
+453954N 0213226E - 454615N 0213541E
+LRTRA5G                                                    Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -          FL80
+445423N 0215258E - 451500N 0214400E -          GND
+452737N 0220252E
+LRTRA5L                                                    Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -          FL200
+445423N 0215258E - 451500N 0214400E -          FL80
+452737N 0220252E
+LRTRA6G                                                    Active: by NOTAM
+451735N 0221614E - 450626N 0223103E -          FL80
+445856N 0222603E - 445423N 0215258E -          GND
+451735N 0221614E
+LRTRA6L                                                    Active: by NOTAM
+451735N 0221614E - 450626N 0223103E -          FL200
+445856N 0222603E - 445423N 0215258E -          FL80
+451735N 0221614E
+LRTRA7G                                                    Active: by NOTAM
+                                            4000 FT AMSL
+Circle of 3 NM radius centred on point of
+                                                GND
+coordinates: 453358N 0215947E
+LRTRA7L                                                    Active: by NOTAM
+                                               FL200
+Circle of 3 NM radius centred on point of
+                                            4000 FT AMSL
+coordinates: 453358N 0215947E
+LRTRA8G                                                    Active: by NOTAM
+                                               FL90
+Circle of 3 NM radius centred on point of
+                                               GND
+coordinates: 452221N 0222826E
+LRTRA8L                                                    Active: by NOTAM
+                                               FL200
+Circle of 3 NM radius centred on point of
+                                               FL90
+coordinates: 452221N 0222826E
+LRTRA9G                                                    Active: by NOTAM
+                                               FL105
+Circle of 3 NM radius centred on point of
+                                               GND
+coordinates: 451805N 0223329E
+LRTRA9L                                                    Active: by NOTAM
+                                               FL200
+Circle of 3 NM radius centred on point of
+                                               FL105
+coordinates: 451805N 0223329E
+LRTRA10G                                                   Active: by NOTAM
+                                            5000 FT AMSL
+Circle of 3 NM radius centred on point of
+                                                GND
+coordinates: 461503N 0215714E
+LRTRA11G                                                   Active: by NOTAM
+                                               FL80
+Circle of 3 NM radius centred on point of
+                                               GND
+coordinates: 462019N 0224946E
+LRTRA11L                                                   Active: by NOTAM
+                                               FL200
+Circle of 3 NM radius centred on point of
+                                               FL80
+coordinates: 462019N 0224946E
+LRTRA12G                                                   Active: by NOTAM
+                                            3500 FT AMSL
+Circle of 3 NM radius centred on point of
+                                                GND
+coordinates: 454311N 0212234E
+LRTRA12L                                                   Active: by NOTAM
+                                               FL200
+Circle of 3 NM radius centred on point of
+                                            3500 FT AMSL
+coordinates: 454311N 0212234E
+LRTRA13G                                                   Active: by NOTAM
+455618N 0210615E - 454615N 0213541E -
+454459N 0213923E - 452737N 0220252E -       5500 FT AMSL
+451500N 0214400E - 452257N 0212807E -           GND
+453200N 0211000E - 454604N 0210750E -
+455618N 0210615E
+
+
+AIRAC AIP AMDT 04/25                                                           ROMATSA
+AIP                                                                           ENR 5.2-3
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA13L                                               Active: by NOTAM
+455618N 0210615E - 454615N 0213541E -
+454459N 0213923E - 452737N 0220252E -      FL200
+451500N 0214400E - 452257N 0212807E -   5500 FT AMSL
+453200N 0211000E - 454604N 0210750E -
+455618N 0210615E
+LRTRA13M                                               Active: by NOTAM
+455618N 0210615E - 454615N 0213541E -
+454459N 0213923E - 452737N 0220252E -      FL280
+451500N 0214400E - 452257N 0212807E -      FL200
+453200N 0211000E - 454604N 0210750E -
+455618N 0210615E
+LRTRA13T                                               Active: by NOTAM
+455618N 0210615E - 454615N 0213541E -
+454459N 0213923E - 452737N 0220252E -      FL660
+451500N 0214400E - 452257N 0212807E -      FL350
+453200N 0211000E - 454604N 0210750E -
+455618N 0210615E
+LRTRA13U                                               Active: by NOTAM
+455618N 0210615E - 454615N 0213541E -
+454459N 0213923E - 452737N 0220252E -      FL350
+451500N 0214400E - 452257N 0212807E -      FL280
+453200N 0211000E - 454604N 0210750E -
+455618N 0210615E
+LRTRA14G                                               Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -
+                                           FL80
+450626N 0223103E - 445856N 0222603E -
+                                           GND
+445423N 0215258E - 451500N 0214400E -
+452737N 0220252E
+LRTRA14L                                               Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -
+                                           FL200
+450626N 0223103E - 445856N 0222603E -
+                                           FL80
+445423N 0215258E - 451500N 0214400E -
+452737N 0220252E
+LRTRA14M                                               Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -
+                                           FL280
+450626N 0223103E - 445856N 0222603E -
+                                           FL200
+445423N 0215258E - 451500N 0214400E -
+452737N 0220252E
+LRTRA14T                                               Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -
+                                           FL660
+450626N 0223103E - 445856N 0222603E -
+                                           FL350
+445423N 0215258E - 451500N 0214400E -
+452737N 0220252E
+LRTRA14U                                               Active: by NOTAM
+452737N 0220252E - 451735N 0221614E -
+                                           FL350
+450626N 0223103E - 445856N 0222603E -
+                                           FL280
+445423N 0215258E - 451500N 0214400E -
+452737N 0220252E
+LRTRA20G                                               Active: by NOTAM
+464448N 0240222E - 463207N 0241247E -
+462804N 0240855E - 461925N 0241227E -
+461711N 0241552E - 460938N 0241640E -   3000 FT AMSL
+460949N 0241043E - 461023N 0235313E -       GND
+461621N 0235022E - 462333N 0234653E -
+464122N 0233817E - 464303N 0235014E -
+464448N 0240222E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-4                                                                      AIP
+17 APR 2025                                                                ROMANIA
+
+                    1                        2                         3
+LRTRA21C                                               Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -
+462938N 0241521E - 462152N 0241817E -
+461518N 0242308E - 460923N 0242408E -       FL75
+460938N 0241640E - 460949N 0241043E -   3000 FT AMSL
+461023N 0235313E - 461621N 0235022E -
+462333N 0234653E - 464122N 0233817E -
+464303N 0235014E - 464448N 0240222E -
+464551N 0240951E
+LRTRA21L                                               Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -
+462938N 0241521E - 462152N 0241817E -
+461518N 0242308E - 460923N 0242408E -      FL200
+460938N 0241640E - 460949N 0241043E -      FL75
+461023N 0235313E - 461621N 0235022E -
+462333N 0234653E - 464122N 0233817E -
+464303N 0235014E - 464448N 0240222E -
+464551N 0240951E
+LRTRA21M                                               Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -
+462938N 0241521E - 462152N 0241817E -
+461518N 0242308E - 460923N 0242408E -      FL280
+460938N 0241640E - 460949N 0241043E -      FL200
+461023N 0235313E - 461621N 0235022E -
+462333N 0234653E - 464122N 0233817E -
+464303N 0235014E - 464448N 0240222E -
+464551N 0240951E
+LRTRA21T                                               Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -
+462938N 0241521E - 462152N 0241817E -
+461518N 0242308E - 460923N 0242408E -      FL660
+460938N 0241640E - 460949N 0241043E -      FL350
+461023N 0235313E - 461621N 0235022E -
+462333N 0234653E - 464122N 0233817E -
+464303N 0235014E - 464448N 0240222E -
+464551N 0240951E
+LRTRA21U                                               Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -
+462938N 0241521E - 462152N 0241817E -
+461518N 0242308E - 460923N 0242408E -      FL350
+460938N 0241640E - 460949N 0241043E -      FL280
+461023N 0235313E - 461621N 0235022E -
+462333N 0234653E - 464122N 0233817E -
+464303N 0235014E - 464448N 0240222E -
+464551N 0240951E
+LRTRA22G                                               Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -      FL80
+455934N 0233112E - 460015N 0231146E -      GND
+462108N 0230437E
+LRTRA22L                                               Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -      FL200
+455934N 0233112E - 460015N 0231146E -      FL80
+462108N 0230437E
+LRTRA23G                                               Active: by NOTAM
+463740N 0232209E - 461843N 0232743E -      FL90
+462108N 0230437E - 463244N 0230039E -      GND
+463740N 0232209E
+
+
+
+AIRAC AIP AMDT 04/25                                                       ROMATSA
+AIP                                                                   ENR 5.2-5
+ROMANIA                                                            17 APR 2025
+
+                    1                     2                    3
+LRTRA23L                                        Active: by NOTAM
+463740N 0232209E - 461843N 0232743E -   FL200
+462108N 0230437E - 463244N 0230039E -   FL90
+463740N 0232209E
+LRTRA24G                                        Active: by NOTAM
+461843N 0232743E - 461621N 0235022E -   FL75
+461023N 0235313E - 455954N 0234435E -   GND
+455934N 0233112E - 461843N 0232743E
+LRTRA24L                                        Active: by NOTAM
+461843N 0232743E - 461621N 0235022E -   FL200
+461023N 0235313E - 455954N 0234435E -   FL75
+455934N 0233112E - 461843N 0232743E
+LRTRA25G                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -   FL75
+461621N 0235022E - 461843N 0232743E -   GND
+463740N 0232209E - 464122N 0233817E
+LRTRA25L                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -   FL200
+461621N 0235022E - 461843N 0232743E -   FL75
+463740N 0232209E - 464122N 0233817E
+LRTRA26L                                        Active: by NOTAM
+462718N 0240324E - 460949N 0241043E -
+                                        FL200
+461023N 0235313E - 461621N 0235022E -
+                                        FL75
+462333N 0234653E - 462636N 0240020E -
+462718N 0240324E
+LRTRA27L                                        Active: by NOTAM
+464551N 0240951E - 464200N 0241300E -
+463458N 0241320E - 463150N 0241431E -   L200
+462938N 0241521E - 462718N 0240324E -   FL75
+462636N 0240020E - 464303N 0235014E -
+464448N 0240222E - 464551N 0240951E
+LRTRA28G                                        Active: by NOTAM
+470054N 0244720E - 464542N 0245231E -
+463306N 0245647E - 463253N 0244947E -
+463246N 0244704E - 463348N 0243815E -   FL70
+463218N 0243032E - 463202N 0242110E -   GND
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 470054N 0244720E
+LRTRA28L                                        Active: by NOTAM
+470054N 0244720E - 464542N 0245231E -
+463306N 0245647E - 463253N 0244947E -
+463246N 0244704E - 463348N 0243815E -   FL200
+463218N 0243032E - 463202N 0242110E -   FL70
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 470054N 0244720E
+LRTRA28M                                        Active: by NOTAM
+470054N 0244720E - 464542N 0245231E -
+463306N 0245647E - 463253N 0244947E -
+463246N 0244704E - 463348N 0243815E -   FL280
+463218N 0243032E - 463202N 0242110E -   FL200
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 470054N 0244720E
+LRTRA28T                                        Active: by NOTAM
+470054N 0244720E - 464542N 0245231E -
+463306N 0245647E - 463253N 0244947E -
+463246N 0244704E - 463348N 0243815E -   FL660
+463218N 0243032E - 463202N 0242110E -   FL350
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 470054N 0244720E
+
+
+ROMATSA                                                    AIRAC AIP AMDT 04/25
+ENR 5.2-6                                                               AIP
+17 APR 2025                                                         ROMANIA
+
+                    1                     2                     3
+LRTRA28U                                        Active: by NOTAM
+470054N 0244720E - 464542N 0245231E -
+463306N 0245647E - 463253N 0244947E -
+463246N 0244704E - 463348N 0243815E -   FL350
+463218N 0243032E - 463202N 0242110E -   FL280
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 470054N 0244720E
+LRTRA29G                                        Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+                                        FL100
+470054N 0244720E - 470043N 0235741E -
+                                        GND
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA29L                                        Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+                                        FL200
+470054N 0244720E - 470043N 0235741E -
+                                        FL100
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA29M                                        Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+                                        FL280
+470054N 0244720E - 470043N 0235741E -
+                                        FL200
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA29T                                        Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+                                        FL660
+470054N 0244720E - 470043N 0235741E -
+                                        FL350
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA29U                                        Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+                                        FL350
+470054N 0244720E - 470043N 0235741E -
+                                        FL280
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA30G                                        Active: by NOTAM
+470056N 0254705E - 463448N 0255708E -
+                                        FL90
+463335N 0251212E - 463306N 0245647E -
+                                        GND
+464542N 0245231E - 470054N 0244720E -
+470056N 0254705E
+LRTRA30L                                        Active: by NOTAM
+470056N 0254705E - 463448N 0255708E -
+                                        FL200
+463335N 0251212E - 463306N 0245647E -
+                                        FL90
+464542N 0245231E - 470054N 0244720E -
+470056N 0254705E
+LRTRA30M
+470056N 0254705E - 463448N 0255708E -           Active: by NOTAM
+                                        FL280
+463335N 0251212E - 463306N 0245647E -
+                                        FL200
+464542N 0245231E - 470054N 0244720E -
+470056N 0254705E
+LRTRA30T                                        Active: by NOTAM
+470056N 0254705E - 463448N 0255708E -
+                                        FL660
+463335N 0251212E - 463306N 0245647E -
+                                        FL350
+464542N 0245231E - 470054N 0244720E -
+470056N 0254705E
+LRTRA30U                                        Active: by NOTAM
+470056N 0254705E - 463448N 0255708E -
+                                        FL350
+463335N 0251212E - 463306N 0245647E -
+                                        FL280
+464542N 0245231E - 470054N 0244720E -
+470056N 0254705E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                ROMATSA
+AIP                                                                    ENR 5.2-7
+ROMANIA                                                             17 APR 2025
+
+                     1                    2                     3
+LRTRA31G                                        Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -   FL100
+472439N 0253756E - 470056N 0254705E -   GND
+470054N 0244720E - 472722N 0243912E
+LRTRA31L                                        Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -   FL200
+472439N 0253756E - 470056N 0254705E -   FL100
+470054N 0244720E - 472722N 0243912E
+LRTRA31M                                        Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -   FL280
+472439N 0253756E - 470056N 0254705E -   FL200
+470054N 0244720E - 472722N 0243912E
+LRTRA31T                                        Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -   FL660
+472439N 0253756E - 470056N 0254705E -   FL350
+470054N 0244720E - 472722N 0243912E
+LRTRA31U                                        Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -   FL350
+472439N 0253756E - 470056N 0254705E -   FL280
+470054N 0244720E - 472722N 0243912E
+LRTRA32G                                        Active: by NOTAM
+470139N 0262932E - 464127N 0263734E -
+                                        FL95
+463845N 0263515E - 463551N 0263354E -
+                                        GND
+463448N 0255708E - 470056N 0254705E -
+470139N 0262932E
+LRTRA32L                                        Active: by NOTAM
+470139N 0262932E - 464127N 0263734E -
+                                        FL200
+463845N 0263515E - 463551N 0263354E -
+                                        FL95
+463448N 0255708E - 470056N 0254705E -
+470139N 0262932E
+LRTRA32M                                        Active: by NOTAM
+470139N 0262932E - 464127N 0263734E -
+                                        FL280
+463845N 0263515E - 463551N 0263354E -
+                                        FL200
+463448N 0255708E - 470056N 0254705E -
+470139N 0262932E
+LRTRA32T                                        Active: by NOTAM
+470139N 0262932E - 464127N 0263734E -
+                                        FL660
+463845N 0263515E - 463551N 0263354E -
+                                        FL350
+463448N 0255708E - 470056N 0254705E -
+470139N 0262932E
+LRTRA32U                                        Active: by NOTAM
+470139N 0262932E - 464127N 0263734E -
+                                        FL350
+463845N 0263515E - 463551N 0263354E -
+                                        FL280
+463448N 0255708E - 470056N 0254705E -
+470139N 0262932E
+LRTRA33G
+472439N 0253756E - 472359N 0260018E -           Active: by NOTAM
+                                        FL90
+472157N 0260518E - 471914N 0261302E -
+                                        GND
+471909N 0262229E - 470139N 0262932E -
+470056N 0254705E - 472439N 0253756E
+LRTRA33L                                        Active: by NOTAM
+472439N 0253756E - 472359N 0260018E -
+                                        FL200
+472157N 0260518E - 471914N 0261302E -
+                                        FL90
+471909N 0262229E - 470139N 0262932E -
+470056N 0254705E - 472439N 0253756E
+LRTRA33M                                        Active: by NOTAM
+472439N 0253756E - 472359N 0260018E -
+                                        FL280
+472157N 0260518E - 471914N 0261302E -
+                                        FL200
+471909N 0262229E - 470139N 0262932E -
+470056N 0254705E - 472439N 0253756E
+
+
+
+
+ROMATSA                                                    AIRAC AIP AMDT 04/25
+ENR 5.2-8                                                               AIP
+17 APR 2025                                                         ROMANIA
+
+                    1                     2                     3
+LRTRA33T                                        Active: by NOTAM
+472439N 0253756E - 472359N 0260018E -
+                                        FL660
+472157N 0260518E - 471914N 0261302E -
+                                        FL350
+471909N 0262229E - 470139N 0262932E -
+470056N 0254705E - 472439N 0253756E
+LRTRA33U                                        Active: by NOTAM
+472439N 0253756E - 472359N 0260018E -
+                                        FL350
+472157N 0260518E - 471914N 0261302E -
+                                        FL280
+471909N 0262229E - 470139N 0262932E -
+470056N 0254705E - 472439N 0253756E
+LRTRA34G                                        Active: by NOTAM
+462403N 0253009E - 461418N 0253438E -
+460122N 0243348E - 460713N 0242430E -   FL65
+460923N 0242408E - 461518N 0242308E -   GND
+461810N 0243233E - 462304N 0245800E -
+462403N 0253009E
+LRTRA34L                                        Active: by NOTAM
+462403N 0253009E - 461418N 0253438E -
+460122N 0243348E - 460713N 0242430E -   FL200
+460923N 0242408E - 461518N 0242308E -   FL65
+461810N 0243233E - 462304N 0245800E -
+462403N 0253009E
+LRTRA34M                                        Active: by NOTAM
+462403N 0253009E - 461418N 0253438E -
+460122N 0243348E - 460713N 0242430E -   FL280
+460923N 0242408E - 461518N 0242308E -   FL200
+461810N 0243233E - 462304N 0245800E -
+462403N 0253009E
+LRTRA34T                                        Active: by NOTAM
+462403N 0253009E - 461418N 0253438E -
+460122N 0243348E - 460713N 0242430E -   FL660
+460923N 0242408E - 461518N 0242308E -   FL350
+461810N 0243233E - 462304N 0245800E -
+462403N 0253009E
+LRTRA34U                                        Active: by NOTAM
+462403N 0253009E - 461418N 0253438E -
+460122N 0243348E - 460713N 0242430E -   FL350
+460923N 0242408E - 461518N 0242308E -   FL280
+461810N 0243233E - 462304N 0245800E -
+462403N 0253009E
+LRTRA35G                                        Active: by NOTAM
+461418N 0253438E - 455941N 0254127E -   FL70
+454920N 0252715E - 455951N 0243611E -   GND
+460122N 0243348E - 461418N 0253438E
+LRTRA35L                                        Active: by NOTAM
+461418N 0253438E - 455941N 0254127E -   FL200
+454920N 0252715E - 455951N 0243611E -   FL70
+460122N 0243348E - 461418N 0253438E
+LRTRA35M                                        Active: by NOTAM
+461418N 0253438E - 455941N 0254127E -   FL280
+454920N 0252715E - 455951N 0243611E -   FL200
+460122N 0243348E - 461418N 0253438E
+LRTRA35T                                        Active: by NOTAM
+461418N 0253438E - 455941N 0254127E -   FL660
+454920N 0252715E - 455951N 0243611E -   FL350
+460122N 0243348E - 461418N 0253438E
+LRTRA35U                                        Active: by NOTAM
+461418N 0253438E - 455941N 0254127E -   FL350
+454920N 0252715E - 455951N 0243611E -   FL280
+460122N 0243348E - 461418N 0253438E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                ROMATSA
+AIP                                                                       ENR 5.2-9
+ROMANIA                                                                17 APR 2025
+
+                    1                     2                     3
+LRTRA36G                                        Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -
+                                        FL80
+461621N 0235022E - 461023N 0235313E -
+                                        GND
+455954N 0234435E - 455934N 0233112E -
+460015N 0231146E - 462108N 0230437E
+LRTRA36L                                        Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -
+                                        FL200
+461621N 0235022E - 461023N 0235313E -
+                                        FL80
+455954N 0234435E - 455934N 0233112E -
+460015N 0231146E - 462108N 0230437E
+LRTRA36M                                        Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -
+                                        FL280
+461621N 0235022E - 461023N 0235313E -
+                                        FL200
+455954N 0234435E - 455934N 0233112E -
+460015N 0231146E - 462108N 0230437E
+LRTRA36T                                        Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -
+                                        FL660
+461621N 0235022E - 461023N 0235313E -
+                                        FL350
+455954N 0234435E - 455934N 0233112E -
+460015N 0231146E - 462108N 0230437E
+LRTRA36U                                        Active: by NOTAM
+462108N 0230437E - 461843N 0232743E -
+                                        FL350
+461621N 0235022E - 461023N 0235313E -
+                                        FL280
+455954N 0234435E - 455934N 0233112E -
+460015N 0231146E - 462108N 0230437E
+LRTRA37G                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -
+                                        FL90
+461621N 0235022E - 461843N 0232743E -
+                                        GND
+462108N 0230437E - 463244N 0230039E -
+463740N 0232209E - 464122N 0233817E
+LRTRA37L                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -
+                                        FL200
+461621N 0235022E - 461843N 0232743E -
+                                        FL90
+462108N 0230437E - 463244N 0230039E -
+463740N 0232209E - 464122N 0233817E
+LRTRA37M                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -
+                                        FL280
+461621N 0235022E - 461843N 0232743E -
+                                        FL200
+462108N 0230437E - 463244N 0230039E -
+463740N 0232209E - 464122N 0233817E
+LRTRA37T                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -
+                                        FL660
+461621N 0235022E - 461843N 0232743E -
+                                        FL350
+462108N 0230437E - 463244N 0230039E -
+463740N 0232209E - 464122N 0233817E
+LRTRA37U                                        Active: by NOTAM
+464122N 0233817E - 462333N 0234653E -
+                                        FL350
+461621N 0235022E - 461843N 0232743E -
+                                        FL280
+462108N 0230437E - 463244N 0230039E -
+463740N 0232209E - 464122N 0233817E
+LRTRA40                                         Active: by NOTAM
+444534N 0282900E - 442500N 0293100E -           Airspace affected: Lower
+                                        FL280
+445000N 0295100E - 451000N 0291400E -
+                                        GND
+450342N 0285449E - 450126N 0283000E -
+444534N 0282900E
+LRTRA41                                         Active: by NOTAM
+444534N 0282900E - 442500N 0293100E -           Airspace affected: Upper
+                                        FL660
+445000N 0295100E - 451000N 0291400E -
+                                        L280
+450342N 0285449E - 450126N 0283000E -
+444534N 0282900E
+
+
+
+
+ROMATSA                                                     AIRAC AIP AMDT 04/25
+ENR 5.2-10                                                                     AIP
+17 APR 2025                                                                ROMANIA
+
+                    1                        2                         3
+LRTRA42G                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+                                           FL85
+460306N 0263459E - 460717N 0261427E -
+                                           GND
+462358N 0260554E - 462458N 0260945E -
+462521N 0263413E
+LRTRA42L                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+                                           FL200
+460306N 0263459E - 460717N 0261427E -
+                                           FL85
+462358N 0260554E - 462458N 0260945E -
+462521N 0263413E
+LRTRA43G                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -      FL90
+455249N 0261643E - 460805N 0255252E -      GND
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA43L                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -      FL200
+455249N 0261643E - 460805N 0255252E -      FL90
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA43M                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -      FL280
+455249N 0261643E - 460805N 0255252E -      FL200
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA43T                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -      FL660
+455249N 0261643E - 460805N 0255252E -      FL350
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA43U                                               Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -      FL350
+455249N 0261643E - 460805N 0255252E -      FL280
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA44G                                               Active: by NOTAM
+465702N 0275524E - 464504N 0280005E -
+463553N 0271520E - 463747N 0271414E -   5000 FT AMSL
+463849N 0271327E - 464014N 0271206E -       GND
+464156N 0270959E - 465700N 0272410E -
+465322N 0273456E - 465702N 0275524E
+LRTRA44L                                               Active: by NOTAM
+465702N 0275524E - 464504N 0280005E -
+463553N 0271520E - 463747N 0271414E -      FL200
+463849N 0271327E - 464014N 0271206E -   5000 FT AMSL
+464156N 0270959E - 465700N 0272410E -
+465322N 0273456E - 465702N 0275524E
+LRTRA44M                                               Active: by NOTAM
+465702N 0275524E - 464504N 0280005E -
+463553N 0271520E - 463747N 0271414E -      FL280
+463849N 0271327E - 464014N 0271206E -      FL200
+464156N 0270959E - 465700N 0272410E -
+465322N 0273456E - 465702N 0275524E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                       ROMATSA
+AIP                                                                         ENR 5.2-11
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA44T                                               Active: by NOTAM
+465702N 0275524E - 464504N 0280005E -
+463553N 0271520E - 463747N 0271414E -      FL660
+463849N 0271327E - 464014N 0271206E -      FL350
+464156N 0270959E - 465700N 0272410E -
+465322N 0273456E - 465702N 0275524E
+LRTRA44U                                               Active: by NOTAM
+465702N 0275524E - 464504N 0280005E -
+463553N 0271520E - 463747N 0271414E -      FL350
+463849N 0271327E - 464014N 0271206E -      FL280
+464156N 0270959E - 465700N 0272410E -
+465322N 0273456E - 465702N 0275524E
+LRTRA45L                                               Active: by NOTAM
+465113N 0263534E - 462804N 0272955E -      FL200
+461119N 0271451E - 463423N 0262039E -      FL105
+465113N 0263534E
+LRTRA45M                                               Active: by NOTAM
+465113N 0263534E - 462804N 0272955E -      FL280
+461119N 0271451E - 463423N 0262039E -      FL200
+465113N 0263534E
+LRTRA45T                                               Active: by NOTAM
+465113N 0263534E - 462804N 0272955E -      FL660
+461119N 0271451E - 463423N 0262039E -      FL350
+465113N 0263534E
+LRTRA45U                                               Active: by NOTAM
+465113N 0263534E - 462804N 0272955E -      FL350
+461119N 0271451E - 463423N 0262039E -      FL280
+465113N 0263534E
+LRTRA46T                                               Active: by NOTAM
+480756N 0263231E - 480714N 0264939E -
+474000N 0270610E - 471626N 0272956E -      FL660
+470507N 0274229E - 465753N 0275641E -      FL350
+464305N 0271033E - 475727N 0261725E -
+480756N 0263231E
+LRTRA46U                                               Active: by NOTAM
+480756N 0263231E - 480714N 0264939E -
+474000N 0270610E - 471626N 0272956E -      FL350
+470507N 0274229E - 465753N 0275641E -      FL280
+464305N 0271033E - 475727N 0261725E -
+480756N 0263231E
+LRTRA47G                                               Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+                                        5000 FT AMSL
+471530N 0271100E - 470533N 0271459E -
+                                            GND
+464619N 0265626E - 464619N 0265055E -
+472145N 0263650E - 473712N 0270852E
+LRTRA47L                                               Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+                                           FL200
+471530N 0271100E - 470533N 0271459E -
+                                        5000 FT AMSL
+464619N 0265626E - 464619N 0265055E -
+472145N 0263650E - 473712N 0270852E
+LRTRA47M                                               Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+                                           FL280
+471530N 0271100E - 470533N 0271459E -
+                                           FL200
+464619N 0265626E - 464619N 0265055E -
+472145N 0263650E - 473712N 0270852E
+LRTRA47T                                               Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+                                           FL660
+471530N 0271100E - 470533N 0271459E -
+                                           FL350
+464619N 0265626E - 464619N 0265055E -
+472145N 0263650E - 473712N 0270852E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-12                                                                          AIP
+17 APR 2025                                                                     ROMANIA
+
+                        1                         2                         3
+LRTRA47U                                                    Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+                                                FL350
+471530N 0271100E - 470533N 0271459E -
+                                                FL280
+464619N 0265626E - 464619N 0265055E -
+472145N 0263650E - 473712N 0270852E
+LRTRA48G                                                    Active: by NOTAM
+                                             5500 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                 GND
+coordinates: 463200N 0265200E
+LRTRA48L                                                    Active: by NOTAM
+                                                FL200
+Circle of 6 NM radius centred on point of
+                                             5500 FT AMSL
+coordinates: 463200N 0265200E
+LRTRA48M                                                    Active: by NOTAM
+                                                FL280
+Circle of 6 NM radius centred on point of
+                                                FL200
+coordinates: 463200N 0265200E
+LRTRA50G                                                    Active: by NOTAM
+                                             5500 FT AMSL
+Circle of 15 NM radius centred on point of
+                                                 GND
+coordinates: 451258N 0265843E
+LRTRA51G                                                    Active: by NOTAM
+                                             5500 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                 GND
+coordinates: 451258N 0265843E
+LRTRA51L                                                    Active: by NOTAM
+                                                FL200
+Circle of 6 NM radius centred on point of
+                                             5500 FT AMSL
+coordinates: 451258N 0265843E
+LRTRA51M                                                    Active: by NOTAM
+                                                FL280
+Circle of 6 NM radius centred on point of
+                                                FL200
+coordinates: 451258N 0265843E
+LRTRA52G                                                    Active: by NOTAM
+455249N 0261643E - 454409N 0263006E -           FL130
+452906N 0262616E - 453639N 0260103E -           GND
+455249N 0261643E
+LRTRA53G                                                    Active: by NOTAM
+453639N 0260103E - 452906N 0262616E -           FL130
+450810N 0262059E - 452222N 0254715E -           GND
+453639N 0260103E
+LRTRA54L                                                    Active: by NOTAM
+460805N 0255252E - 455249N 0261643E -
+                                                FL200
+454409N 0263006E - 452906N 0262616E -
+                                                FL130
+453639N 0260103E - 454003N 0254936E -
+455604N 0255816E - 460805N 0255252E
+LRTRA54M                                                    Active: by NOTAM
+460805N 0255252E - 455249N 0261643E -
+                                                FL280
+454409N 0263006E - 452906N 0262616E -
+                                                FL200
+453639N 0260103E - 454003N 0254936E -
+455604N 0255816E - 460805N 0255252E
+LRTRA54T                                                    Active: by NOTAM
+460805N 0255252E - 455249N 0261643E -
+                                                FL660
+454409N 0263006E - 452906N 0262616E -
+                                                FL350
+453639N 0260103E - 454003N 0254936E -
+455604N 0255816E - 460805N 0255252E
+LRTRA54U                                                    Active: by NOTAM
+460805N 0255252E - 455249N 0261643E -
+                                                FL350
+454409N 0263006E - 452906N 0262616E -
+                                                FL280
+453639N 0260103E - 454003N 0254936E -
+455604N 0255816E - 460805N 0255252E
+LRTRA55L                                                    Active: by NOTAM
+454003N 0254936E - 453639N 0260103E -
+                                                FL200
+452906N 0262616E - 450810N 0262059E -
+                                                FL130
+452222N 0254715E - 452447N 0254126E -
+454003N 0254936E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                            ROMATSA
+AIP                                                                         ENR 5.2-13
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA55M                                               Active: by NOTAM
+454003N 0254936E - 453639N 0260103E -
+                                           FL280
+452906N 0262616E - 450810N 0262059E -
+                                           FL200
+452222N 0254715E - 452447N 0254126E -
+454003N 0254936E
+LRTRA55T                                               Active: by NOTAM
+454003N 0254936E - 453639N 0260103E -
+                                           FL660
+452906N 0262616E - 450810N 0262059E -
+                                           FL350
+452222N 0254715E - 452447N 0254126E -
+454003N 0254936E
+LRTRA55U                                               Active: by NOTAM
+454003N 0254936E - 453639N 0260103E -
+                                           FL350
+452906N 0262616E - 450810N 0262059E -
+                                           FL280
+452222N 0254715E - 452447N 0254126E -
+454003N 0254936E
+LRTRA60G                                               Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -   5000 FT AMSL
+461359N 0272900E - 462000N 0271022E -       GND
+463133N 0271952E - 463938N 0280000E
+LRTRA60L                                               Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -      FL200
+461359N 0272900E - 462000N 0271022E -   5000 FT AMSL
+463133N 0271952E - 463938N 0280000E
+LRTRA60M                                               Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -      FL280
+461359N 0272900E - 462000N 0271022E -      FL200
+463133N 0271952E - 463938N 0280000E
+LRTRA60T                                               Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -      FL660
+461359N 0272900E - 462000N 0271022E -      FL350
+463133N 0271952E - 463938N 0280000E
+LRTRA60U                                               Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -      FL350
+461359N 0272900E - 462000N 0271022E -      FL280
+463133N 0271952E - 463938N 0280000E
+LRTRA61G                                               Active: by NOTAM
+462000N 0271022E - 461359N 0272900E -      FL65
+455122N 0272501E - 455122N 0264637E -      GND
+461329N 0265222E - 462000N 0271022E
+LRTRA61L                                               Active: by NOTAM
+462000N 0271022E - 461359N 0272900E -      FL200
+455122N 0272501E - 455122N 0264637E -      FL65
+461329N 0265222E - 462000N 0271022E
+LRTRA61M                                               Active: by NOTAM
+462000N 0271022E - 461359N 0272900E -      FL280
+455122N 0272501E - 455122N 0264637E -      FL200
+461329N 0265222E - 462000N 0271022E
+LRTRA61T                                               Active: by NOTAM
+462000N 0271022E - 461359N 0272900E -      FL660
+455122N 0272501E - 455122N 0264637E -      FL350
+461329N 0265222E - 462000N 0271022E
+LRTRA61U                                               Active: by NOTAM
+462000N 0271022E - 461359N 0272900E -      FL350
+455122N 0272501E - 455122N 0264637E -      FL280
+461329N 0265222E - 462000N 0271022E
+LRTRA62G                                               Active: by NOTAM
+461359N 0272900E - 461327N 0280035E -   4500 FT AMSL
+455122N 0275540E - 455122N 0272501E -       GND
+461359N 0272900E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-14                                                                     AIP
+17 APR 2025                                                                ROMANIA
+
+                    1                        2                         3
+LRTRA62L                                               Active: by NOTAM
+461359N 0272900E - 461327N 0280035E -      FL200
+455122N 0275540E - 455122N 0272501E -   4500 FT AMSL
+461359N 0272900E
+LRTRA62M                                               Active: by NOTAM
+461359N 0272900E - 461327N 0280035E -      FL280
+455122N 0275540E - 455122N 0272501E -      FL200
+461359N 0272900E
+LRTRA62T                                               Active: by NOTAM
+461359N 0272900E - 461327N 0280035E -      FL660
+455122N 0275540E - 455122N 0272501E -      FL350
+461359N 0272900E
+LRTRA62U                                               Active: by NOTAM
+461359N 0272900E - 461327N 0280035E -      FL350
+455122N 0275540E - 455122N 0272501E -      FL280
+461359N 0272900E
+LRTRA63G                                               Active: by NOTAM
+455122N 0264637E - 455122N 0272501E -
+                                           FL65
+452935N 0272114E - 453035N 0265051E -
+                                           GND
+453052N 0264117E - 453559N 0264237E -
+455122N 0264637E
+LRTRA63L                                               Active: by NOTAM
+455122N 0264637E - 455122N 0272501E -      FL200
+452935N 0272114E - 453035N 0265051E -      FL65
+453052N 0264117E - 455122N 0264637E
+LRTRA63M                                               Active: by NOTAM
+455122N 0264637E - 455122N 0272501E -      FL280
+452935N 0272114E - 453035N 0265051E -      FL200
+453052N 0264117E - 455122N 0264637E
+LRTRA63T                                               Active: by NOTAM
+455122N 0264637E - 455122N 0272501E -      FL660
+452935N 0272114E - 453035N 0265051E -      FL350
+453052N 0264117E - 455122N 0264637E
+LRTRA63U                                               Active: by NOTAM
+455122N 0264637E - 455122N 0272501E -      FL350
+452935N 0272114E - 453035N 0265051E -      FL280
+453052N 0264117E - 455122N 0264637E
+LRTRA64G                                               Active: by NOTAM
+455122N 0272501E - 455122N 0275540E -   4000 FT AMSL
+452835N 0275040E - 452935N 0272114E -       GND
+455122N 0272501E
+LRTRA64L                                               Active: by NOTAM
+455122N 0272501E - 455122N 0275540E -      FL200
+452835N 0275040E - 452935N 0272114E -   4000 FT AMSL
+455122N 0272501E
+LRTRA64M                                               Active: by NOTAM
+455122N 0272501E - 455122N 0275540E -      FL280
+452835N 0275040E - 452935N 0272114E -      FL200
+455122N 0272501E
+LRTRA64T                                               Active: by NOTAM
+455122N 0272501E - 455122N 0275540E -      FL660
+452835N 0275040E - 452935N 0272114E -      FL350
+455122N 0272501E
+LRTRA64U                                               Active: by NOTAM
+455122N 0272501E - 455122N 0275540E -      FL350
+452835N 0275040E - 452935N 0272114E -      FL280
+455122N 0272501E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                       ROMATSA
+AIP                                                                         ENR 5.2-15
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA65G                                               Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 451155N 0272838E -
+451312N 0272538E - 450753N 0272117E -   5500 FT AMSL
+450556N 0272613E - 450954N 0272929E -       GND
+450244N 0273236E - 444728N 0273911E -
+445352N 0270637E - 450407N 0263420E -
+453052N 0264117E
+LRTRA65L                                               Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 451155N 0272838E -
+451312N 0272538E - 450753N 0272117E -      FL200
+450556N 0272613E - 450954N 0272929E -   5500 FT AMSL
+450244N 0273236E - 444728N 0273911E -
+445352N 0270637E - 450407N 0263420E -
+453052N 0264117E
+LRTRA65M                                               Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 451155N 0272838E -
+                                           FL280
+451104N 0272859E - 450954N 0272929E -
+                                           FL200
+450244N 0273236E - 444728N 0273911E -
+445352N 0270637E - 450407N 0263420E -
+453052N 0264117E
+LRTRA65T                                               Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 451155N 0272838E -
+                                           FL660
+451104N 0272859E - 450954N 0272929E -
+                                           FL350
+450244N 0273236E - 444728N 0273911E -
+445352N 0270637E - 450407N 0263420E -
+453052N 0264117E
+LRTRA65U                                               Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 451155N 0272838E -
+                                           FL350
+451104N 0272859E - 450954N 0272929E -
+                                           FL280
+450244N 0273236E - 444728N 0273911E -
+445352N 0270637E - 450407N 0263420E -
+453052N 0264117E
+LRTRA66G                                               Active: by NOTAM
+452935N 0272114E - 452835N 0275040E -   4500 FT AMSL
+451332N 0281732E - 451107N 0273029E -       GND
+451155N 0272838E - 452935N 0272114E
+LRTRA66L                                               Active: by NOTAM
+452935N 0272114E - 452835N 0275040E -      FL200
+451332N 0281732E - 451107N 0273029E -   4500 FT AMSL
+451155N 0272838E - 452935N 0272114E
+LRTRA66M                                               Active: by NOTAM
+452935N 0272114E - 452835N 0275040E -
+                                           FL280
+451332N 0281732E - 451107N 0273029E -
+                                           FL200
+451104N 0272859E - 451155N 0272838E -
+452935N 0272114E
+LRTRA66T                                               Active: by NOTAM
+452935N 0272114E - 452835N 0275040E -
+                                           FL660
+451332N 0281732E - 451107N 0273029E -
+                                           FL350
+451104N 0272859E - 451155N 0272838E -
+452935N 0272114E
+LRTRA66U                                               Active: by NOTAM
+452935N 0272114E - 452835N 0275040E -
+                                           FL350
+451332N 0281732E - 451107N 0273029E -
+                                           FL280
+451104N 0272859E - 451155N 0272838E -
+452935N 0272114E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-16                                                                     AIP
+17 APR 2025                                                                ROMANIA
+
+                    1                        2                         3
+LRTRA67G                                               Active: by NOTAM
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -   5000 FT AMSL
+444728N 0273911E - 450244N 0273236E -       GND
+450954N 0272929E - 451107N 0273029E -
+451332N 0281732E
+LRTRA67L                                               Active: by NOTAM
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -      FL200
+444728N 0273911E - 450244N 0273236E -   5000 FT AMSL
+450954N 0272929E - 451107N 0273029E -
+451332N 0281732E
+LRTRA67M                                               Active: by NOTAM
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -      FL280
+444728N 0273911E - 450244N 0273236E -      FL200
+450954N 0272929E - 451104N 0272859E -
+451107N 0273029E - 451332N 0281732E
+LRTRA67T                                               Active: by NOTAM
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -      FL660
+444728N 0273911E - 450244N 0273236E -      FL350
+450954N 0272929E - 451104N 0272859E -
+451107N 0273029E - 451332N 0281732E
+LRTRA67U                                               Active: by NOTAM
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -      FL350
+444728N 0273911E - 450244N 0273236E -      FL280
+450954N 0272929E - 451104N 0272859E -
+451107N 0273029E - 451332N 0281732E
+LRTRA68G                                               Active: by NOTAM
+451312N 0272538E - 451155N 0272838E -
+                                        3500 FT AMSL
+451107N 0273029E - 450954N 0272929E -
+                                            GND
+450556N 0272613E - 450753N 0272117E -
+451312N 0272538E
+LRTRA68L                                               Active: by NOTAM
+451312N 0272538E - 451155N 0272838E -
+                                           FL200
+451107N 0273029E - 450954N 0272929E -
+                                        3500 FT AMSL
+450556N 0272613E - 450753N 0272117E -
+451312N 0272538E
+LRTRA69L                                               Active: by NOTAM
+451312N 0272538E - 451155N 0272838E -
+                                           FL200
+451107N 0273029E - 450954N 0272929E -
+                                           FL130
+450556N 0272613E - 450753N 0272117E -
+451312N 0272538E
+LRTRA71G                                               Active: by NOTAM
+442624N 0275521E - 441355N 0282323E -
+440421N 0282842E - 440304N 0282924E -
+                                        5500 FT AMSL
+435858N 0283141E - 435542N 0283330E -
+                                            GND
+435138N 0283546E - 434914N 0283336E -
+435406N 0280546E - 440333N 0280016E -
+440429N 0275521E - 442624N 0275521E
+LRTRA71L                                               Active: by NOTAM
+442624N 0275521E - 441355N 0282323E -
+440421N 0282842E - 440304N 0282924E -
+                                           FL200
+435858N 0283141E - 435542N 0283330E -
+                                        5500 FT AMSL
+435138N 0283546E - 434914N 0283336E -
+435406N 0280546E - 440333N 0280016E -
+440429N 0275521E - 442624N 0275521E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                       ROMATSA
+AIP                                                                         ENR 5.2-17
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA71M                                               Active: by NOTAM
+442624N 0275521E - 441355N 0282323E -
+440421N 0282842E - 440304N 0282924E -
+                                           FL280
+435858N 0283141E - 435542N 0283330E -
+                                           FL200
+435138N 0283546E - 434914N 0283336E -
+435406N 0280546E - 440333N 0280016E -
+440429N 0275521E - 442624N 0275521E
+LRTRA71T                                               Active: by NOTAM
+442624N 0275521E - 441355N 0282323E -
+440421N 0282842E - 440304N 0282924E -
+                                           FL660
+435858N 0283141E - 435542N 0283330E -
+                                           FL350
+435138N 0283546E - 434914N 0283336E -
+435406N 0280546E - 440333N 0280016E -
+440429N 0275521E - 442624N 0275521E
+LRTRA71U                                               Active: by NOTAM
+442624N 0275521E - 441355N 0282323E -
+440421N 0282842E - 440304N 0282924E -
+                                           FL350
+435858N 0283141E - 435542N 0283330E -
+                                           FL280
+435138N 0283546E - 434914N 0283336E -
+435406N 0280546E - 440333N 0280016E -
+440429N 0275521E - 442624N 0275521E
+LRTRA72G                                               Active: by NOTAM
+443448N 0273125E - 443428N 0273703E -   5500 FT AMSL
+442624N 0275521E - 440429N 0275521E -       GND
+440919N 0273125E - 443448N 0273125E
+LRTRA72L                                               Active: by NOTAM
+443448N 0273125E - 443428N 0273703E -      FL200
+442624N 0275521E - 440429N 0275521E -   5500 FT AMSL
+440919N 0273125E - 443448N 0273125E
+LRTRA72M                                               Active: by NOTAM
+443448N 0273125E - 443428N 0273703E -      FL280
+442624N 0275521E - 440429N 0275521E -      FL200
+440919N 0273125E - 443448N 0273125E
+LRTRA72T                                               Active: by NOTAM
+443448N 0273125E - 443428N 0273703E -      FL660
+442624N 0275521E - 440429N 0275521E -      FL350
+440919N 0273125E - 443448N 0273125E
+LRTRA72U                                               Active: by NOTAM
+443448N 0273125E - 443428N 0273703E -      FL350
+442624N 0275521E - 440429N 0275521E -      FL280
+440919N 0273125E - 443448N 0273125E
+LRTRA73G                                               Active: by NOTAM
+443613N 0270724E - 443448N 0273125E -   5500 FT AMSL
+440919N 0273125E - 441205N 0271908E -       GND
+441321N 0270830E - 443613N 0270724E
+LRTRA73L                                               Active: by NOTAM
+443613N 0270724E - 443448N 0273125E -      FL200
+440919N 0273125E - 441205N 0271908E -   5500 FT AMSL
+441321N 0270830E - 443613N 0270724E
+LRTRA73M                                               Active: by NOTAM
+443613N 0270724E - 443448N 0273125E -      FL280
+440919N 0273125E - 441205N 0271908E -      FL200
+441321N 0270830E - 443613N 0270724E
+LRTRA73T                                               Active: by NOTAM
+443613N 0270724E - 443448N 0273125E -      FL660
+440919N 0273125E - 441205N 0271908E -      FL350
+441321N 0270830E - 443613N 0270724E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-18                                                                           AIP
+17 APR 2025                                                                      ROMANIA
+
+                        1                          2                         3
+LRTRA73U                                                     Active: by NOTAM
+443613N 0270724E - 443448N 0273125E -            FL350
+440919N 0273125E - 441205N 0271908E -            FL280
+441321N 0270830E - 443613N 0270724E
+LRTRA74                                                      Active: by NOTAM
+                                              5500 FT AMSL
+Circle of 15 NM radius centred on point of
+                                                  GND
+coordinates: 442332N 0274336E
+LRTRA80G                                                     Active: by NOTAM
+440401N 0283543E - 440059N 0284300E -
+                                              3500 FT AMSL
+435404N 0283722E - 435542N 0283330E -
+                                                  GND
+435706N 0283011E - 435858N 0283141E -
+440401N 0283543E
+LRTRA81G                                                     Active: by NOTAM
+440408N 0284535E - 440408N 0284812E -         3000 FT AMSL
+435404N 0284814E - 435404N 0283722E -             GND
+440059N 0284300E - 440408N 0284535E
+LRTRA82G                                                     Active: by NOTAM
+435404N 0283722E - 435404N 0284814E -         3000 FT AMSL
+434500N 0284814E - 434500N 0283546E -             GND
+435404N 0283722E
+LRTRA83G                                                     Active: by NOTAM
+                                              3500 FT AMSL
+Circle of 2.5 NM radius centred on point of
+                                                  GND
+coordinates: 434913N 0282649E
+LRTRA84G                                                     Active: by NOTAM
+                                              3500 FT AMSL
+Circle of 2.5 NM radius centred on point of
+                                                  GND
+coordinates: 435720N 0282700E
+LRTRA85G                                                     Active: by NOTAM
+440500N 0282500E - 440421N 0282842E -
+                                              3500 FT AMSL
+440400N 0283040E - 440304N 0282924E -
+                                                  GND
+440040N 0282610E - 440150N 0282230E -
+440430N 0282200E - 440500N 0282500E
+LRTRA90G                                                     Active: by NOTAM
+                                              2000 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                  GND
+coordinates: 444220N 0264301E
+LRTRA91G                                                     Active: by NOTAM
+                                              2000 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                  GND
+coordinates: 441932N 0263021E
+LRTRA91L                                                     Active: by NOTAM
+                                                 FL200
+Circle of 6 NM radius centred on point of
+                                              2000 FT AMSL
+coordinates: 441932N 0263021E
+LRTRA92G                                                     Active: by NOTAM
+                                              2000 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                  GND
+coordinates: 441655N 0253201E
+LRTRA92L                                                     Active: by NOTAM
+                                                 FL200
+Circle of 6 NM radius centred on point of
+                                              2000 FT AMSL
+coordinates: 441655N 0253201E
+LRTRA93G                                                     Active: by NOTAM
+                                              2000 FT AMSL
+Circle of 6 NM radius centred on point of
+                                                  GND
+coordinates: 443018N 0252910E
+LRTRA94G                                                     Active: by NOTAM
+444704N 0253104E - 444456N 0254015E -         2000 FT AMSL
+444145N 0254126E - 444421N 0252600E -             GND
+444704N 0253104E
+LRTRA100G                                                    Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -         4500 FT AMSL
+442605N 0241220E - 443422N 0234004E -             GND
+445359N 0233344E
+LRTRA100L                                                    Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -            FL200
+442605N 0241220E - 443422N 0234004E -         4500 FT AMSL
+445359N 0233344E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                             ROMATSA
+AIP                                                                         ENR 5.2-19
+ROMANIA                                                                    17 APR 2025
+
+                    1                        2                         3
+LRTRA100M                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -      FL280
+442605N 0241220E - 443422N 0234004E -      FL200
+445359N 0233344E
+LRTRA100T                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -      FL660
+442605N 0241220E - 443422N 0234004E -      FL350
+445359N 0233344E
+LRTRA100U                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -      FL350
+442605N 0241220E - 443422N 0234004E -      FL280
+445359N 0233344E
+LRTRA101G                                              Active: by NOTAM
+443422N 0234004E - 442605N 0241220E -   4500 FT AMSL
+441912N 0241715E - 441901N 0234451E -       GND
+443422N 0234004E
+LRTRA101L                                              Active: by NOTAM
+443422N 0234004E - 442605N 0241220E -      FL200
+441912N 0241715E - 441901N 0234451E -   4500 FT AMSL
+443422N 0234004E
+LRTRA101M                                              Active: by NOTAM
+443422N 0234004E - 442605N 0241220E -      FL280
+441912N 0241715E - 441901N 0234451E -      FL200
+443422N 0234004E
+LRTRA101T                                              Active: by NOTAM
+443422N 0234004E - 442605N 0241220E -      FL660
+441912N 0241715E - 441901N 0234451E -      FL350
+443422N 0234004E
+LRTRA101U                                              Active: by NOTAM
+443422N 0234004E - 442605N 0241220E -      FL350
+441912N 0241715E - 441901N 0234451E -      FL280
+443422N 0234004E
+LRTRA102G                                              Active: by NOTAM
+441912N 0241715E - 441849N 0241730E -   4000 FT AMSL
+435503N 0240532E - 440733N 0234837E -       GND
+441901N 0234451E - 441912N 0241715E
+LRTRA102L                                              Active: by NOTAM
+441912N 0241715E - 441849N 0241730E -      FL200
+435503N 0240532E - 440733N 0234837E -   4000 FT AMSL
+441901N 0234451E - 441912N 0241715E
+LRTRA102M                                              Active: by NOTAM
+441912N 0241715E - 441849N 0241730E -      FL280
+435503N 0240532E - 440733N 0234837E -      FL200
+441901N 0234451E - 441912N 0241715E
+LRTRA102T                                              Active: by NOTAM
+441912N 0241715E - 441849N 0241730E -      FL660
+435503N 0240532E - 440733N 0234837E -      FL350
+441901N 0234451E - 441912N 0241715E
+LRTRA102U                                              Active: by NOTAM
+41912N 0241715E - 441849N 0241730E -       FL350
+435503N 0240532E - 440733N 0234837E -      FL280
+441901N 0234451E - 441912N 0241715E
+LRTRA103G                                              Active: by NOTAM
+442904N 0230410E - 442831N 0232731E -   4500 FT AMSL
+435914N 0233702E - 440226N 0231725E -       GND
+442904N 0230410E
+LRTRA103L                                              Active: by NOTAM
+442904N 0230410E - 442831N 0232731E -      FL200
+435914N 0233702E - 440226N 0231725E -   4500 FT AMSL
+442904N 0230410E
+
+
+
+
+ROMATSA                                                           AIRAC AIP AMDT 04/25
+ENR 5.2-20                                                                     AIP
+17 APR 2025                                                                ROMANIA
+
+                    1                        2                         3
+LRTRA103M                                              Active: by NOTAM
+442904N 0230410E - 442831N 0232731E -      FL280
+435914N 0233702E - 440226N 0231725E -      FL200
+442904N 0230410E
+LRTRA103T                                              Active: by NOTAM
+442904N 0230410E - 442831N 0232731E -      FL660
+435914N 0233702E - 440226N 0231725E -      FL350
+442904N 0230410E
+LRTRA103U                                              Active: by NOTAM
+442904N 0230410E - 442831N 0232731E -      FL350
+435914N 0233702E - 440226N 0231725E -      FL280
+442904N 0230410E
+LRTRA104G                                              Active: by NOTAM
+445941N 0225512E - 445645N 0231823E -   4500 FT AMSL
+443522N 0232522E - 443658N 0230406E -       GND
+445941N 0225512E
+LRTRA104L                                              Active: by NOTAM
+445941N 0225512E - 445645N 0231823E -      FL200
+443522N 0232522E - 443658N 0230406E -   4500 FT AMSL
+445941N 0225512E
+LRTRA104M                                              Active: by NOTAM
+445941N 0225512E - 445645N 0231823E -      FL280
+443522N 0232522E - 443658N 0230406E -      FL200
+445941N 0225512E
+LRTRA104T                                              Active: by NOTAM
+445941N 0225512E - 445645N 0231823E -      FL660
+443522N 0232522E - 443658N 0230406E -      FL350
+445941N 0225512E
+LRTRA104U                                              Active: by NOTAM
+445941N 0225512E - 445645N 0231823E -      FL350
+443522N 0232522E - 443658N 0230406E -      FL280
+445941N 0225512E
+LRTRA105G                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -
+                                        4500 FT AMSL
+442605N 0241220E - 441912N 0241715E -
+                                            GND
+441901N 0234451E - 443422N 0234004E -
+445359N 0233344E
+LRTRA105L                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -
+                                           FL200
+442605N 0241220E - 441912N 0241715E -
+                                        4500 FT AMSL
+441901N 0234451E - 443422N 0234004E -
+445359N 0233344E
+LRTRA105M                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -
+                                           FL280
+442605N 0241220E - 441912N 0241715E -
+                                           FL200
+441901N 0234451E - 443422N 0234004E -
+445359N 0233344E
+LRTRA105T                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -
+                                           FL660
+442605N 0241220E - 441912N 0241715E -
+                                           FL350
+441901N 0234451E - 443422N 0234004E -
+445359N 0233344E
+LRTRA105U                                              Active: by NOTAM
+445359N 0233344E - 443733N 0240409E -
+                                           FL350
+442605N 0241220E - 441912N 0241715E -
+                                           FL280
+441901N 0234451E - 443422N 0234004E -
+445359N 0233344E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                       ROMATSA
+AIP                                                                  ENR 5.2-21
+ROMANIA                                                             17 APR 2025
+
+                    1                     2                     3
+LRTRA110A                                       Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 472157N 0260518E -
+471914N 0261302E - 471909N 0262229E -
+470139N 0262932E - 464127N 0263734E -
+463845N 0263515E - 463551N 0263354E -
+463448N 0255708E - 463335N 0251212E -   FL280
+463306N 0245647E - 463253N 0244947E -   FL100
+463246N 0244704E - 463348N 0243815E -
+463218N 0243032E - 463202N 0242110E -
+463150N 0241431E - 463458N 0241320E -
+464200N 0241300E - 464551N 0240951E -
+470043N 0235741E - 472716N 0233558E -
+472851N 0234023E - 473122N 0234449E -
+473353N 0234552E
+LRTRA110B                                       Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 472323N 0262046E -
+471909N 0262229E - 470139N 0262932E -
+464127N 0263734E - 463845N 0263515E -
+463551N 0263354E - 463448N 0255708E -   FL660
+463335N 0251212E - 463306N 0245647E -   FL280
+463253N 0244947E - 463246N 0244704E -
+463232N 0243846E - 463218N 0243032E -
+463202N 0242110E - 464200N 0241300E -
+464551N 0240951E - 470043N 0235741E -
+472716N 0233558E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA110C                                       Active: by NOTAM
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 472323N 0262046E -
+471909N 0262229E - 470139N 0262932E -   FL660
+464127N 0263734E - 463845N 0263515E -   FL280
+463551N 0263354E - 463448N 0255708E -
+463335N 0251212E - 464542N 0245231E -
+470052N 0242731E - 472851N 0234023E -
+473122N 0234449E - 473353N 0234552E
+LRTRA110D                                       Active: by NOTAM
+472722N 0243912E - 472533N 0245406E -
+472439N 0253756E - 472359N 0260018E -
+472323N 0262046E - 471909N 0262229E -
+                                        FL660
+470139N 0262932E - 464127N 0263734E -
+                                        FL280
+463845N 0263515E - 463551N 0263354E -
+463448N 0255708E - 463335N 0251212E -
+464542N 0245231E - 470054N 0244720E -
+472722N 0243912E
+LRTRA111A                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -   FL280
+444728N 0273911E - 445352N 0270637E -   FL65
+450407N 0263420E - 453052N 0264117E -
+453559N 0264237E - 455122N 0264637E -
+461329N 0265222E - 462000N 0271022E -
+463133N 0271952E - 463938N 0280000E
+
+
+
+
+ROMATSA                                                    AIRAC AIP AMDT 04/25
+ENR 5.2-22                                                              AIP
+17 APR 2025                                                         ROMANIA
+
+                    1                     2                     3
+LRTRA111B                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -   FL660
+444728N 0273911E - 445352N 0270637E -   FL280
+450407N 0263420E - 453052N 0264117E -
+455122N 0264637E - 461329N 0265222E -
+462000N 0271022E - 463133N 0271952E -
+463938N 0280000E
+LRTRA111C                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -   FL660
+450244N 0273236E - 450638N 0272648E -   FL280
+450929N 0272235E - 453035N 0265051E -
+453559N 0264237E - 455122N 0264637E -
+461329N 0265222E - 462000N 0271022E -
+463133N 0271952E - 463938N 0280000E
+LRTRA111D                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+452935N 0272114E - 453035N 0265051E -
+453559N 0264237E - 454409N 0263006E -   FL280
+455249N 0261643E - 460805N 0255252E -   FL100
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E -
+462425N 0264443E - 463133N 0271952E -
+463938N 0280000E
+LRTRA111E                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+452935N 0272114E - 453035N 0265051E -
+453559N 0264237E - 454409N 0263006E -   FL660
+455249N 0261643E - 460805N 0255252E -   FL280
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E -
+462425N 0264443E - 463133N 0271952E -
+463938N 0280000E
+LRTRA111F                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -
+450244N 0273236E - 450638N 0272648E -
+                                        FL280
+450929N 0272235E - 453035N 0265051E -
+                                        FL100
+453559N 0264237E - 454409N 0263006E -
+455249N 0261643E - 460805N 0255252E -
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E -
+462425N 0264443E - 463133N 0271952E -
+463938N 0280000E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                ROMATSA
+AIP                                                                  ENR 5.2-23
+ROMANIA                                                             17 APR 2025
+
+                    1                     2                     3
+LRTRA111H                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -
+450244N 0273236E - 450638N 0272648E -
+                                        FL660
+450929N 0272235E - 453035N 0265051E -
+                                        FL280
+453559N 0264237E - 454409N 0263006E -
+455249N 0261643E - 460805N 0255252E -
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E -
+462425N 0264443E - 463133N 0271952E -
+463938N 0280000E
+LRTRA111I                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+                                        FL280
+452935N 0272114E - 453035N 0265051E -
+                                        FL65
+453052N 0264117E - 455122N 0264637E -
+461329N 0265222E - 462000N 0271022E -
+463133N 0271952E - 463938N 0280000E
+LRTRA111J                                       Active: by NOTAM
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+                                        FL660
+452935N 0272114E - 453035N 0265051E -
+                                        FL280
+453052N 0264117E - 455122N 0264637E -
+461329N 0265222E - 462000N 0271022E -
+463133N 0271952E - 463938N 0280000E
+LRTRA111K                                       Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 452835N 0275040E -
+                                        FL280
+451332N 0281732E - 450746N 0282347E -
+                                        FL65
+450109N 0282253E - 445054N 0275001E -
+444728N 0273911E - 445352N 0270637E -
+450407N 0263420E - 453052N 0264117E
+LRTRA111N                                       Active: by NOTAM
+453052N 0264117E - 453035N 0265051E -
+452935N 0272114E - 452835N 0275040E -
+                                        FL660
+451332N 0281732E - 450746N 0282347E -
+                                        FL280
+450109N 0282253E - 445054N 0275001E -
+444728N 0273911E - 445352N 0270637E -
+450407N 0263420E - 453052N 0264117E
+LRTRA112L                                       Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -
+                                        FL200
+452906N 0262616E - 450810N 0262059E -
+                                        FL130
+452222N 0254715E - 452447N 0254126E -
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+LRTRA112M                                       Active: by NOTAM
+462521N 0263413E - 462004N 0263924E -
+460306N 0263459E - 454409N 0263006E -
+                                        FL280
+452906N 0262616E - 450810N 0262059E -
+                                        FL200
+452222N 0254715E - 452447N 0254126E -
+461915N 0254749E - 462358N 0260554E -
+462458N 0260945E - 462521N 0263413E
+
+
+
+
+ROMATSA                                                    AIRAC AIP AMDT 04/25
+ENR 5.2-24                                                              AIP
+17 APR 2025                                                         ROMANIA
+
+                    1                     2                     3
+LRTRA113A                                       Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+465702N 0275524E - 464504N 0280005E -
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -
+444728N 0273911E - 445352N 0270637E -   FL280
+450407N 0263420E - 450412N 0263404E -   FL130
+453013N 0250117E - 461023N 0235313E -
+461621N 0235022E - 462333N 0234653E -
+464122N 0233817E - 472716N 0233558E -
+472851N 0234023E - 473122N 0234449E -
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 473712N 0270852E
+LRTRA113B                                       Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+465702N 0275524E - 464504N 0280005E -
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -
+444728N 0273911E - 445352N 0270637E -   FL660
+450407N 0263420E - 450412N 0263404E -   L280
+453013N 0250117E - 461023N 0235313E -
+461621N 0235022E - 462333N 0234653E -
+464122N 0233817E - 472716N 0233558E -
+472851N 0234023E - 473122N 0234449E -
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 473712N 0270852E
+LRTRA113C                                       Active: by NOTAM
+473712N 0270852E - 472428N 0272339E -
+465702N 0275524E - 464504N 0280005E -
+463938N 0280000E - 461327N 0280035E -
+455122N 0275540E - 452835N 0275040E -
+451332N 0281732E - 450746N 0282347E -
+450109N 0282253E - 445054N 0275001E -
+450244N 0273236E - 450638N 0272648E -
+                                        FL660
+450929N 0272235E - 453035N 0265051E -
+                                        FL280
+453035N 0265051E - 453559N 0264237E -
+454409N 0263006E - 455249N 0261643E -
+460805N 0255252E - 463335N 0251212E -
+464542N 0245231E - 470052N 0242731E -
+472851N 0234023E - 473122N 0234449E -
+473353N 0234552E - 472722N 0243912E -
+472533N 0245406E - 472439N 0253756E -
+472359N 0260018E - 473712N 0270852E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                ROMATSA
+AIP                                                                                            ENR 5.2-25
+ROMANIA                                                                                       17 APR 2025
+
+                                                                     Remarks
+                                                  Upper limit
+Identification, name and lateral limits                              (time of activity, type of restriction,
+                                                  Lower limit
+                                                                     nature of hazard, risk of interception)
+                         1                             2                                  3
+TEMPORARY SEGREGATED AREAS (TSA)
+LRTSA59 (BUZĂU)                                                      Active: by NOTAM
+Circle of 6 NM radius centred on point of                            Airspace affected: Lower
+coordinates: 450738N 0264745E
+LRTSA61 (CLINCENI)                                                   Active: by NOTAM
+Circle of 6 NM radius centred on point of                            Airspace affected: Lower
+coordinates: 441800N 0255600E
+LRTSA66 (LUCIU)                                                      Active: by NOTAM
+Circle of 6 NM radius centred on point of                            Airspace affected: Lower
+coordinates: 445820N 0270500E               Vertical limits are issued
+LRTSA67 (Pădurea SPĂTARU)                          by NOTAM            Active: by NOTAM
+Circle of 6 NM radius centred on point of                              Airspace affected: Lower
+coordinates: 450520N 0264620E
+LRTSA68 (Pădurea FRASIN)                                             Active: by NOTAM
+Circle of 6 NM radius centred on point of                            Airspace affected: Lower
+coordinates: 450610N 0264915E
+LRTSA69 (SMEENI)                                                     Active: by NOTAM
+Circle of 6 NM radius centred on point of                            Airspace affected: Lower
+coordinates: 445940N 0265200E
+
+
+
+
+ROMATSA                                                                            AIRAC AIP AMDT 04/25
+

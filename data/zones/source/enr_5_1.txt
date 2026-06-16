@@ -1,0 +1,1288 @@
+AIP                                                                                                       ENR 5.1-1
+ROMANIA                                                                                                29 JAN 1998
+
+
+
+
+                                           ENR 5. NAVIGATION WARNINGS
+
+
+
+                             ENR 5.1 PROHIBITED, RESTRICTED AND DANGER AREAS
+
+                                                       1. General
+    The airspace in which a potential hazard to aircraft operations may exist and the areas within which the
+operation of civil aircraft may be, for one reason or another, restricted either temporarily or permanently, are
+classified in three categories of areas, as defined by ICAO:
+
+    DANGER AREA
+    An airspace of defined dimensions within which activities dangerous to the flight of aircraft may exist at
+specified times.
+    The purpose of the creation of a danger area is to caution operators or pilots of aircraft about the existing
+danger, having in view their responsibility for the safety of their aircraft.
+
+    PROHIBITED AREA
+    An airspace of defined dimensions within which the flight of aircraft is prohibited.
+    This term is used when the flight of civil aircraft within the designated airspace is not permitted at any time
+under any circumstances.
+
+    RESTRICTED AREA
+    An airspace of defined dimensions within which the flight of aircraft may be carried out only under certain
+specified conditions.
+
+       Each area is as small as practicable and contained within simple geometrical limits such as a circle, square,
+etc.
+
+                                                  2. Area designation
+       Each (danger, prohibited and restricted) area is designated using two groups of letters and a number:
+
+
+                           Nationality letter
+                              (LR = Romania)
+       LR P1               number (unique for each area
+                               within the same category)
+
+                           area type: P = Prohibited Area
+                                      R = Restricted Area
+                                      D = Danger Area
+
+
+
+
+Civil Aviation Authority                                                                       AIRAC AIP AMDT 13
+ENR 5.1-1                                                                                                        AIP
+29 JAN 1998                                                                                                  ROMANIA
+
+
+
+
+                                 ENR 5. AVERTISMENTE PENTRU NAVIGAŢIE
+
+
+
+                       ENR 5.1 ZONE INTERZISE, RESTRICŢIONATE ŞI PERICULOASE
+
+                                                  1. Generalităţi
+     Porţiunile de spaţiu aerian în care pot exista pericole pentru aeronave şi zonele în interiorul cărora zborurile
+aeronavelor civile pot, pentru un motiv oarecare, să fie supuse restricţiilor provizorii sau permanente sunt
+clasificate în trei categorii de zbor, conform definiţiilor OACI, după cum urmează:
+
+
+    ZONA PERICULOASĂ
+     Porţiunea de spaţiu aerian de dimensiuni definite în interiorul căreia se desfăşoară în timpul unor perioade
+definite activităţi periculoase pentru zborul aeronavelor.
+    Stabilirea unei zone periculoase are drept scop să avertizeze pe deţinătorii de aeronave şi pe piloţii
+aeronavelor despre pericolul existent, avându-se în vedere responsabilitatea lor în ceea ce priveşte securitatea
+zborurilor.
+
+
+    ZONA INTERZISĂ
+    Porţiunea de spaţiu aerian de dimensiuni definite în limitele căreia zborul aeronavelor este interzis.
+    Această denumire este utilizată numai atunci când zborurile aeronavelor civile în spaţiul aerian astfel
+desemnat sunt interzise pe tot timpul şi toate împrejurările.
+
+
+    ZONA RESTRICŢIONATĂ
+   Porţiunea de spaţiu aerian de dimensiuni definite în limitele căreia zborul aeronavelor se poate executa
+numai în anumite condiţii specificate.
+
+
+    Întinderea fiecărei zone este redusă cât mai mult posibil, iar limitele sunt asemănătoare figurilor geometrice
+simple: cerc, pătrat, etc.
+
+
+                                             2. Identificarea zonelor
+   Fiecare zonă (interzisă, reglementată sau periculoasă) este identificată prin doua grupuri de litere şi un
+număr:
+
+
+                        Indicativ de naţionalitate
+                                (LR = Romania)
+      LR P1               număr (unic pentru fiecare zonă
+                           din cadrul aceleaşi categorii)
+
+                           tipul zonei: P = Zonă Interzisă
+                                       R = Zonă Restricţionată
+                                       D = Zonă Periculoasă
+
+
+
+
+AIRAC AIP AMDT 13                                                                             Civil Aviation Authority
+AIP                                                                                               ENR 5.1-2
+ROMANIA                                                                                        17 APR 2025
+
+
+
+                      3. Prohibited, Restricted and Danger Areas within BUCUREŞTI FIR
+                                                                      Remarks
+                                                     Upper limit
+Identification, name and lateral limits                               (time of activity, type of restriction,
+                                                     Lower limit
+                                                                      nature of hazard, risk of interception)
+                         1                               2                                 3
+PROHIBITED AREAS
+LRP2 CERNAVODĂ
+                                                    4000 FT QNH       H24
+Circle of 1 NM (2 KM) radius centred on point of
+                                                        GND           Nuclear Energy Plant
+coordinates: 441920N 0280324E
+LRP4
+Circle of 5 KM radius centred on point of               FL85
+                                                                      H24
+coordinates: 434424N 0234644E, except where             GND
+inside SOFIA FIR.
+
+
+
+
+ROMATSA                                                                            AIRAC AIP AMDT 04/25
+ENR 5.1-3                                                                                        AIP
+17 APR 2025                                                                                  ROMANIA
+
+
+                                                                 Remarks
+                                                   Upper limit
+Identification, name and lateral limits                          (time of activity, type of restriction,
+                                                   Lower limit
+                                                                 nature of hazard, risk of interception)
+                         1                             2                              3
+RESTRICTED AREAS
+LRR1 PITEŞTI/Geamăna                                             Active: H24
+Circle of 11 NM (20 KM) radius centred on point
+of coordinates: 445100N 0245300E                     FL660       Supersonic flights are prohibited.
+                                                     GND
+                                                                 Subsonic flights are prohibited
+                                                      FL60       below 2000m STD (FL60), except
+                                                      GND        aircraft with maximum take-of weight
+                                                                 below 5.7 t.
+LRR3                                                             Active: H24
+443025N 0261400E - 442720N 0255830E -                FL105       Penetration permission required,
+442100N 0260400E - 442100N 0261400E -                GND         according to Government Decision
+to point of origin                                               HG no. 859/2021.
+LRR4                                                             Active: H24
+Circle of 5 NM (10 KM) radius centred on point                   Nuclear Energy Plant
+of coordinates: 442000N 0280200E except                          Except Romanian state aircraft
+LRP2 airspace.                                    4000 FT QNH    performing        SAR,         medical
+                                                      GND        evacuation, real world air policing,
+                                                                 radiological survey, emergency
+                                                                 intervention in case of real or drill
+                                                                 nuclear or radiological alerts.
+LRR5                                                             Time of activity: H24, except state
+453500N 0251235E - 453500N 0251630E -                            aircraft.
+453100N 0252240E - 452910N 0251900E -
+                                                   600 M AGL
+453000N 0251600E - 452400N 0251300E -
+                                                      GND
+452255N 0251455E - 452142N 0251310E -
+452310N 0251035E - 452410N 0251200E -
+452800N 0250840E - 453025N 0250840E
+LRR6                                                             H24
+Area bounded by lines joining points 440922N
+0260215E then along the clockwise arc of a        2000 FT AMSL
+circle of 3 NM radius centred on 440708N              GND
+0260503E to 440454N 0260215E to point of
+origin.
+LRR7 BERCENI                                                     H24
+442100N 0260400E - 442100N 0261400E -                            For VFR flights except Romanian
+                                                  2000 FT AMSL
+441840N 0261400E - 441840N 0261100E -                            state aircraft performing SAR, real
+                                                      GND
+442100N 0260400E                                                 world     air     policing,   medical
+                                                                 evacuation.
+LRR8 BALTENI                                                     H24
+Circle of 1 NM radius centred on point of                        For VFR flights except Romanian
+                                                  2400 FT AMSL
+coordinates: 444327N 0260309E                                    state aircraft performing SAR, real
+                                                      GND
+                                                                 world     air     policing,   medical
+                                                                 evacuation.
+LRR9 NEPTUN                                                      H24
+Circle of 1 NM radius centred on point of                        For VFR flights except Romanian
+                                                  2100 FT AMSL
+coordinates: 435219N 0283614E                                    state aircraft performing SAR, real
+                                                      GND
+                                                                 world     air     policing,   medical
+                                                                 evacuation.
+LRR50                                                            Time of activity: H24
+A circle, radius 13.5 NM (25 KM) centred at                      Except SAR, real world air policing,
+434424N 0234644E, except where inside SOFIA                      medical evacuation, cartographic
+FIR.                                                 FL165       aerial photo aircraft and aircraft with
+                                                     GND         maximum take-off weight below
+                                                                 5.7 t.
+                                                                 Risk of interception in the event of
+                                                                 penetration.
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                        ROMATSA
+AIP                                                                                  ENR 5.1-4
+ROMANIA                                                                           17 APR 2025
+
+
+                       1                           2                         3
+LRR101 Va ea Că gărească                                 Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 445914N 0260920E
+LRR102 Bo de ti Scăieni Seci                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450310N 0260309E
+LRR103 ehedin a                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450619N 0261158E
+LRR104 Ce t ra                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450155N 0262013E
+LRR105 Tătar                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450621N 0261943E
+LRR106 C m ina                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450849N 0254442E
+LRR107 T eni                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450255N 0255447E
+LRR108 Vărbi ă                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450900N 0255943E
+LRR109 Tohani                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450352N 0262448E
+LRR110 Pro i a                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450750N 0254115E
+LRR111 Vi ere ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 451418N 0262639E
+LRR112 Pietroase e                                       Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450354N 0263502E
+LRR113 Tisă                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 450946N 0262957E
+LRR120 Bo reni                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471341N 0263758E
+LRR121 a t                                               Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472750N 0265629E
+LRR122 Va ea Rac i                                       Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472119N 0265300E
+LRR123 R ginoasa                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471554N 0264938E
+LRR124 Hodora                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471837N 0270003E
+LRR125 Coarne e Ca rei                                   Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472258N 0270855E
+LRR126 Bă a i                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471330N 0270822E
+
+
+
+
+ROMATSA                                                               AIRAC AIP AMDT 04/25
+ENR 5.1-5                                                                                   AIP
+17 APR 2025                                                                             ROMANIA
+
+
+                       1                           2                         3
+LRR127 Str nga                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471051N 0265718E
+LRR128 L nca i                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 470707N 0264901E
+LRR129 Les e i                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472206N 0264117E
+LRR130 Beci Vechi                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454348N 0270309E
+LRR131 Anghe e ti                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 460441N 0270623E
+LRR132 Varni a                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455900N 0265644E
+LRR133 Panci                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455616N 0270445E
+LRR134 Bo ote ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455116N 0270057E
+LRR135 Bi ighe ti                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454906N 0271132E
+LRR136 Poiana                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 460009N 0271527E
+LRR137 Nicore ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455519N 0271759E
+LRR138 Ureche ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 453650N 0270530E
+LRR139 Răd e ti                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454455N 0271926E
+LRR142 B ne ti A ere ti                                  Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 464704N 0275835E
+LRR143 Codăe ti                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 465136N 0274710E
+LRR145 Cre e ti                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 463849N 0275825E
+LRR146 So e ti                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 464431N 0274906E
+LRR151 ăd ari                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 444213N 0240504E
+LRR152 Or e ti                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 444846N 0241323E
+LRR153 Pobor                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 444010N 0242634E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                ROMATSA
+AIP                                                                                  ENR 5.1-6
+ROMANIA                                                                           17 APR 2025
+
+
+                       1                           2                         3
+LRR154 S mb re ti                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 444855N 0242627E
+LRR155 Dobroteasa                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 444534N 0241758E
+LRR156 Ş ani                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 443321N 0240712E
+LRR157 Şte ăne ti                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 443637N 0241514E
+LRR160 Că mă i                                           Active: by NOTAM
+                                                 FL240
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435814N 0245148E
+LRR161 Troian                                            Active: by NOTAM
+                                                 FL240
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 440037N 0250108E
+LRR162 F rc e ti                                         Active: by NOTAM
+                                                 FL240
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435200N 0250733E
+LRR163 Dracea                                            Active: by NOTAM
+                                                 FL240
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435112N 0250104E
+LRR164 O teanca                                          Active: by NOTAM
+                                                 FL240
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435004N 0244804E
+LRR165 P o ii S ă ite ti                                 Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435732N 0244047E
+LRR166 Ci ieni                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435410N 0243553E
+LRR167 Vi ina                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 435106N 0242649E
+LRR168 Ar ăteasca                                        Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point   FL255   Anti-hail Rocket firing Area
+of coordinates: 435715N 0242235E except          GND
+LRR501 and LRR502 airspace.
+LRR169 Băbici                                            Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point   FL255   Anti-hail Rocket firing Area
+of coordinates: 440145N 0243253E except          GND
+LRR501 and LRR502 airspace.
+LRR170 Gott ob                                           Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point   FL255   Anti-hail Rocket firing Area
+of coordinates: 455541N 0204316E except          GND
+airspace within elgrad FIR.
+LRR171 Reca                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455017N 0213241E
+LRR172 To o o ă         are                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454650N 0213705E
+LRR173 Be in                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454546N 0214550E
+LRR174 B ia                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 453824N 0213558E
+
+
+
+
+ROMATSA                                                               AIRAC AIP AMDT 04/25
+ENR 5.1-7                                                                                          AIP
+17 APR 2025                                                                                    ROMANIA
+
+
+                        1                             2                             3
+LRR175 S nnico a        are                                     Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point      FL255       Anti-hail Rocket firing Area
+of coordinates: 460335N 0203912E except             GND
+airspace within udapest FIR.
+LRR176 To a a                                                   Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 454100N 0215655E
+LRR177 Păd rani                                                 Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 453232N 0215640E
+LRR178 Daro a                                                   Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 453748N 0214600E
+LRR179 Sara a e Igri                                            Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 460359N 0204806E
+LRR180 Va ea Ani or                                             Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 442126N 0225515E
+LRR181 Bă ăci a                                                 Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 442240N 0230717E
+LRR182 Dance                                                    Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point      FL255       Anti-hail Rocket firing Area
+of coordinates: 442132N 0224404E, except            GND
+airspace within elgrad FIR.
+LRR183 O ri or                                                  Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 441818N 0230319E
+LRR184 Iab ani a                                                Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 442759N 0225842E
+LRR185 P nghina                                                 Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 441638N 0225556E
+LRR186 Rogo a                                                   Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point      FL255       Anti-hail Rocket firing Area
+of coordinates: 442835N 0224843E, except            GND
+airspace within elgrad FIR.
+LRR190 Da ga                                                    Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 440929N 0234808E
+LRR191 Cerăt                                                    Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 440432N 0234028E
+LRR192 Rado an                                                  Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 440858N 0233605E
+LRR193 Padea                                                    Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 440100N 0234738E
+LRR194 Cri a                                                    Active: by NOTAM
+                                                    FL255
+Circle of 6 NM (12 KM) radius centred on point                  Anti-hail Rocket firing Area
+                                                    GND
+of coordinates: 441548N 0233821E
+LRR206                                                          Time of activity: H24
+Circle of 2 NM radius centred on point of                       Except SAR, real world air policing
+                                                 2000 FT AMSL
+coordinates 443846N 0253632E.                                   and medical evacuation aircraft.
+                                                     GND
+                                                                Risk of interception in the event of
+                                                                penetration.
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                       ROMATSA
+AIP                                                                                  ENR 5.1-8
+ROMANIA                                                                           17 APR 2025
+
+
+                       1                           2                         3
+LRR220 P gari                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472927N 0270519E
+LRR221 ihai ogă nicean                                   Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472117N 0272434E
+LRR222 Rom ne ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 471619N 0271836E
+LRR223 Şo da                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472911N 0271807E
+LRR230 i co                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 453828N 0271442E
+LRR231 Bordeasca No ă                                    Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 453128N 0271833E
+LRR232 Sih ea                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 452933N 0270713E
+LRR233 V t r                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 453653N 0272632E
+LRR234 ăci eni                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455152N 0274451E
+LRR235 C ca                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 454505N 0275422E
+LRR236 T rg B or                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455255N 0275353E
+LRR237 Ghinghe ti                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455811N 0274622E
+LRR238 Tă igi                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455909N 0272829E
+LRR239 Băneasa                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455639N 0275539E
+LRR270 Lo rin                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 455801N 0204903E
+LRR271 Periam Varias                                     Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 460046N 0205653E
+LRR272 imbo ia Căr ini                                   Active: by NOTAM
+Circle of 6 NM (12 KM) radius centred on point   FL255   Anti-hail Rocket firing Area
+of coordinates: 455129N 0205316E except          GND
+airspace within elgrad FIR
+LRR300 C m eni a                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 463846N 0242719E
+LRR301 G odeni                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 464036N 0243602E
+LRR302 Brea a                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 464449N 0243829E
+
+
+
+ROMATSA                                                               AIRAC AIP AMDT 04/25
+ENR 5.1-9                                                                                   AIP
+17 APR 2025                                                                             ROMANIA
+
+
+                       1                           2                         3
+LRR303 Fărăgă                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 464514N 0243202E
+LRR304 Goreni                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 465039N 0243946E
+LRR305 Logig                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 465211N 0243449E
+LRR306 Că na De S s                                      Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 462234N 0242609E
+LRR307 Şoim                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 462316N 0243521E
+LRR308 C nd                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461609N 0243031E
+LRR309 De enii                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461630N 0242016E
+LRR310 S ntămărie                                        Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461423N 0240840E
+LRR311 A ec                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461734N 0240008E
+LRR312 Va ea L ngă                                       Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 460846N 0240338E
+LRR313 B a                                               Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461034N 0235333E
+LRR314 Ci g e                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461719N 0235049E
+LRR315 Că d                                              Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 461217N 0234428E
+LRR316 Tătăre ti                                         Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 474106N 0230125E
+LRR317 St na                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473103N 0225758E
+LRR318 Ard d                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473743N 0225317E
+LRR319 S       r De os                                   Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472750N 0224759E
+LRR320 Sat       ic                                      Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473435N 0224225E
+LRR321 Trebe ti                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 474052N 0224436E
+LRR322 Ghenci                                            Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473816N 0223202E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                ROMATSA
+AIP                                                                                ENR 5.1-10
+ROMANIA                                                                           17 APR 2025
+
+
+                        1                          2                         3
+LRR323 Santă                                             Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473043N 0223111E
+LRR324 Sără ad                                           Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 472801N 0223747E
+LRR325 Petre ti                                          Active: by NOTAM
+                                                 FL255
+Circle of 6 NM (12 KM) radius centred on point           Anti-hail Rocket firing Area
+                                                 GND
+of coordinates: 473541N 0222117E
+LRR501                                                   Time of activity: H24
+Circle of 2.16 NM (4 KM) radius centered on              Except Romanian state aircraft
+point of coordinates: 440436N 0242506E                   performing SAR, real world air
+                                                         policing,     medical      evacuation,
+                                                 FL165
+                                                         cartographic aerial photo.
+                                                 GND
+                                                         Potential     ha ard    to     aircraft
+                                                         operations.
+                                                         Risk of interception in the event of
+                                                         penetration.
+LRR502                                                   Time of activity: H24
+Circle of 4.86 NM (9 KM) radius centered on              Except Romanian state aircraft
+point of coordinates: 440436N 0242506E                   performing SAR, real world air
+                                                         policing,     medical      evacuation,
+                                                 FL410
+                                                         cartographic aerial photo.
+                                                 FL165
+                                                         Potential     ha ard    to     aircraft
+                                                         operations.
+                                                         Risk of interception in the event of
+                                                         penetration.
+LRR503                                                   Time of activity: H24
+Circle of 9.18 NM (17 KM) radius centered on             Except Romanian state aircraft
+point of coordinates: 440436N 0242506E                   performing SAR, real world air
+                                                         policing,     medical      evacuation,
+                                                 FL660
+                                                         cartographic aerial photo.
+                                                 FL410
+                                                         Potential     ha ard    to     aircraft
+                                                         operations.
+                                                         Risk of interception in the event of
+                                                         penetration.
+
+
+
+
+ROMATSA                                                               AIRAC AIP AMDT 04/25
+ENR 5.1-11                                                                              AIP
+17 APR 2025                                                                         ROMANIA
+
+
+                                                        Remarks
+                                          Upper limit
+Identification, name and lateral limits                 (time of activity, type of restriction,
+                                          Lower limit
+                                                        nature of hazard, risk of interception)
+                         1                    2                              3
+DANGER AREAS
+LRD01A BABADAG (T LCEA)                                 Active: by NOTAM
+445500N 0285300E - 445500N 0290000E -       FL100       Airspace affected: Lower
+445010N 0290000E - 444735N 0284344E -       GND         Firing Range
+445025N 0284130E - 445500N 0285300E
+LRD01B BABADAG (T LCEA)                                 Active: by NOTAM
+445500N 0285300E - 445500N 0290000E -       FL285       Airspace affected: Lower
+445010N 0290000E - 444735N 0284344E -       GND         Firing Range
+445025N 0284130E - 445500N 0285300E
+LRD01C BABADAG (T LCEA)                                 Active: by NOTAM
+445500N 0285300E - 445500N 0290000E -       FL660       Airspace affected: Lower,    pper
+445010N 0290000E - 444735N 0284344E -       GND         Firing Range
+445025N 0284130E - 445500N 0285300E
+LRD03A BOGATA TURDA (CL -AL A)                          Active: by NOTAM
+463300N 0234700E - 462800N 0235100E -       FL100       Airspace affected: Lower
+462400N 0234700E - 462800N 0234600E -       GND         Firing Range
+463300N 0234700E
+LRD03B BOGATA TURDA (CL -AL A)                          Active: by NOTAM
+463300N 0234700E - 462800N 0235100E -       FL285       Airspace affected: Lower
+462400N 0234700E - 462800N 0234600E -       GND         Firing Range
+463300N 0234700E
+LRD04A BOTOSESTI PAIA (MEHEDINTI)                       Active: by NOTAM
+442530N 0231100E - 442240N 0231630E -       FL100       Airspace affected: Lower
+442125N 0231430E - 442400N 0230930E -       GND         Firing Range
+442530N 0231100E
+LRD04B BOTOSESTI PAIA (MEHEDINTI)                       Active: by NOTAM
+442530N 0231100E - 442240N 0231630E -       FL285       Airspace affected: Lower
+442125N 0231430E - 442400N 0230930E -       GND         Firing Range
+442530N 0231100E
+LRD05A PRISLOP                                          Active: by NOTAM
+452147N 0251220E - 452128N 0251235E -       FL100       Airspace affected: Lower
+452123N 0251235E - 452139N 0251155E -       GND         Firing Range
+452147N 0251220E
+LRD05B PRISLOP                                          Active: by NOTAM
+452147N 0251220E - 452128N 0251235E -       FL285       Airspace affected: Lower
+452123N 0251235E - 452139N 0251155E -       GND         Firing Range
+452147N 0251220E
+LRD06A CAP IDIA (CONSTANTA)                             Active: by NOTAM
+442933N 0293107E - 442412N 0293156E -                   Airspace affected: Lower
+440901N 0292644E - 440427N 0292219E -       FL100       Firing Range
+441333N 0285130E - 442205N 0284225E -       GND
+442400N 0284225E - 442930N 0285535E -
+442933N 0293107E
+LRD06B CAP IDIA (CONSTANTA)                             Active: by NOTAM
+442933N 0293107E - 442412N 0293156E -                   Airspace affected: Lower
+440901N 0292644E - 440427N 0292219E -       FL285       Firing Range
+441333N 0285130E - 442205N 0284225E -       GND
+442400N 0284225E - 442930N 0285535E -
+442933N 0293107E
+LRD06C CAP IDIA (CONSTANTA)                             Active: by NOTAM
+442933N 0293107E - 442412N 0293156E -                   Airspace affected: Lower,    pper
+440901N 0292644E - 440427N 0292219E -       FL660       Firing Range
+441333N 0285130E - 442205N 0284225E -       GND
+442400N 0284225E - 442930N 0285535E -
+442933N 0293107E
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                ROMATSA
+AIP                                                                                             ENR 5.1-12
+ROMANIA                                                                                        17 APR 2025
+
+
+                     1                                    2                                3
+LRD07A CAP IDIA 2 (CONSTANTA)                                         Active: by NOTAM
+442930N 0285535E - 442505N 0290112E -                                 Airspace affected: Lower
+                                                       FL100
+441942N 0290049E - 441434N 0285756E -                                 Firing Range
+                                                        GND
+441306N 0285620E - 442205N 0284225E -
+442526N 0284230E - 442930N 0285535E
+LRD07B CAP IDIA 2 (CONSTANTA)                                         Active: by NOTAM
+442930N 0285535E - 442505N 0290112E -                                 Airspace affected: Lower
+                                                       FL285
+441942N 0290049E - 441434N 0285756E -                                 Firing Range
+                                                        GND
+441306N 0285620E - 442205N 0284225E -
+442526N 0284230E - 442930N 0285535E
+LRD07C CAP IDIA 2 (CONSTANTA)                                         Active: by NOTAM
+442930N 0285535E - 442505N 0290112E -                                 Airspace affected: Lower, pper
+                                                       FL660
+441942N 0290049E - 441434N 0285756E -                                 Firing Range
+                                                        GND
+441306N 0285620E - 442205N 0284225E -
+442526N 0284230E - 442930N 0285535E
+LRD08A CINCU ( RASOV)                                                 Active: by NOTAM
+460107N 0244512E - 455500N 0245448E -                  FL100          Airspace affected: Lower
+455500N 0245024E - 455830N 0244248E -                   GND           Firing Range
+460107N 0244512E
+LRD08B CINCU ( RASOV)                                                 Active: by NOTAM
+460107N 0244512E - 455500N 0245448E -                  FL285          Airspace affected: Lower
+455500N 0245024E - 455830N 0244248E -                   GND           Firing Range
+460107N 0244512E
+LRD08C CINCU ( RASOV)                                                 Active: by NOTAM
+460107N 0244512E - 455500N 0245448E -                  FL660          Airspace affected: Lower, pper
+455500N 0245024E - 455830N 0244248E -                   GND           Firing Range
+460107N 0244512E
+LRD09A C R IŞOARA (SI I )                                             Active: by NOTAM
+454404N 0243124E - 454404N 0243418E -                  FL100          Airspace affected: Lower
+454224N 0243336E - 454224N 0243254E -                   GND           Firing Range
+454404N 0243124E
+LRD09B C R IŞOARA (SI I )                                             Active: by NOTAM
+454404N 0243124E - 454404N 0243418E -                  FL285          Airspace affected: Lower
+454224N 0243336E - 454224N 0243254E -                   GND           Firing Range
+454404N 0243124E
+LRD10A CINCU ( RA OV)                                                 Active: by NOTAM
+462400N 0243800E - 455527N 0253538E -                  FL100          Airspace affected: Lower
+453013N 0250117E - 460000N 0242015E -                   GND           Military flight activities
+462400N 0243800E
+LRD10B CINCU ( RA OV)                                                 Active: by NOTAM
+462400N 0243800E - 455527N 0253538E -                  FL285          Airspace affected: Lower
+453013N 0250117E - 460000N 0242015E -                   GND           Military flight activities
+462400N 0243800E
+Note: In case LRD10A/LRD10B is active, VFR flights shall use the following transit corridor for crossing the
+area:
+Sibiu/LRSB (454610N 0241006E) - Făgăraş (455000N 0245800E) - 454552N 0252338E - Ghimbav/LRBG
+(454110N 0253144E), GND - 2000 FT AGL, 1 NM left/right of centerline.
+LRD14A DUD TAUTI (ARAD)                                               Active: by NOTAM
+461700N 0215345E - 461625N 0215530E -                  FL100          Airspace affected: Lower
+461315N 0215343E - 461420N 0215020E -                   GND           Firing Range
+461700N 0215345E
+LRD14B DUD TAUTI (ARAD)                                               Active: by NOTAM
+461700N 0215345E - 461625N 0215530E -                  FL285          Airspace affected: Lower
+461315N 0215343E - 461420N 0215020E -                   GND           Firing Range
+461700N 0215345E
+LRD17A GĂINA                                                          Active: by NOTAM
+462150N 0224230E - 462050N 0224640E -                  FL100          Airspace affected: Lower
+461930N 0224900E - 461940N 0224440E -                   GND           Firing Range
+462150N 0224230E
+
+
+
+
+ROMATSA                                                                             AIRAC AIP AMDT 04/25
+ENR 5.1-13                                                                          AIP
+17 APR 2025                                                                     ROMANIA
+
+
+                        1                    2                       3
+LRD17B GĂINA                                       Active: by NOTAM
+462150N 0224230E - 462050N 0224640E -      FL285   Airspace affected: Lower
+461930N 0224900E - 461940N 0224440E -      GND     Firing Range
+462150N 0224230E
+LRD19A GROHOTIS ( RA OV)                           Active: by NOTAM
+452800N 0254900E - 452800N 0255500E -      FL100   Airspace affected: Lower
+452300N 0255400E - 452300N 0254800E -      GND     Firing Range
+452800N 0254900E
+LRD19B GROHOTIS ( RA OV)                           Active: by NOTAM
+452800N 0254900E - 452800N 0255500E -      FL285   Airspace affected: Lower
+452300N 0255400E - 452300N 0254800E -      GND     Firing Range
+452800N 0254900E
+LRD21A EGALIA (C L RA I)                           Active: by NOTAM
+443330N 0273300E - 443330N 0273420E -      FL100   Airspace affected: Lower
+442530N 0273420E - 442530N 0273310E -      GND     Firing Range
+443330N 0273300E
+LRD21B EGALIA (C L RA I)                           Active: by NOTAM
+443330N 0273300E - 443330N 0273420E -      FL285   Airspace affected: Lower
+442530N 0273420E - 442530N 0273310E -      GND     Firing Range
+443330N 0273300E
+LRD21C EGALIA (C L RA I)                           Active: by NOTAM
+443330N 0273300E - 443330N 0273420E -      FL660   Airspace affected: Lower,    pper
+442530N 0273420E - 442530N 0273310E -      GND     Firing Range
+443330N 0273300E
+LRD24A IGODIN (HARGHITA)                           Active: by NOTAM
+462035N 0254725E - 462030N 0254750E -      FL100   Airspace affected: Lower
+461925N 0254715E - 461930N 0254700E -      GND     Firing Range
+462035N 0254725
+LRD24B IGODIN (HARGHITA)                           Active: by NOTAM
+462035N 0254725E - 462030N 0254750E -      FL285   Airspace affected: Lower
+461925N 0254715E - 461930N 0254700E -      GND     Firing Range
+462035N 0254725
+LRD37A S I (SAT -MARE)                             Active: by NOTAM
+474040N 0230910E - 473950N 0230910E -      FL100   Airspace affected: Lower
+473955N 0230830E - 474000N 0230830E -      GND     Firing Range
+474040N 0230910E
+LRD37B S I (SAT -MARE)                             Active: by NOTAM
+474040N 0230910E - 473950N 0230910E -      FL285   Airspace affected: Lower
+473955N 0230830E - 474000N 0230830E -      GND     Firing Range
+474040N 0230910E
+LRD38A S        RDAN ĂLINA (GALA I)                Active: by NOTAM
+454010N 0275250E - 454010N 0275815E -      FL100   Airspace affected: Lower
+453030N 0275815E - 453030N 0275250E -      GND     Firing Range
+454010N 0275250E
+LRD38B S        RDAN ĂLINA (GALA I)                Active: by NOTAM
+454010N 0275250E - 454010N 0275815E -      FL285   Airspace affected: Lower
+453030N 0275815E - 453030N 0275250E -      GND     Firing Range
+454010N 0275250E
+LRD38C S        RDAN ĂLINA (GALA I)                Active: by NOTAM
+454010N 0275250E - 454010N 0275815E -      FL660   Airspace affected: Lower,    pper
+453030N 0275815E - 453030N 0275250E -      GND     Firing Range
+454010N 0275250E
+LRD39A S        RDAN ĂLINA (GALA I)                Active: by NOTAM
+                                           FL100
+A circle, radius 20NM centred at 453437N           Airspace affected: Lower
+                                           GND
+0275451E, limited by FIR boundary                  Military flight activities
+LRD39B S        RDAN ĂLINA (GALA I)                Active: by NOTAM
+                                           FL285
+A circle, radius 20NM centred at 453437N           Airspace affected: Lower
+                                           GND
+0275451E, limited by FIR boundary                  Military flight activities
+
+
+
+
+AIRAC AIP AMDT 04/25                                                            ROMATSA
+AIP                                                                     ENR 5.1-14
+ROMANIA                                                                17 APR 2025
+
+
+                    1                     2                       3
+LRD43A VOINA PORTĂREASA (ARGE )                 Active: by NOTAM
+452830N 0245440E - 452830N 0250100E -   FL100   Airspace affected: Lower
+452410N 0250100E - 452410N 0245440E -   GND     Firing Range
+452830N 0245440E
+LRD43B VOINA PORTĂREASA (ARGE )                 Active: by NOTAM
+452830N 0245440E - 452830N 0250100E -   FL285   Airspace affected: Lower
+452410N 0250100E - 452410N 0245440E -   GND     Firing Range
+452830N 0245440E
+LRD70A ANGALIA2                                 Active: by NOTAM
+435500N 0285100E - 435500N 0290800E -   FL100   Airspace affected: Lower
+434500N 0290800E - 434500N 0285100E -   GND     Firing Range
+435500N 0285100E
+LRD70B ANGALIA2                                 Active: by NOTAM
+435500N 0285100E - 435500N 0290800E -   FL285   Airspace affected: Lower
+434500N 0290800E - 434500N 0285100E -   GND     Firing Range
+435500N 0285100E
+LRD70C ANGALIA2                                 Active: by NOTAM
+435500N 0285100E - 435500N 0290800E -   FL660   Airspace affected: Lower,   pper
+434500N 0290800E - 434500N 0285100E -   GND     Firing Range
+435500N 0285100E
+LRD71A ANGALIA3                                 Active: by NOTAM
+435500N 0290800E - 435500N 0293000E -   FL100   Airspace affected: Lower
+434500N 0293000E - 434500N 0290800E -   GND     Firing Range
+435500N 0290800E
+LRD71B ANGALIA3                                 Active: by NOTAM
+435500N 0290800E - 435500N 0293000E -   FL285   Airspace affected: Lower
+434500N 0293000E - 434500N 0290800E -   GND     Firing Range
+435500N 0290800E
+LRD72A TU LA3                                   Active: by NOTAM
+440500N 0290800E - 440500N 0293000E -   FL100   Airspace affected: Lower
+435500N 0293000E - 435500N 0290800E -   GND     Firing Range
+440500N 0290800E
+LRD72B TU LA3                                   Active: by NOTAM
+440500N 0290800E - 440500N 0293000E -   FL285   Airspace affected: Lower
+435500N 0293000E - 435500N 0290800E -   GND     Firing Range
+440500N 0290800E
+LRD72C TU LA3                                   Active: by NOTAM
+440500N 0290800E - 440500N 0293000E -   FL660   Airspace affected: Lower,   pper
+435500N 0293000E - 435500N 0290800E -   GND     Firing Range
+440500N 0290800E
+LRD73A CONSTAN A3                               Active: by NOTAM
+441500N 0290800E - 441500N 0293000E -   FL100   Airspace afected: Lower
+440500N 0293000E - 440500N 0290800E -   GND     Firing Range
+441500N 0290800E
+LRD73B CONSTAN A3                               Active: by NOTAM
+441500N 0290800E - 441500N 0293000E -   FL285   Airspace afected: Lower
+440500N 0293000E - 440500N 0290800E -   GND     Firing Range
+441500N 0290800E
+LRD73C CONSTAN A3                               Active: by NOTAM
+441500N 0290800E - 441500N 0293000E -   FL660   Airspace afected: Lower,    pper
+440500N 0293000E - 440500N 0290800E -   GND     Firing Range
+441500N 0290800E
+LRD74A IDIA2                                    Active: by NOTAM
+442500N 0285100E - 442500N 0290800E -   FL100   Airspace affected: Lower
+441500N 0290800E - 441500N 0285100E -   GND     Firing Range
+442500N 0285100E
+LRD74B IDIA2                                    Active: by NOTAM
+442500N 0285100E - 442500N 0290800E -   FL285   Airspace affected: Lower
+441500N 0290800E - 441500N 0285100E -   GND     Firing Range
+442500N 0285100E
+
+
+
+
+ROMATSA                                                     AIRAC AIP AMDT 04/25
+ENR 5.1-15                                                                                               AIP
+17 APR 2025                                                                                          ROMANIA
+
+
+                       1                                   2                              3
+LRD74C IDIA2                                                            Active: by NOTAM
+442500N 0285100E - 442500N 0290800E -                   FL660           Airspace affected: Lower,     pper
+441500N 0290800E - 441500N 0285100E -                   GND             Firing Range
+442500N 0285100E
+LRD75A IDIA3                                                            Active: by NOTAM
+442500N 0290800E - 442500N 0293000E -                   FL100           Airspace affected: Lower
+441500N 0293000E - 441500N 0290800E -                   GND             Firing Range
+442500N 0290800E
+LRD75B IDIA3                                                            Active: by NOTAM
+442500N 0290800E - 442500N 0293000E -                   FL285           Airspace affected: Lower
+441500N 0293000E - 441500N 0290800E -                   GND             Firing Range
+442500N 0290800E
+LRD76A SF NTU GHEORGHE                                                  Active: by NOTAM
+445800N 0295700E - 444300N 0295400E -                   FL100           Airspace affected: Lower
+445200N 0293600E - 445600N 0293600E -                   GND             Firing Range
+445800N 0295700E
+LRD76B SF NTU GHEORGHE                                                  Active: by NOTAM
+445800N 0295700E - 444300N 0295400E -                   FL285           Airspace affected: Lower
+445200N 0293600E - 445600N 0293600E -                   GND             Firing Range
+445800N 0295700E
+LRD100A BUCUREŞTI/C inceni                                           Active: by NOTAM
+                                                    2000 FT AMSL
+Circle of 6 NM (12 KM) radius centred on point                       Airspace affected: Lower
+                                                        GND
+of coordinates: 441800N 0255600E                                     Sports activity of aircraft and gliders
+LRD100B BUCUREŞTI/C inceni                                           Active: by NOTAM
+                                                        FL60
+Circle of 6 NM (12 KM) radius centred on point                       Sports activity of aircraft, gliders and
+                                                        GND
+of coordinates: 441800N 0255600E                                     parachute jumping.
+LRD100C BUCUREŞTI/C inceni                                           Active: by NOTAM
+                                                        FL130
+Circle of 6 NM (12 KM) radius centred on point                       Sports activity of aircraft, gliders and
+                                                        GND
+of coordinates: 441800N 0255600E                                     parachute jumping
+LRD101 PLOIEŞTI/Stre nic                                             All the year: H
+                                                 ALT 4000 FT(1200 M)
+Circle of 5 NM (10 KM) radius centred on point                       Sports activity of gliders and
+                                                        GND
+of coordinates: 445500N 0255800E                                     parachute jumping
+LRD103 BRAŞOV                                                        Active: by NOTAM
+                                                     4000 FT AMSL
+454717N 0253951E - 454438N 0254522E -                                Sports activity of aircraft, gliders and
+                                                         GND
+453912N 0253953E - 454204N 0253421E                                  parachute jumping.
+LRD104 BRAŞOV                                                        Active: by NOTAM
+                                                         FL80
+454717N 0253951E - 454438N 0254522E -                                Sports activity of gliders and
+                                                         GND
+453912N 0253953E - 454204N 0253421E                                  parachute jumping.
+LRD105 ARNESTI                                                       Active: by NOTAM
+                                                         FL80
+453512N 0252456E - 453329N 0252754E -                                Sports activity of gliders and
+                                                         GND
+453114N 0252538E - 453259N 0252243E                                  parachute jumping.
+LRD106A IANCA                                                        Active: by NOTAM
+451312N 0272538E - 451155N 0272838E -                                Sports activity of aircraft, gliders and
+                                                    2000 FT AMSL
+451107N 0273029E - 450954N 0272929E -                                parachute jumping
+                                                        GND
+450556N 0272613E - 450753N 0272117E -
+451312N 0272538E
+LRD106B IANCA                                                           Active: by NOTAM
+451312N 0272538E - 451155N 0272838E -                                   Sports activity of aircraft, gliders and
+                                                        FL130
+451107N 0273029E - 450954N 0272929E -                                   parachute jumping
+                                                        GND
+450556N 0272613E - 450753N 0272117E -
+451312N 0272538E
+LRD107A DEVA                                                            Active: by NOTAM
+                                                        FL100
+Circle of 5 NM (10 KM) radius centred on point                          Sports activity of aircraft, gliders and
+                                                        GND
+of coordinates: 455159N 0225758E                                        parachute jumping
+
+
+
+
+AIRAC AIP AMDT 04/25                                                                                ROMATSA
+
