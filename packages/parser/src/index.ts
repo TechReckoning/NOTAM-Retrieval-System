@@ -1,7 +1,13 @@
 /** Public API of the @notam/parser package. */
 
 export * from './types.js';
-export { parseGeometryFromText, extractCoords, parseRadiusMeters } from './coordinates.js';
+export {
+  parseGeometryFromText,
+  extractCoords,
+  parseRadiusMeters,
+  coordsToRing,
+  selfIntersectionWarning,
+} from './coordinates.js';
 export { parseVerticalLimit } from './verticalLimits.js';
 export { buildSchedules, extractTimes } from './schedule.js';
 export {

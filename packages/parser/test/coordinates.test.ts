@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { extractCoords, parseGeometryFromText, parseRadiusMeters } from '../src/coordinates.js';
+import {
+  coordsToRing,
+  extractCoords,
+  parseGeometryFromText,
+  parseRadiusMeters,
+} from '../src/coordinates.js';
 
 describe('extractCoords', () => {
   it('parses a spaced DMS pair', () => {
@@ -57,5 +62,40 @@ describe('parseGeometryFromText', () => {
   it('returns null geometry when no coordinates present', () => {
     const { geometry } = parseGeometryFromText('LRTRA 28 G LRTRA 28 L LRTRA 28 M');
     expect(geometry).toBeNull();
+  });
+
+  it('models a "N NM S/D" corridor as a buffered centre line, not a bow-tie', () => {
+    // Out-and-back route (A→B→C→B→A) with a 5 NM each-side width.
+    const text =
+      'A(45 00 00N/026 00 00E) - B(45 30 00N/026 30 00E) - C(46 00 00N/027 00 00E) - ' +
+      'B(45 30 00N/026 30 00E) - A(45 00 00N/026 00 00E), 5 NM S/D';
+    const { geometry } = parseGeometryFromText(text);
+    expect(geometry).not.toBeNull();
+    expect(['Polygon', 'MultiPolygon']).toContain(geometry!.type);
+    // A buffered corridor has many rounded vertices — not the 5-point raw ring.
+    if (geometry!.type === 'Polygon') {
+      expect((geometry as GeoJSON.Polygon).coordinates[0].length).toBeGreaterThan(5);
+    }
+  });
+});
+
+describe('coordsToRing', () => {
+  const c = (lat: number, lon: number) => ({ lat, lon });
+
+  it('truncates at the closing vertex, dropping trailing coordinates', () => {
+    // v0, v1, v2, v0(closes) then a stray "Note" coordinate that must be ignored.
+    const ring = coordsToRing([c(45, 25), c(46, 25), c(46, 26), c(45, 25), c(40, 20)]);
+    expect(ring).toEqual([
+      [25, 45],
+      [25, 46],
+      [26, 46],
+      [25, 45],
+    ]);
+  });
+
+  it('closes an open ring and drops consecutive duplicates', () => {
+    const ring = coordsToRing([c(45, 25), c(45, 25), c(46, 25), c(46, 26)]);
+    expect(ring[0]).toEqual(ring[ring.length - 1]); // closed
+    expect(ring).toHaveLength(4); // dup dropped: (25,45),(25,46),(26,46),(25,45)
   });
 });

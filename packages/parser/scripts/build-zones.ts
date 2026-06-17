@@ -15,7 +15,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Feature, Polygon } from 'geojson';
-import { canonicalDesignator, extractCoords } from '../src/index.js';
+import { canonicalDesignator, coordsToRing, extractCoords, selfIntersectionWarning } from '../src/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ZONES = resolve(__dirname, '../../../data/zones');
@@ -86,11 +86,15 @@ function buildGeometry(block: Block): { geometry: Polygon; warning?: string } | 
   }
 
   if (coords.length >= 3) {
-    const ring = coords.map((c) => [Number(c.lon.toFixed(6)), Number(c.lat.toFixed(6))]);
-    const [fx, fy] = ring[0];
-    const [lx, ly] = ring[ring.length - 1];
-    if (fx !== lx || fy !== ly) ring.push(ring[0]);
-    return { geometry: { type: 'Polygon', coordinates: [ring] } };
+    // coordsToRing truncates at the ring's closing vertex, so trailing "Note:" /
+    // "except …" coordinates in the source block don't pollute the polygon.
+    const ring = coordsToRing(coords).map(([lon, lat]) => [
+      Number(lon.toFixed(6)),
+      Number(lat.toFixed(6)),
+    ]);
+    const geometry: Polygon = { type: 'Polygon', coordinates: [ring] };
+    const warn = selfIntersectionWarning(geometry)[0];
+    return warn ? { geometry, warning: warn } : { geometry };
   }
   return { geometry: { type: 'Polygon', coordinates: [] }, warning: 'too few coordinates' };
 }
@@ -116,6 +120,7 @@ function main(): void {
   const seen = new Set<string>();
   const skipped: string[] = [];
   const oob: string[] = [];
+  const selfInt: string[] = [];
 
   for (const { file, source } of SOURCES) {
     for (const block of parseFile(resolve(ZONES, 'source', file))) {
@@ -139,6 +144,7 @@ function main(): void {
       }
 
       seen.add(designator);
+      if (geom.warning?.includes('self-intersecting')) selfInt.push(designator);
       const prefix = /^(LR[A-Z]+?)\s/.exec(designator)?.[1] ?? '';
       features.push({
         type: 'Feature',
@@ -170,6 +176,7 @@ function main(): void {
   console.log(`Wrote ${features.length} zones to ro-airspace.geojson`);
   console.log('by type:', byType);
   if (oob.length) console.log(`⚠ ${oob.length} zones with vertices outside RO bounds:`, oob.slice(0, 8));
+  if (selfInt.length) console.log(`⚠ ${selfInt.length} self-intersecting after parse:`, selfInt);
   if (skipped.length) console.log(`⚠ skipped ${skipped.length}:`, skipped.slice(0, 8));
 }
 
