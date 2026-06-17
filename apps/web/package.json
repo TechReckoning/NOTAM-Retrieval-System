@@ -14,6 +14,8 @@
     "@turf/boolean-intersects": "^7.1.0",
     "@turf/helpers": "^7.1.0",
     "@turf/turf": "^7.1.0",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
     "maplibre-gl": "^4.7.1",
     "pmtiles": "^3.2.0",
     "react": "^18.3.1",

@@ -1,6 +1,5 @@
 import { bucketByAreas } from '@notam/parser';
-import { useMemo } from 'react';
-import { buildTmaCsv, downloadText, exportFilename } from '../lib/export';
+import { useMemo, useState } from 'react';
 import { applyFilters } from '../lib/filter';
 import { TMA_AREAS } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
@@ -28,16 +27,17 @@ export function ListView(): JSX.Element {
   }, [notams, filters]);
 
   const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
+  const [exporting, setExporting] = useState(false);
 
-  function exportCsv(): void {
-    const cols = columns.map((c) => ({ name: c.tma.name, notams: c.items }));
-    const csv = buildTmaCsv(
-      cols,
-      meta ?? { bulletinNr: null, bulletinDate: null, source: null },
-      filters,
-      new Date().toISOString(),
-    );
-    downloadText(exportFilename(meta ?? { bulletinNr: null, bulletinDate: null, source: null }), csv);
+  async function exportPdf(): Promise<void> {
+    setExporting(true);
+    try {
+      const { exportTmaPdf } = await import('../lib/pdf');
+      const cols = columns.map((c) => ({ name: c.tma.name, notams: c.items }));
+      await exportTmaPdf(cols, meta ?? { bulletinNr: null, bulletinDate: null, source: null }, filters);
+    } finally {
+      setExporting(false);
+    }
   }
 
   return (
@@ -51,11 +51,11 @@ export function ListView(): JSX.Element {
         </span>
         <button
           className="btn export-btn"
-          onClick={exportCsv}
-          disabled={totalShown === 0}
-          title="Export the TMA NAPOC + TMA BUCUREȘTI lists (current filters) as CSV"
+          onClick={exportPdf}
+          disabled={totalShown === 0 || exporting}
+          title="Export the TMA NAPOC + TMA BUCUREȘTI lists (current filters) as a PDF briefing"
         >
-          ⭳ Export CSV
+          {exporting ? 'Preparing…' : '⭳ Export PDF'}
         </button>
       </div>
       <div className="listview-cols" style={{ gridTemplateColumns: `repeat(${columns.length}, 1fr)` }}>
