@@ -340,11 +340,17 @@ body {
 }
 .listview-counts {
   display: flex;
+  align-items: center;
   gap: 18px;
   padding: 8px 14px;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-size: 12px;
+}
+.export-btn {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 5px 12px;
 }
 .listview-cols {
   flex: 1;

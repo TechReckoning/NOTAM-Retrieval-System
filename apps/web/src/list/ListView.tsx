@@ -1,5 +1,6 @@
 import { bucketByAreas } from '@notam/parser';
 import { useMemo } from 'react';
+import { buildTmaCsv, downloadText, exportFilename } from '../lib/export';
 import { applyFilters } from '../lib/filter';
 import { TMA_AREAS } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
@@ -15,6 +16,7 @@ import { NotamCard } from './NotamCard';
 export function ListView(): JSX.Element {
   const notams = useStore((s) => s.notams);
   const filters = useStore((s) => s.filters);
+  const meta = useStore((s) => s.meta);
 
   const { columns, noGeometry, outside } = useMemo(() => {
     // List View ignores the map-only spatial controls (TMA preset / drawn area).
@@ -25,6 +27,19 @@ export function ListView(): JSX.Element {
     return { columns: cols, noGeometry: result.noGeometry, outside: result.outside };
   }, [notams, filters]);
 
+  const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
+
+  function exportCsv(): void {
+    const cols = columns.map((c) => ({ name: c.tma.name, notams: c.items }));
+    const csv = buildTmaCsv(
+      cols,
+      meta ?? { bulletinNr: null, bulletinDate: null, source: null },
+      filters,
+      new Date().toISOString(),
+    );
+    downloadText(exportFilename(meta ?? { bulletinNr: null, bulletinDate: null, source: null }), csv);
+  }
+
   return (
     <main className="listview">
       <div className="listview-counts">
@@ -34,6 +49,14 @@ export function ListView(): JSX.Element {
         <span title="NOTAMs with geometry that fall outside every listed TMA">
           ◇ Outside listed areas: {outside.length}
         </span>
+        <button
+          className="btn export-btn"
+          onClick={exportCsv}
+          disabled={totalShown === 0}
+          title="Export the TMA NAPOC + TMA BUCUREȘTI lists (current filters) as CSV"
+        >
+          ⭳ Export CSV
+        </button>
       </div>
       <div className="listview-cols" style={{ gridTemplateColumns: `repeat(${columns.length}, 1fr)` }}>
         {columns.map(({ tma, items }) => (
