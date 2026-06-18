@@ -122,17 +122,24 @@ export function Filters(): JSX.Element {
               key={t.id}
               className={`chip${areaPresetId === t.id ? ' on' : ''}`}
               onClick={() =>
-                areaPresetId === t.id ? setDrawnArea(null) : setAreaPreset(t.id, t.geometry)
+                areaPresetId === t.id
+                  ? setDrawnArea(null)
+                  : setAreaPreset(t.id, t.geometry, t.floorFt, t.ceilingFt)
               }
-              title={t.approximate ? 'Approximate boundary — pending authoritative AIP coordinates' : ''}
+              title={`${t.floorLabel}–${t.ceilingLabel}${
+                t.approximate ? ' · approximate boundary' : ''
+              }`}
             >
               {t.name}
               {t.approximate ? ' ≈' : ''}
             </button>
           ))}
         </div>
-        {activeTma?.approximate && (
-          <div className="aoi-note">≈ {activeTma.name} boundary is approximate (placeholder)</div>
+        {activeTma && (
+          <div className="aoi-note">
+            3-D filter · {activeTma.floorLabel}–{activeTma.ceilingLabel}
+            {activeTma.approximate ? ' · boundary approximate' : ''}
+          </div>
         )}
       </section>
 

@@ -34,8 +34,8 @@ interface AppState {
   setFlRange: (min: number, max: number) => void;
   setTime: (from: string, to: string) => void;
   setDrawnArea: (poly: Polygon | null) => void;
-  /** Apply a predefined area-of-interest (e.g. a TMA) by id + geometry. */
-  setAreaPreset: (id: string, poly: Polygon) => void;
+  /** Apply a predefined area-of-interest (e.g. a TMA) by id + geometry + vertical slab. */
+  setAreaPreset: (id: string, poly: Polygon, floorFt: number, ceilingFt: number) => void;
   setDrawMode: (on: boolean) => void;
   resetFilters: () => void;
 }
@@ -70,12 +70,17 @@ export const useStore = create<AppState>((set) => ({
   setTime: (from, to) => set((s) => ({ filters: { ...s.filters, timeFrom: from, timeTo: to } })),
   setDrawnArea: (poly) =>
     set((s) => ({
-      filters: { ...s.filters, drawnArea: poly },
+      // Custom drawn area is lateral only — clear any TMA vertical slab.
+      filters: { ...s.filters, drawnArea: poly, areaFloorFt: null, areaCeilingFt: null },
       drawMode: false,
       areaPresetId: poly ? 'custom' : null,
     })),
-  setAreaPreset: (id, poly) =>
-    set((s) => ({ filters: { ...s.filters, drawnArea: poly }, drawMode: false, areaPresetId: id })),
+  setAreaPreset: (id, poly, floorFt, ceilingFt) =>
+    set((s) => ({
+      filters: { ...s.filters, drawnArea: poly, areaFloorFt: floorFt, areaCeilingFt: ceilingFt },
+      drawMode: false,
+      areaPresetId: id,
+    })),
   setDrawMode: (on) => set({ drawMode: on }),
   resetFilters: () => set({ filters: defaultFilters(), areaPresetId: null }),
 }));

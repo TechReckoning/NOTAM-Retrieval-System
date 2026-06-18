@@ -5,7 +5,7 @@
 
 import booleanIntersects from '@turf/boolean-intersects';
 import { feature } from '@turf/helpers';
-import type { Activity, AreaType } from '@notam/parser';
+import { bandsOverlap, type Activity, type AreaType } from '@notam/parser';
 import type { Feature, Polygon } from 'geojson';
 import type { LoadedNotam } from './types';
 
@@ -18,8 +18,15 @@ export interface FilterState {
   /** ISO time window (inclusive). Empty string = unbounded. */
   timeFrom: string;
   timeTo: string;
-  /** User-drawn area-of-interest polygon, or null. */
+  /** Area-of-interest polygon (a TMA preset or a custom drawn rectangle), or null. */
   drawnArea: Polygon | null;
+  /**
+   * Vertical slab (feet AMSL) of the active area-of-interest, applied on top of
+   * the lateral test. Set for TMA presets (3-D); null for a custom drawn area
+   * (lateral only).
+   */
+  areaFloorFt: number | null;
+  areaCeilingFt: number | null;
 }
 
 export const FL_FLOOR = 0;
@@ -34,6 +41,8 @@ export function defaultFilters(): FilterState {
     timeFrom: '',
     timeTo: '',
     drawnArea: null,
+    areaFloorFt: null,
+    areaCeilingFt: null,
   };
 }
 
@@ -78,6 +87,12 @@ export function applyFilters(notams: LoadedNotam[], f: FilterState): FilterResul
         return false;
       }
       if (!booleanIntersects(area, feature(n.geometry))) return false;
+      // Vertical test for TMA presets (3-D); custom drawn areas have no slab.
+      if (f.areaFloorFt != null && f.areaCeilingFt != null) {
+        const low = Number.isFinite(n.lower.feet) ? n.lower.feet : FL_FLOOR;
+        const high = Number.isFinite(n.upper.feet) ? n.upper.feet : FL_CEILING;
+        if (!bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt)) return false;
+      }
     }
     return true;
   });
