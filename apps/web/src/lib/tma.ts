@@ -12,6 +12,12 @@ export interface TmaArea {
   name: string;
   approximate: boolean;
   geometry: Polygon;
+  /** Vertical limits in feet AMSL (FL185 = 18500). */
+  floorFt: number;
+  ceilingFt: number;
+  /** Display labels, e.g. "2000 ft" and "FL185". */
+  floorLabel: string;
+  ceilingLabel: string;
 }
 
 const parsed = JSON.parse(raw) as { features: any[] };
@@ -21,6 +27,10 @@ export const TMA_AREAS: TmaArea[] = parsed.features.map((f: any) => ({
   name: f.properties.name,
   approximate: Boolean(f.properties.approximate),
   geometry: f.geometry as Polygon,
+  floorFt: f.properties.floorFt ?? Number.NEGATIVE_INFINITY,
+  ceilingFt: f.properties.ceilingFt ?? Number.POSITIVE_INFINITY,
+  floorLabel: f.properties.floorLabel ?? '',
+  ceilingLabel: f.properties.ceilingLabel ?? '',
 }));
 
 export function findTma(id: string): TmaArea | undefined {

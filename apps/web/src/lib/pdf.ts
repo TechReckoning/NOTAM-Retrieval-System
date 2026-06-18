@@ -90,9 +90,10 @@ export async function buildTmaPdfDoc(columns: TmaColumn[], meta: Meta, filters: 
 
   let startY = 33;
   for (const col of columns) {
+    const bandText = col.band ? `  (${ascii(col.band)})` : '';
     autoTable(doc, {
       startY,
-      head: [[`${ascii(col.name)}  —  ${col.notams.length} NOTAM(s)`]],
+      head: [[`${ascii(col.name)}${bandText}  —  ${col.notams.length} NOTAM(s)`]],
       body: [],
       theme: 'plain',
       headStyles: { fontStyle: 'bold', fontSize: 11, textColor: [11, 16, 32] },

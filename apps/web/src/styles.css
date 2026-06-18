@@ -375,6 +375,12 @@ body {
   align-items: center;
   gap: 8px;
 }
+.tma-col-band {
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0;
+}
 .tma-col-count {
   margin-left: auto;
   background: var(--panel-2);

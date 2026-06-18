@@ -1,10 +1,17 @@
-import { bucketByAreas } from '@notam/parser';
+import { bandsOverlap, bucketByAreas } from '@notam/parser';
 import { useMemo, useState } from 'react';
 import { applyFilters } from '../lib/filter';
-import { TMA_AREAS } from '../lib/tma';
+import { TMA_AREAS, type TmaArea } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
 import { NotamCard } from './NotamCard';
+
+/** Does a NOTAM's vertical band overlap the TMA's floor/ceiling slab? */
+function overlapsVertically(n: LoadedNotam, tma: TmaArea): boolean {
+  const low = Number.isFinite(n.lower.feet) ? n.lower.feet : 0; // GND if unknown
+  const high = Number.isFinite(n.upper.feet) ? n.upper.feet : Number.POSITIVE_INFINITY;
+  return bandsOverlap(low, high, tma.floorFt, tma.ceilingFt);
+}
 
 /**
  * List View Mode: per-TMA briefing. The same left-bar filters drive two (or more)
@@ -22,8 +29,16 @@ export function ListView(): JSX.Element {
     const { visible } = applyFilters(notams, { ...filters, drawnArea: null });
     const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.geometry }));
     const result = bucketByAreas<LoadedNotam>(visible, areas);
-    const cols = TMA_AREAS.map((t) => ({ tma: t, items: result.byArea[t.id] ?? [] }));
-    return { columns: cols, noGeometry: result.noGeometry, outside: result.outside };
+    // A NOTAM is "in" a TMA only if it overlaps both laterally AND vertically.
+    const placed = new Set<string>();
+    const cols = TMA_AREAS.map((t) => {
+      const items = (result.byArea[t.id] ?? []).filter((n) => overlapsVertically(n, t));
+      items.forEach((n) => placed.add(n.uid));
+      return { tma: t, items };
+    });
+    // Outside = has geometry but in no TMA volume (lateral miss, or vertical miss).
+    const outsideAll = visible.filter((n) => n.geometry && !placed.has(n.uid));
+    return { columns: cols, noGeometry: result.noGeometry, outside: outsideAll };
   }, [notams, filters]);
 
   const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
@@ -33,7 +48,11 @@ export function ListView(): JSX.Element {
     setExporting(true);
     try {
       const { exportTmaPdf } = await import('../lib/pdf');
-      const cols = columns.map((c) => ({ name: c.tma.name, notams: c.items }));
+      const cols = columns.map((c) => ({
+        name: c.tma.name,
+        band: `${c.tma.floorLabel} – ${c.tma.ceilingLabel}`,
+        notams: c.items,
+      }));
       await exportTmaPdf(cols, meta ?? { bulletinNr: null, bulletinDate: null, source: null }, filters);
     } finally {
       setExporting(false);
@@ -64,6 +83,9 @@ export function ListView(): JSX.Element {
             <header className="tma-col-head">
               {tma.name}
               {tma.approximate ? ' ≈' : ''}
+              <span className="tma-col-band">
+                {tma.floorLabel} – {tma.ceilingLabel}
+              </span>
               <span className="tma-col-count">{items.length}</span>
             </header>
             <ul className="tma-col-list">

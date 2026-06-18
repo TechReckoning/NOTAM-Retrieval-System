@@ -14,19 +14,37 @@ import { extractCoords } from '../src/index.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, '../../../data/zones/tma.geojson');
 
-// Source: AIP Romania ENR 2.1 (lateral limits). DMS as published.
-const TMAS: { id: string; name: string; raw: string }[] = [
+// Source: AIP Romania ENR 2.1 (lateral + vertical limits).
+// Vertical: floorFt/ceilingFt in feet AMSL (FL185 = 18 500 ft); labels for display.
+interface TmaDef {
+  id: string;
+  name: string;
+  raw: string;
+  floorFt: number;
+  ceilingFt: number;
+  floorLabel: string;
+  ceilingLabel: string;
+}
+const TMAS: TmaDef[] = [
   {
     id: 'TMA_NAPOC',
     name: 'TMA NAPOC',
     raw: `471756N 0240259E - 462812N 0250000E - 453800N 0250000E - 453800N 0233300E -
           460015N 0231146E - 465945N 0225115E - 471501N 0230809E - 471756N 0240259E`,
+    floorFt: 2000,
+    ceilingFt: 18500,
+    floorLabel: '2000 ft',
+    ceilingLabel: 'FL185',
   },
   {
     id: 'TMA_BUCURESTI',
     name: 'TMA BUCUREȘTI',
     raw: `450434N 0251130E - 450434N 0262715E - 445323N 0265801E - 442000N 0270000E -
           440000N 0254000E - 440447N 0251511E - 443737N 0250858E - 450434N 0251130E`,
+    floorFt: 1000,
+    ceilingFt: 18500,
+    floorLabel: '1000 ft',
+    ceilingLabel: 'FL185',
   },
 ];
 
@@ -51,7 +69,16 @@ const fc = {
     'Used as predefined coordinate filters. Regenerate with: npm run tma -w packages/parser.',
   features: TMAS.map((t) => ({
     type: 'Feature',
-    properties: { id: t.id, name: t.name, approximate: false, source: 'AIP ENR 2.1' },
+    properties: {
+      id: t.id,
+      name: t.name,
+      approximate: false,
+      source: 'AIP ENR 2.1',
+      floorFt: t.floorFt,
+      ceilingFt: t.ceilingFt,
+      floorLabel: t.floorLabel,
+      ceilingLabel: t.ceilingLabel,
+    },
     geometry: { type: 'Polygon', coordinates: [ring(t.raw)] },
   })),
 };

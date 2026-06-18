@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { parseVerticalLimit } from '../src/verticalLimits.js';
+import { bandsOverlap, parseVerticalLimit } from '../src/verticalLimits.js';
 
 describe('parseVerticalLimit', () => {
   it('GND => 0 ft', () => {
@@ -40,5 +40,21 @@ describe('parseVerticalLimit', () => {
 
   it('unknown text => NaN', () => {
     expect(Number.isNaN(parseVerticalLimit('???').feet)).toBe(true);
+  });
+});
+
+describe('bandsOverlap (TMA vertical slab vs NOTAM band)', () => {
+  // TMA NAPOC slab: 2000 ft – FL185 (18500 ft).
+  it('NOTAM spanning the slab overlaps (GND–FL280)', () => {
+    expect(bandsOverlap(0, 28000, 2000, 18500)).toBe(true);
+  });
+  it('NOTAM entirely below the floor does not overlap (GND–1500)', () => {
+    expect(bandsOverlap(0, 1500, 2000, 18500)).toBe(false);
+  });
+  it('NOTAM entirely above the ceiling does not overlap (FL200–FL350)', () => {
+    expect(bandsOverlap(20000, 35000, 2000, 18500)).toBe(false);
+  });
+  it('touching the floor counts as overlap', () => {
+    expect(bandsOverlap(0, 2000, 2000, 18500)).toBe(true);
   });
 });

@@ -8,7 +8,11 @@
         "id": "TMA_NAPOC",
         "name": "TMA NAPOC",
         "approximate": false,
-        "source": "AIP ENR 2.1"
+        "source": "AIP ENR 2.1",
+        "floorFt": 2000,
+        "ceilingFt": 18500,
+        "floorLabel": "2000 ft",
+        "ceilingLabel": "FL185"
       },
       "geometry": {
         "type": "Polygon",
@@ -56,7 +60,11 @@
         "id": "TMA_BUCURESTI",
         "name": "TMA BUCUREȘTI",
         "approximate": false,
-        "source": "AIP ENR 2.1"
+        "source": "AIP ENR 2.1",
+        "floorFt": 1000,
+        "ceilingFt": 18500,
+        "floorLabel": "1000 ft",
+        "ceilingLabel": "FL185"
       },
       "geometry": {
         "type": "Polygon",

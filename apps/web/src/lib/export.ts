@@ -5,6 +5,8 @@ import type { LoadedNotam } from './types';
 
 export interface TmaColumn {
   name: string;
+  /** Vertical band label, e.g. "2000 ft – FL185". */
+  band?: string;
   notams: LoadedNotam[];
 }
 

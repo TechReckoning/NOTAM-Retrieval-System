@@ -8,7 +8,7 @@ export {
   coordsToRing,
   selfIntersectionWarning,
 } from './coordinates.js';
-export { parseVerticalLimit } from './verticalLimits.js';
+export { parseVerticalLimit, bandsOverlap } from './verticalLimits.js';
 export { buildSchedules, extractTimes } from './schedule.js';
 export {
   classifyAreaType,

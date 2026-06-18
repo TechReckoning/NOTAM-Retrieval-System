@@ -42,3 +42,12 @@ export function parseVerticalLimit(rawInput: string): VerticalLimit {
 
   return { kind: 'UNKNOWN', raw, feet: Number.NaN };
 }
+
+/**
+ * Do two altitude bands [aLow,aHigh] and [bLow,bHigh] (feet) overlap? Used to test
+ * whether a NOTAM's vertical extent intersects a TMA's floor/ceiling slab.
+ * Inclusive at the edges (touching counts as overlap).
+ */
+export function bandsOverlap(aLow: number, aHigh: number, bLow: number, bHigh: number): boolean {
+  return aLow <= bHigh && aHigh >= bLow;
+}
