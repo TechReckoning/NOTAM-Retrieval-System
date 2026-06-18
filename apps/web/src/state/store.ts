@@ -70,14 +70,26 @@ export const useStore = create<AppState>((set) => ({
   setTime: (from, to) => set((s) => ({ filters: { ...s.filters, timeFrom: from, timeTo: to } })),
   setDrawnArea: (poly) =>
     set((s) => ({
-      // Custom drawn area is lateral only — clear any TMA vertical slab.
-      filters: { ...s.filters, drawnArea: poly, areaFloorFt: null, areaCeilingFt: null },
+      // Custom drawn area is lateral only — clear any TMA vertical slab / allocation.
+      filters: {
+        ...s.filters,
+        drawnArea: poly,
+        areaFloorFt: null,
+        areaCeilingFt: null,
+        areaTmaId: null,
+      },
       drawMode: false,
       areaPresetId: poly ? 'custom' : null,
     })),
   setAreaPreset: (id, poly, floorFt, ceilingFt) =>
     set((s) => ({
-      filters: { ...s.filters, drawnArea: poly, areaFloorFt: floorFt, areaCeilingFt: ceilingFt },
+      filters: {
+        ...s.filters,
+        drawnArea: poly,
+        areaFloorFt: floorFt,
+        areaCeilingFt: ceilingFt,
+        areaTmaId: id,
+      },
       drawMode: false,
       areaPresetId: id,
     })),

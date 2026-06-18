@@ -4,6 +4,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Feature, FeatureCollection, Polygon } from 'geojson';
 import { useEffect, useRef } from 'react';
+import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
@@ -36,10 +37,14 @@ function popupHtml(n: LoadedNotam): string {
   const sched = n.schedules
     .map((s) => `${s.rawFrom}–${s.rawTo}`)
     .join(', ');
+  const tmas = tmasForNotam(n)
+    .map((t) => `<span class="popup-tma">${esc(t.name)}</span>`)
+    .join(' ');
   return `
     <div class="popup">
       <div class="popup-id" style="border-color:${areaColor(n.areaType)}">${esc(n.id)}</div>
       <div class="popup-type">${AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</div>
+      ${tmas ? `<div class="popup-tmas">${tmas}</div>` : ''}
       <div class="popup-title">${esc(n.title || '')}</div>
       <table>
         <tr><th>Activity</th><td>${esc(acts)}</td></tr>

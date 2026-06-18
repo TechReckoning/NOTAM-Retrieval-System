@@ -304,6 +304,35 @@ body {
   color: var(--danger);
   font-size: 11px;
 }
+/* persistent "allocated to TMA" tag (map-view list + popup) */
+.tma-tag {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+/* basis badge in List View cards */
+.basis-badge {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.basis-badge.inside {
+  color: #04121a;
+  background: var(--accent);
+}
+.basis-badge.allocated {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.card-head .card-caret {
+  margin-left: 6px;
+}
 .row-title {
   margin: 4px 0 2px;
   font-size: 13px;
@@ -486,6 +515,18 @@ body {
   color: var(--muted);
   font-size: 12px;
   margin: 2px 0 6px;
+}
+.popup-tmas {
+  margin: 0 0 6px;
+}
+.popup-tma {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-right: 4px;
 }
 .popup-title {
   margin-bottom: 8px;

@@ -3,12 +3,16 @@ import { useState } from 'react';
 import { areaColor } from '../lib/colors';
 import type { LoadedNotam } from '../lib/types';
 
+/** Why a NOTAM appears in a TMA column: physically inside, or allocated by decree. */
+export type Basis = 'in' | 'allocated';
+
 interface Props {
   notam: LoadedNotam;
+  basis?: Basis;
 }
 
 /** A NOTAM row for List View Mode that expands inline to show full detail. */
-export function NotamCard({ notam: n }: Props): JSX.Element {
+export function NotamCard({ notam: n, basis }: Props): JSX.Element {
   const [open, setOpen] = useState(false);
   const color = areaColor(n.areaType);
 
@@ -19,6 +23,16 @@ export function NotamCard({ notam: n }: Props): JSX.Element {
           {n.id}
         </span>
         <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+        {basis === 'allocated' && (
+          <span className="basis-badge allocated" title="Allocated to this TMA (outside its boundary)">
+            allocated
+          </span>
+        )}
+        {basis === 'in' && (
+          <span className="basis-badge inside" title="Geometrically inside this TMA">
+            in TMA
+          </span>
+        )}
         <span className="card-caret">{open ? '▾' : '▸'}</span>
       </button>
 

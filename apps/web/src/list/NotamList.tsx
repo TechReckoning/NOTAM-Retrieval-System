@@ -1,5 +1,6 @@
 import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
 import { useEffect, useRef } from 'react';
+import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
@@ -35,6 +36,7 @@ export function NotamList({ visible, hiddenNoGeometry }: Props): JSX.Element {
         {visible.map((n) => {
           const color = areaColor(n.areaType);
           const pending = !n.geometry;
+          const tmas = tmasForNotam(n);
           return (
             <li
               key={n.uid}
@@ -53,6 +55,11 @@ export function NotamList({ visible, hiddenNoGeometry }: Props): JSX.Element {
                   {n.id}
                 </span>
                 <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+                {tmas.map((t) => (
+                  <span key={t.id} className="tma-tag" title={`Allocated to ${t.name}`}>
+                    {t.name}
+                  </span>
+                ))}
                 {pending && <span className="row-pending" title="Geometry pending gazetteer">⚑ no map</span>}
               </div>
               {n.title && <div className="row-title">{n.title}</div>}

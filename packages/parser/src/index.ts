@@ -35,6 +35,12 @@ export {
   type ZoneIndex,
 } from './zones.js';
 export { bucketByAreas, type AreaPolygon, type BucketResult } from './spatial.js';
+export {
+  buildAllocationIndex,
+  allocatedTmas,
+  type AllocationTable,
+  type AllocationIndex,
+} from './allocations.js';
 
 /** Human-readable labels for the model enums (shared by UI). */
 export const AREA_TYPE_LABELS: Record<string, string> = {

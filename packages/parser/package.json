@@ -17,7 +17,8 @@
     "test:watch": "vitest",
     "sample": "tsx scripts/build-sample.ts",
     "tma": "tsx scripts/build-tma.ts",
-    "zones": "tsx scripts/build-zones.ts"
+    "zones": "tsx scripts/build-zones.ts",
+    "allocations": "tsx scripts/build-allocations.ts"
   },
   "dependencies": {
     "@turf/boolean-intersects": "^7.1.0",

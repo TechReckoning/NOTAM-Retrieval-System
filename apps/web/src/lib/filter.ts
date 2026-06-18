@@ -7,6 +7,7 @@ import booleanIntersects from '@turf/boolean-intersects';
 import { feature } from '@turf/helpers';
 import { bandsOverlap, type Activity, type AreaType } from '@notam/parser';
 import type { Feature, Polygon } from 'geojson';
+import { isAllocatedTo } from './allocations';
 import type { LoadedNotam } from './types';
 
 export interface FilterState {
@@ -27,6 +28,12 @@ export interface FilterState {
    */
   areaFloorFt: number | null;
   areaCeilingFt: number | null;
+  /**
+   * Active TMA preset id (e.g. "TMA_NAPOC"), or null for a custom drawn area.
+   * When set, NOTAMs allocated to that TMA pass the area test regardless of
+   * geometry (authority allocation).
+   */
+  areaTmaId: string | null;
 }
 
 export const FL_FLOOR = 0;
@@ -43,6 +50,7 @@ export function defaultFilters(): FilterState {
     drawnArea: null,
     areaFloorFt: null,
     areaCeilingFt: null,
+    areaTmaId: null,
   };
 }
 
@@ -82,16 +90,21 @@ export function applyFilters(notams: LoadedNotam[], f: FilterState): FilterResul
     if (!altitudeOverlaps(n, f.flMin, f.flMax)) return false;
     if (!timeOverlaps(n, f.timeFrom, f.timeTo)) return false;
     if (area) {
-      if (!n.geometry) {
-        hiddenNoGeometry++;
-        return false;
-      }
-      if (!booleanIntersects(area, feature(n.geometry))) return false;
-      // Vertical test for TMA presets (3-D); custom drawn areas have no slab.
-      if (f.areaFloorFt != null && f.areaCeilingFt != null) {
-        const low = Number.isFinite(n.lower.feet) ? n.lower.feet : FL_FLOOR;
-        const high = Number.isFinite(n.upper.feet) ? n.upper.feet : FL_CEILING;
-        if (!bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt)) return false;
+      // A NOTAM allocated to the active TMA is relevant by decree — it passes the
+      // area test regardless of geometry (even if it lies outside the boundary).
+      const allocated = f.areaTmaId ? isAllocatedTo(n, f.areaTmaId) : false;
+      if (!allocated) {
+        if (!n.geometry) {
+          hiddenNoGeometry++;
+          return false;
+        }
+        if (!booleanIntersects(area, feature(n.geometry))) return false;
+        // Vertical test for TMA presets (3-D); custom drawn areas have no slab.
+        if (f.areaFloorFt != null && f.areaCeilingFt != null) {
+          const low = Number.isFinite(n.lower.feet) ? n.lower.feet : FL_FLOOR;
+          const high = Number.isFinite(n.upper.feet) ? n.upper.feet : FL_CEILING;
+          if (!bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt)) return false;
+        }
       }
     }
     return true;

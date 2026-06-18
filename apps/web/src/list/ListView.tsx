@@ -1,10 +1,11 @@
 import { bandsOverlap, bucketByAreas } from '@notam/parser';
 import { useMemo, useState } from 'react';
+import { isAllocatedTo } from '../lib/allocations';
 import { applyFilters } from '../lib/filter';
 import { TMA_AREAS, type TmaArea } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
-import { NotamCard } from './NotamCard';
+import { NotamCard, type Basis } from './NotamCard';
 
 /** Does a NOTAM's vertical band overlap the TMA's floor/ceiling slab? */
 function overlapsVertically(n: LoadedNotam, tma: TmaArea): boolean {
@@ -29,16 +30,26 @@ export function ListView(): JSX.Element {
     const { visible } = applyFilters(notams, { ...filters, drawnArea: null });
     const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.geometry }));
     const result = bucketByAreas<LoadedNotam>(visible, areas);
-    // A NOTAM is "in" a TMA only if it overlaps both laterally AND vertically.
+    // A NOTAM belongs to a TMA if it is geometrically inside (lateral AND vertical)
+    // OR allocated to it by the authorities. Each NOTAM appears once per column.
     const placed = new Set<string>();
     const cols = TMA_AREAS.map((t) => {
-      const items = (result.byArea[t.id] ?? []).filter((n) => overlapsVertically(n, t));
-      items.forEach((n) => placed.add(n.uid));
+      const lateral = new Set((result.byArea[t.id] ?? []).map((n) => n.uid));
+      const items: { notam: LoadedNotam; basis: Basis }[] = [];
+      for (const n of visible) {
+        const inside = lateral.has(n.uid) && overlapsVertically(n, t);
+        const allocated = isAllocatedTo(n, t.id);
+        if (!inside && !allocated) continue;
+        items.push({ notam: n, basis: inside ? 'in' : 'allocated' });
+        placed.add(n.uid);
+      }
       return { tma: t, items };
     });
-    // Outside = has geometry but in no TMA volume (lateral miss, or vertical miss).
+    // Outside = geometry present but in no TMA (lateral/vertical miss and not allocated).
     const outsideAll = visible.filter((n) => n.geometry && !placed.has(n.uid));
-    return { columns: cols, noGeometry: result.noGeometry, outside: outsideAll };
+    // Not placeable = no geometry and not allocated to any TMA.
+    const noGeom = visible.filter((n) => !n.geometry && !placed.has(n.uid));
+    return { columns: cols, noGeometry: noGeom, outside: outsideAll };
   }, [notams, filters]);
 
   const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
@@ -51,7 +62,7 @@ export function ListView(): JSX.Element {
       const cols = columns.map((c) => ({
         name: c.tma.name,
         band: `${c.tma.floorLabel} – ${c.tma.ceilingLabel}`,
-        notams: c.items,
+        notams: c.items.map((it) => it.notam),
       }));
       await exportTmaPdf(cols, meta ?? { bulletinNr: null, bulletinDate: null, source: null }, filters);
     } finally {
@@ -89,8 +100,8 @@ export function ListView(): JSX.Element {
               <span className="tma-col-count">{items.length}</span>
             </header>
             <ul className="tma-col-list">
-              {items.map((n) => (
-                <NotamCard key={n.uid} notam={n} />
+              {items.map(({ notam, basis }) => (
+                <NotamCard key={notam.uid} notam={notam} basis={basis} />
               ))}
               {items.length === 0 && (
                 <li className="empty">No NOTAMs in this area match the filters.</li>
