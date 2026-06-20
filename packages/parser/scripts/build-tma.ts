@@ -6,13 +6,30 @@
  * Run: npm run tma -w packages/parser
  */
 
+import buffer from '@turf/buffer';
 import { writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Polygon } from 'geojson';
 import { extractCoords } from '../src/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, '../../../data/zones/tma.geojson');
+
+/** Lateral buffer applied around each TMA boundary (operational margin). */
+const BUFFER_NM = 5;
+
+/** Build the buffered polygon: the boundary expanded outward by BUFFER_NM. */
+function bufferRing(geometry: Polygon): Polygon {
+  const buffered = buffer(geometry, BUFFER_NM * 1.852, { units: 'kilometers' });
+  const g = buffered!.geometry as Polygon;
+  return {
+    type: 'Polygon',
+    coordinates: g.coordinates.map((ring) =>
+      ring.map(([lon, lat]) => [Number(lon.toFixed(6)), Number(lat.toFixed(6))]),
+    ),
+  };
+}
 
 // Source: AIP Romania ENR 2.1 (lateral + vertical limits).
 // Vertical: floorFt/ceilingFt in feet AMSL (FL185 = 18 500 ft); labels for display.
@@ -67,20 +84,26 @@ const fc = {
   _comment:
     'TMA boundaries from AIP Romania ENR 2.1 lateral limits, parsed from published DMS. ' +
     'Used as predefined coordinate filters. Regenerate with: npm run tma -w packages/parser.',
-  features: TMAS.map((t) => ({
-    type: 'Feature',
-    properties: {
-      id: t.id,
-      name: t.name,
-      approximate: false,
-      source: 'AIP ENR 2.1',
-      floorFt: t.floorFt,
-      ceilingFt: t.ceilingFt,
-      floorLabel: t.floorLabel,
-      ceilingLabel: t.ceilingLabel,
-    },
-    geometry: { type: 'Polygon', coordinates: [ring(t.raw)] },
-  })),
+  features: TMAS.map((t) => {
+    const geometry: Polygon = { type: 'Polygon', coordinates: [ring(t.raw)] };
+    return {
+      type: 'Feature',
+      properties: {
+        id: t.id,
+        name: t.name,
+        approximate: false,
+        source: 'AIP ENR 2.1',
+        floorFt: t.floorFt,
+        ceilingFt: t.ceilingFt,
+        floorLabel: t.floorLabel,
+        ceilingLabel: t.ceilingLabel,
+        bufferNm: BUFFER_NM,
+        // Lateral filtering margin: the boundary expanded outward by BUFFER_NM.
+        bufferGeometry: bufferRing(geometry),
+      },
+      geometry,
+    };
+  }),
 };
 
 writeFileSync(OUT, JSON.stringify(fc, null, 2) + '\n');

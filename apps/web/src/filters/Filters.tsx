@@ -124,9 +124,9 @@ export function Filters(): JSX.Element {
               onClick={() =>
                 areaPresetId === t.id
                   ? setDrawnArea(null)
-                  : setAreaPreset(t.id, t.geometry, t.floorFt, t.ceilingFt)
+                  : setAreaPreset(t.id, t.bufferGeometry, t.floorFt, t.ceilingFt)
               }
-              title={`${t.floorLabel}–${t.ceilingLabel}${
+              title={`${t.floorLabel}–${t.ceilingLabel} · +${t.bufferNm} NM buffer${
                 t.approximate ? ' · approximate boundary' : ''
               }`}
             >
@@ -137,7 +137,8 @@ export function Filters(): JSX.Element {
         </div>
         {activeTma && (
           <div className="aoi-note">
-            3-D filter · {activeTma.floorLabel}–{activeTma.ceilingLabel}
+            3-D filter · {activeTma.floorLabel}–{activeTma.ceilingLabel} · +{activeTma.bufferNm} NM
+            buffer
             {activeTma.approximate ? ' · boundary approximate' : ''}
           </div>
         )}

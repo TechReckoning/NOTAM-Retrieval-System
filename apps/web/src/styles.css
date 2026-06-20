@@ -396,6 +396,10 @@ body {
   color: var(--accent);
   border: 1px solid var(--accent);
 }
+.basis-badge.buffer {
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+}
 .card-head .card-caret {
   margin-left: 6px;
 }

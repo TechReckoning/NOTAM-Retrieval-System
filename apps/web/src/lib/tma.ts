@@ -11,7 +11,11 @@ export interface TmaArea {
   id: string;
   name: string;
   approximate: boolean;
+  /** True AIP lateral boundary (for display). */
   geometry: Polygon;
+  /** Boundary expanded outward by `bufferNm` — the effective lateral filter area. */
+  bufferGeometry: Polygon;
+  bufferNm: number;
   /** Vertical limits in feet AMSL (FL185 = 18500). */
   floorFt: number;
   ceilingFt: number;
@@ -27,6 +31,8 @@ export const TMA_AREAS: TmaArea[] = parsed.features.map((f: any) => ({
   name: f.properties.name,
   approximate: Boolean(f.properties.approximate),
   geometry: f.geometry as Polygon,
+  bufferGeometry: (f.properties.bufferGeometry ?? f.geometry) as Polygon,
+  bufferNm: f.properties.bufferNm ?? 0,
   floorFt: f.properties.floorFt ?? Number.NEGATIVE_INFINITY,
   ceilingFt: f.properties.ceilingFt ?? Number.POSITIVE_INFINITY,
   floorLabel: f.properties.floorLabel ?? '',

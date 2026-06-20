@@ -4,8 +4,9 @@ import { areaColor } from '../lib/colors';
 import { STATUS_COLOR, STATUS_LABEL } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
 
-/** Why a NOTAM appears in a TMA column: physically inside, or allocated by decree. */
-export type Basis = 'in' | 'allocated';
+/** Why a NOTAM appears in a TMA column: inside the boundary, within the 5 NM
+ *  buffer, or allocated by decree. */
+export type Basis = 'in' | 'buffer' | 'allocated';
 
 interface Props {
   notam: LoadedNotam;
@@ -40,8 +41,13 @@ export function NotamCard({ notam: n, basis, status }: Props): JSX.Element {
             allocated
           </span>
         )}
+        {basis === 'buffer' && (
+          <span className="basis-badge buffer" title="Within the 5 NM buffer around this TMA">
+            Within 5 NM
+          </span>
+        )}
         {basis === 'in' && (
-          <span className="basis-badge inside" title="Geometrically inside this TMA">
+          <span className="basis-badge inside" title="Geometrically inside this TMA boundary">
             in TMA
           </span>
         )}

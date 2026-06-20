@@ -1,3 +1,5 @@
+import booleanIntersects from '@turf/boolean-intersects';
+import { feature } from '@turf/helpers';
 import { bandsOverlap, bucketByAreas } from '@notam/parser';
 import { useMemo, useState } from 'react';
 import { isAllocatedTo } from '../lib/allocations';
@@ -34,19 +36,26 @@ export function ListView(): JSX.Element {
     const visible = activeOnly
       ? matched.filter((n) => statusFor(n, opTime) === 'active')
       : matched;
-    const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.geometry }));
+    // Lateral test uses the 5 NM buffer (the effective filter area).
+    const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.bufferGeometry }));
     const result = bucketByAreas<LoadedNotam>(visible, areas);
-    // A NOTAM belongs to a TMA if it is geometrically inside (lateral AND vertical)
-    // OR allocated to it by the authorities. Each NOTAM appears once per column.
+    // A NOTAM belongs to a TMA if it overlaps the buffered area (lateral AND
+    // vertical) OR is allocated to it. Basis: inside the true boundary => 'in';
+    // only within the 5 NM buffer => 'buffer'; otherwise 'allocated'.
     const placed = new Set<string>();
     const cols = TMA_AREAS.map((t) => {
-      const lateral = new Set((result.byArea[t.id] ?? []).map((n) => n.uid));
+      const inBufferLateral = new Set((result.byArea[t.id] ?? []).map((n) => n.uid));
       const items: { notam: LoadedNotam; basis: Basis }[] = [];
       for (const n of visible) {
-        const inside = lateral.has(n.uid) && overlapsVertically(n, t);
+        const inBuffer = inBufferLateral.has(n.uid) && overlapsVertically(n, t);
         const allocated = isAllocatedTo(n, t.id);
-        if (!inside && !allocated) continue;
-        items.push({ notam: n, basis: inside ? 'in' : 'allocated' });
+        if (!inBuffer && !allocated) continue;
+        let basis: Basis = 'allocated';
+        if (inBuffer) {
+          const inTrue = !!n.geometry && booleanIntersects(feature(t.geometry), feature(n.geometry));
+          basis = inTrue ? 'in' : 'buffer';
+        }
+        items.push({ notam: n, basis });
         placed.add(n.uid);
       }
       return { tma: t, items };

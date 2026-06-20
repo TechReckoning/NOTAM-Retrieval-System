@@ -7,6 +7,7 @@ import { useEffect, useRef } from 'react';
 import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
 import { statusFor } from '../lib/status';
+import { TMA_AREAS } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
 import { getStyle, INITIAL_VIEW } from './style';
@@ -88,6 +89,7 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
     map.on('load', () => {
       map.addSource('notams', { type: 'geojson', data: emptyFc(), promoteId: 'uid' });
       map.addSource('aoi', { type: 'geojson', data: emptyFc() });
+      map.addSource('tma-boundary', { type: 'geojson', data: emptyFc() });
 
       map.addLayer({
         id: 'notam-fill',
@@ -130,6 +132,13 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
         type: 'line',
         source: 'aoi',
         paint: { 'line-color': '#00e0ff', 'line-width': 1.5, 'line-dasharray': [2, 2] },
+      });
+      // True TMA boundary (solid) drawn inside the dashed 5 NM buffer.
+      map.addLayer({
+        id: 'tma-boundary-line',
+        type: 'line',
+        source: 'tma-boundary',
+        paint: { 'line-color': '#00e0ff', 'line-width': 2 },
       });
 
       loadedRef.current = true;
@@ -243,6 +252,17 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
         { padding: 60, duration: 700 },
       );
     }
+  }, [areaPresetId]);
+
+  // Draw the true TMA boundary (solid) when a TMA preset is active; the dashed
+  // 5 NM buffer is the area-of-interest ('aoi') drawn from filters.drawnArea.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !loadedRef.current) return;
+    const src = map.getSource('tma-boundary') as maplibregl.GeoJSONSource | undefined;
+    const tma = areaPresetId ? TMA_AREAS.find((t) => t.id === areaPresetId) : undefined;
+    if (tma) src?.setData({ type: 'Feature', properties: {}, geometry: tma.geometry } as Feature);
+    else src?.setData(emptyFc());
   }, [areaPresetId]);
 
   useEffect(() => {
