@@ -2,10 +2,12 @@ import { lazy, Suspense, useMemo, useState } from 'react';
 import { Filters } from './filters/Filters';
 import { AREA_COLORS } from './lib/colors';
 import { applyFilters } from './lib/filter';
+import { buildQualityReport } from './lib/quality';
 import { STATUS_COLOR, STATUS_LABEL, statusFor } from './lib/status';
 import { ListView } from './list/ListView';
 import { NotamList } from './list/NotamList';
 import { MapView } from './map/MapView';
+import { QualityPanel } from './quality/QualityPanel';
 import { useStore } from './state/store';
 import { AREA_TYPE_LABELS, type ActivationStatus } from '@notam/parser';
 
@@ -15,10 +17,14 @@ const IngestReview = lazy(() =>
 );
 
 export function App(): JSX.Element {
+  const notams = useStore((s) => s.notams);
   const meta = useStore((s) => s.meta);
   const viewMode = useStore((s) => s.viewMode);
   const setViewMode = useStore((s) => s.setViewMode);
   const [showIngest, setShowIngest] = useState(true);
+  const [showQuality, setShowQuality] = useState(false);
+
+  const flaggedCount = useMemo(() => buildQualityReport(notams).flaggedCount, [notams]);
 
   return (
     <div className="app">
@@ -56,6 +62,15 @@ export function App(): JSX.Element {
               ))}
           </div>
         )}
+        {meta && (
+          <button
+            className={`btn quality-btn${flaggedCount > 0 ? ' flagged' : ''}`}
+            onClick={() => setShowQuality(true)}
+            title="Data quality — items the parser flagged for review"
+          >
+            {flaggedCount > 0 ? `⚠ ${flaggedCount} flagged` : '✓ Data quality'}
+          </button>
+        )}
         <button className="btn" onClick={() => setShowIngest(true)}>
           Load bulletin
         </button>
@@ -75,6 +90,7 @@ export function App(): JSX.Element {
           <IngestReview onClose={() => setShowIngest(false)} />
         </Suspense>
       )}
+      {showQuality && <QualityPanel onClose={() => setShowQuality(false)} />}
     </div>
   );
 }

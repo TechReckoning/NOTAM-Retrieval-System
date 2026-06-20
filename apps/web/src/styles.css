@@ -609,6 +609,52 @@ body {
   vertical-align: top;
 }
 
+/* ---- data-quality button + panel ---- */
+.quality-btn.flagged {
+  border-color: #e6932b;
+  color: #ffce8a;
+}
+.quality-modal .quality-cats {
+  margin: 4px 0 10px;
+}
+.quality-clear {
+  padding: 24px;
+  text-align: center;
+  color: #3fbf6f;
+}
+.quality-modal .ingest-table td {
+  white-space: normal;
+  vertical-align: top;
+}
+.quality-row {
+  cursor: pointer;
+}
+.quality-row:hover td {
+  background: var(--panel-2);
+}
+.quality-cat-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffce8a;
+  border: 1px solid #e6932b;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin: 0 4px 2px 0;
+}
+.quality-msgs {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 2px;
+  white-space: normal;
+}
+.quality-foot {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 12px;
+}
+
 /* ---- ingest overlay ---- */
 .ingest-overlay {
   position: fixed;
