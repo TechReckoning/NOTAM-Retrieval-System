@@ -10,6 +10,7 @@ export {
 } from './coordinates.js';
 export { parseVerticalLimit, bandsOverlap } from './verticalLimits.js';
 export { buildSchedules, extractTimes } from './schedule.js';
+export { activationStatus, type ActivationStatus } from './status.js';
 export {
   classifyAreaType,
   classifyActivities,

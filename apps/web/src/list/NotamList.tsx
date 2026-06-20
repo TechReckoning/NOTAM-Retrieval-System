@@ -2,15 +2,17 @@ import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
 import { useEffect, useRef } from 'react';
 import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
+import { STATUS_COLOR, STATUS_LABEL, statusFor } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
 
 interface Props {
   visible: LoadedNotam[];
   hiddenNoGeometry: number;
+  opTime: string;
 }
 
-export function NotamList({ visible, hiddenNoGeometry }: Props): JSX.Element {
+export function NotamList({ visible, hiddenNoGeometry, opTime }: Props): JSX.Element {
   const selectedUid = useStore((s) => s.selectedUid);
   const select = useStore((s) => s.select);
   const hover = useStore((s) => s.hover);
@@ -37,6 +39,7 @@ export function NotamList({ visible, hiddenNoGeometry }: Props): JSX.Element {
           const color = areaColor(n.areaType);
           const pending = !n.geometry;
           const tmas = tmasForNotam(n);
+          const status = statusFor(n, opTime);
           return (
             <li
               key={n.uid}
@@ -44,13 +47,18 @@ export function NotamList({ visible, hiddenNoGeometry }: Props): JSX.Element {
                 if (el) rowRefs.current.set(n.uid, el);
                 else rowRefs.current.delete(n.uid);
               }}
-              className={`notam-row${n.uid === selectedUid ? ' selected' : ''}`}
+              className={`notam-row status-${status}${n.uid === selectedUid ? ' selected' : ''}`}
               style={{ borderLeftColor: color }}
               onClick={() => select(n.uid)}
               onMouseEnter={() => hover(n.uid)}
               onMouseLeave={() => hover(null)}
             >
               <div className="row-top">
+                <span
+                  className="status-dot"
+                  style={{ background: STATUS_COLOR[status] }}
+                  title={STATUS_LABEL[status]}
+                />
                 <span className="row-id" style={{ background: color }}>
                   {n.id}
                 </span>

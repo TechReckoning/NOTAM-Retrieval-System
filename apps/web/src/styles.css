@@ -98,6 +98,72 @@ body {
   font-weight: 600;
 }
 
+/* ---- operational time status bar ---- */
+.statusbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 16px;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.statusbar-label {
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+.statusbar input[type='time'] {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+.statusbar-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.active-only {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text);
+  cursor: pointer;
+}
+.status-legend {
+  display: flex;
+  gap: 12px;
+}
+.status-legend .legend-item i {
+  border-radius: 50%;
+}
+.freshness-warn {
+  margin-left: auto;
+  color: #ffb454;
+  font-weight: 600;
+}
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: none;
+}
+/* dim NOTAMs that aren't active at the operational time */
+.notam-row.status-upcoming,
+.notam-row.status-expired,
+.notam-card.status-upcoming,
+.notam-card.status-expired {
+  opacity: 0.5;
+}
+.notam-row.status-active,
+.notam-card.status-active {
+  opacity: 1;
+}
+
 /* ---- body layout ---- */
 .body {
   flex: 1;

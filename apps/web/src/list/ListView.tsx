@@ -2,6 +2,7 @@ import { bandsOverlap, bucketByAreas } from '@notam/parser';
 import { useMemo, useState } from 'react';
 import { isAllocatedTo } from '../lib/allocations';
 import { applyFilters } from '../lib/filter';
+import { statusFor } from '../lib/status';
 import { TMA_AREAS, type TmaArea } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
@@ -24,10 +25,15 @@ export function ListView(): JSX.Element {
   const notams = useStore((s) => s.notams);
   const filters = useStore((s) => s.filters);
   const meta = useStore((s) => s.meta);
+  const opTime = useStore((s) => s.opTime);
+  const activeOnly = useStore((s) => s.activeOnly);
 
   const { columns, noGeometry, outside } = useMemo(() => {
     // List View ignores the map-only spatial controls (TMA preset / drawn area).
-    const { visible } = applyFilters(notams, { ...filters, drawnArea: null });
+    const { visible: matched } = applyFilters(notams, { ...filters, drawnArea: null });
+    const visible = activeOnly
+      ? matched.filter((n) => statusFor(n, opTime) === 'active')
+      : matched;
     const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.geometry }));
     const result = bucketByAreas<LoadedNotam>(visible, areas);
     // A NOTAM belongs to a TMA if it is geometrically inside (lateral AND vertical)
@@ -50,7 +56,7 @@ export function ListView(): JSX.Element {
     // Not placeable = no geometry and not allocated to any TMA.
     const noGeom = visible.filter((n) => !n.geometry && !placed.has(n.uid));
     return { columns: cols, noGeometry: noGeom, outside: outsideAll };
-  }, [notams, filters]);
+  }, [notams, filters, activeOnly, opTime]);
 
   const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
   const [exporting, setExporting] = useState(false);
@@ -101,7 +107,7 @@ export function ListView(): JSX.Element {
             </header>
             <ul className="tma-col-list">
               {items.map(({ notam, basis }) => (
-                <NotamCard key={notam.uid} notam={notam} basis={basis} />
+                <NotamCard key={notam.uid} notam={notam} basis={basis} status={statusFor(notam, opTime)} />
               ))}
               {items.length === 0 && (
                 <li className="empty">No NOTAMs in this area match the filters.</li>

@@ -1,6 +1,7 @@
-import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
+import { ACTIVITY_LABELS, AREA_TYPE_LABELS, type ActivationStatus } from '@notam/parser';
 import { useState } from 'react';
 import { areaColor } from '../lib/colors';
+import { STATUS_COLOR, STATUS_LABEL } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
 
 /** Why a NOTAM appears in a TMA column: physically inside, or allocated by decree. */
@@ -9,16 +10,27 @@ export type Basis = 'in' | 'allocated';
 interface Props {
   notam: LoadedNotam;
   basis?: Basis;
+  status?: ActivationStatus;
 }
 
 /** A NOTAM row for List View Mode that expands inline to show full detail. */
-export function NotamCard({ notam: n, basis }: Props): JSX.Element {
+export function NotamCard({ notam: n, basis, status }: Props): JSX.Element {
   const [open, setOpen] = useState(false);
   const color = areaColor(n.areaType);
 
   return (
-    <li className={`notam-card${open ? ' open' : ''}`} style={{ borderLeftColor: color }}>
+    <li
+      className={`notam-card${open ? ' open' : ''}${status ? ` status-${status}` : ''}`}
+      style={{ borderLeftColor: color }}
+    >
       <button className="card-head" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
+        {status && (
+          <span
+            className="status-dot"
+            style={{ background: STATUS_COLOR[status] }}
+            title={STATUS_LABEL[status]}
+          />
+        )}
         <span className="row-id" style={{ background: color }}>
           {n.id}
         </span>

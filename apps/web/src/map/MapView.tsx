@@ -6,16 +6,18 @@ import type { Feature, FeatureCollection, Polygon } from 'geojson';
 import { useEffect, useRef } from 'react';
 import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
+import { statusFor } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
 import { getStyle, INITIAL_VIEW } from './style';
 
 interface Props {
   visible: LoadedNotam[];
+  opTime: string;
 }
 
 /** Build the GeoJSON the map renders — only NOTAMs that have geometry. */
-function toFeatureCollection(notams: LoadedNotam[]): FeatureCollection {
+function toFeatureCollection(notams: LoadedNotam[], opTime: string): FeatureCollection {
   const features: Feature[] = notams
     .filter((n) => n.geometry)
     .map((n) => ({
@@ -25,6 +27,7 @@ function toFeatureCollection(notams: LoadedNotam[]): FeatureCollection {
         uid: n.uid,
         id: n.id,
         color: areaColor(n.areaType),
+        active: statusFor(n, opTime) === 'active',
       },
       geometry: n.geometry!,
     }));
@@ -55,7 +58,7 @@ function popupHtml(n: LoadedNotam): string {
     </div>`;
 }
 
-export function MapView({ visible }: Props): JSX.Element {
+export function MapView({ visible, opTime }: Props): JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const popupRef = useRef<maplibregl.Popup | null>(null);
@@ -63,9 +66,11 @@ export function MapView({ visible }: Props): JSX.Element {
   const prevSelected = useRef<string | null>(null);
   const prevHovered = useRef<string | null>(null);
 
-  // Keep a ref to the current visible set for event handlers (avoid stale closures).
+  // Keep refs to the current values for event handlers (avoid stale closures).
   const visibleRef = useRef<LoadedNotam[]>(visible);
   visibleRef.current = visible;
+  const opTimeRef = useRef<string>(opTime);
+  opTimeRef.current = opTime;
 
   // --- create map once ---
   useEffect(() => {
@@ -96,7 +101,10 @@ export function MapView({ visible }: Props): JSX.Element {
             0.5,
             ['boolean', ['feature-state', 'hovered'], false],
             0.38,
-            0.2,
+            // Active areas are solid; inactive (upcoming/expired) are dimmed.
+            ['get', 'active'],
+            0.22,
+            0.05,
           ],
         },
       });
@@ -107,6 +115,7 @@ export function MapView({ visible }: Props): JSX.Element {
         paint: {
           'line-color': ['get', 'color'],
           'line-width': ['case', ['boolean', ['feature-state', 'selected'], false], 3.5, 1.5],
+          'line-opacity': ['case', ['get', 'active'], 1, 0.3],
         },
       });
       // Area-of-interest rectangle.
@@ -125,7 +134,7 @@ export function MapView({ visible }: Props): JSX.Element {
 
       loadedRef.current = true;
       (map.getSource('notams') as maplibregl.GeoJSONSource).setData(
-        toFeatureCollection(visibleRef.current),
+        toFeatureCollection(visibleRef.current, opTimeRef.current),
       );
     });
 
@@ -164,9 +173,9 @@ export function MapView({ visible }: Props): JSX.Element {
     const map = mapRef.current;
     if (!map || !loadedRef.current) return;
     (map.getSource('notams') as maplibregl.GeoJSONSource | undefined)?.setData(
-      toFeatureCollection(visible),
+      toFeatureCollection(visible, opTime),
     );
-  }, [visible]);
+  }, [visible, opTime]);
 
   // --- reflect selection: highlight + fly to ---
   const selectedUid = useStore((s) => s.selectedUid);
