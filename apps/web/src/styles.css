@@ -613,6 +613,41 @@ body {
   vertical-align: top;
 }
 
+/* ---- overlaps flag + button + panel ---- */
+.overlap-flag {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ff7ab2;
+  border: 1px solid #ff7ab2;
+  border-radius: 4px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.overlaps-btn.has-overlaps {
+  border-color: #ff7ab2;
+  color: #ff9ec6;
+}
+.overlap-pair {
+  white-space: nowrap;
+}
+.overlap-id {
+  font-weight: 700;
+  font-size: 12px;
+  color: #04121a;
+  border: none;
+  border-radius: 4px;
+  padding: 1px 7px;
+  cursor: pointer;
+}
+.overlap-x {
+  margin: 0 8px;
+  color: #ff7ab2;
+  font-weight: 700;
+}
+.overlap-row td {
+  vertical-align: top;
+}
+
 /* ---- data-quality button + panel ---- */
 .quality-btn.flagged {
   border-color: #e6932b;

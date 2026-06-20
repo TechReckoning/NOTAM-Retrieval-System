@@ -12,10 +12,11 @@ interface Props {
   notam: LoadedNotam;
   basis?: Basis;
   status?: ActivationStatus;
+  overlapCount?: number;
 }
 
 /** A NOTAM row for List View Mode that expands inline to show full detail. */
-export function NotamCard({ notam: n, basis, status }: Props): JSX.Element {
+export function NotamCard({ notam: n, basis, status, overlapCount = 0 }: Props): JSX.Element {
   const [open, setOpen] = useState(false);
   const color = areaColor(n.areaType);
 
@@ -49,6 +50,11 @@ export function NotamCard({ notam: n, basis, status }: Props): JSX.Element {
         {basis === 'in' && (
           <span className="basis-badge inside" title="Geometrically inside this TMA boundary">
             in TMA
+          </span>
+        )}
+        {overlapCount > 0 && (
+          <span className="overlap-flag" title={`Overlaps ${overlapCount} other active NOTAM(s)`}>
+            ⧉ {overlapCount}
           </span>
         )}
         <span className="card-caret">{open ? '▾' : '▸'}</span>

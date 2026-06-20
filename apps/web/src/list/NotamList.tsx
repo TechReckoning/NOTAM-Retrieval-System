@@ -1,7 +1,8 @@
 import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
+import { buildOverlaps } from '../lib/overlaps';
 import { STATUS_COLOR, STATUS_LABEL, statusFor } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
 import { useStore } from '../state/store';
@@ -17,6 +18,7 @@ export function NotamList({ visible, hiddenNoGeometry, opTime }: Props): JSX.Ele
   const select = useStore((s) => s.select);
   const hover = useStore((s) => s.hover);
   const rowRefs = useRef<Map<string, HTMLLIElement>>(new Map());
+  const overlapPartners = useMemo(() => buildOverlaps(visible, opTime).partners, [visible, opTime]);
 
   // When selection changes (e.g. from a map click), scroll the list to it.
   useEffect(() => {
@@ -68,6 +70,14 @@ export function NotamList({ visible, hiddenNoGeometry, opTime }: Props): JSX.Ele
                     {t.name}
                   </span>
                 ))}
+                {(overlapPartners.get(n.uid)?.length ?? 0) > 0 && (
+                  <span
+                    className="overlap-flag"
+                    title={`Overlaps: ${overlapPartners.get(n.uid)!.join(', ')}`}
+                  >
+                    ⧉ {overlapPartners.get(n.uid)!.length}
+                  </span>
+                )}
                 {pending && <span className="row-pending" title="Geometry pending gazetteer">⚑ no map</span>}
               </div>
               {n.title && <div className="row-title">{n.title}</div>}

@@ -4,6 +4,7 @@ import { bandsOverlap, bucketByAreas } from '@notam/parser';
 import { useMemo, useState } from 'react';
 import { isAllocatedTo } from '../lib/allocations';
 import { applyFilters } from '../lib/filter';
+import { buildOverlaps } from '../lib/overlaps';
 import { statusFor } from '../lib/status';
 import { TMA_AREAS, type TmaArea } from '../lib/tma';
 import type { LoadedNotam } from '../lib/types';
@@ -30,12 +31,13 @@ export function ListView(): JSX.Element {
   const opTime = useStore((s) => s.opTime);
   const activeOnly = useStore((s) => s.activeOnly);
 
-  const { columns, noGeometry, outside } = useMemo(() => {
+  const { columns, noGeometry, outside, overlapPartners } = useMemo(() => {
     // List View ignores the map-only spatial controls (TMA preset / drawn area).
     const { visible: matched } = applyFilters(notams, { ...filters, drawnArea: null });
     const visible = activeOnly
       ? matched.filter((n) => statusFor(n, opTime) === 'active')
       : matched;
+    const overlaps = buildOverlaps(visible, opTime).partners;
     // Lateral test uses the 5 NM buffer (the effective filter area).
     const areas = TMA_AREAS.map((t) => ({ id: t.id, geometry: t.bufferGeometry }));
     const result = bucketByAreas<LoadedNotam>(visible, areas);
@@ -64,7 +66,7 @@ export function ListView(): JSX.Element {
     const outsideAll = visible.filter((n) => n.geometry && !placed.has(n.uid));
     // Not placeable = no geometry and not allocated to any TMA.
     const noGeom = visible.filter((n) => !n.geometry && !placed.has(n.uid));
-    return { columns: cols, noGeometry: noGeom, outside: outsideAll };
+    return { columns: cols, noGeometry: noGeom, outside: outsideAll, overlapPartners: overlaps };
   }, [notams, filters, activeOnly, opTime]);
 
   const totalShown = columns.reduce((sum, c) => sum + c.items.length, 0);
@@ -116,7 +118,13 @@ export function ListView(): JSX.Element {
             </header>
             <ul className="tma-col-list">
               {items.map(({ notam, basis }) => (
-                <NotamCard key={notam.uid} notam={notam} basis={basis} status={statusFor(notam, opTime)} />
+                <NotamCard
+                  key={notam.uid}
+                  notam={notam}
+                  basis={basis}
+                  status={statusFor(notam, opTime)}
+                  overlapCount={overlapPartners.get(notam.uid)?.length ?? 0}
+                />
               ))}
               {items.length === 0 && (
                 <li className="empty">No NOTAMs in this area match the filters.</li>

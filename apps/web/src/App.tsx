@@ -2,11 +2,13 @@ import { lazy, Suspense, useMemo, useState } from 'react';
 import { Filters } from './filters/Filters';
 import { AREA_COLORS } from './lib/colors';
 import { applyFilters } from './lib/filter';
+import { buildOverlaps, overlapScopeSet } from './lib/overlaps';
 import { buildQualityReport } from './lib/quality';
 import { STATUS_COLOR, STATUS_LABEL, statusFor } from './lib/status';
 import { ListView } from './list/ListView';
 import { NotamList } from './list/NotamList';
 import { MapView } from './map/MapView';
+import { OverlapsPanel } from './overlaps/OverlapsPanel';
 import { QualityPanel } from './quality/QualityPanel';
 import { useStore } from './state/store';
 import { AREA_TYPE_LABELS, type ActivationStatus } from '@notam/parser';
@@ -21,10 +23,17 @@ export function App(): JSX.Element {
   const meta = useStore((s) => s.meta);
   const viewMode = useStore((s) => s.viewMode);
   const setViewMode = useStore((s) => s.setViewMode);
+  const filters = useStore((s) => s.filters);
+  const opTime = useStore((s) => s.opTime);
   const [showIngest, setShowIngest] = useState(true);
   const [showQuality, setShowQuality] = useState(false);
+  const [showOverlaps, setShowOverlaps] = useState(false);
 
   const flaggedCount = useMemo(() => buildQualityReport(notams).flaggedCount, [notams]);
+  const overlapCount = useMemo(
+    () => buildOverlaps(overlapScopeSet(notams, filters, viewMode), opTime).pairs.length,
+    [notams, filters, viewMode, opTime],
+  );
 
   return (
     <div className="app">
@@ -64,6 +73,15 @@ export function App(): JSX.Element {
         )}
         {meta && (
           <button
+            className={`btn overlaps-btn${overlapCount > 0 ? ' has-overlaps' : ''}`}
+            onClick={() => setShowOverlaps(true)}
+            title="Co-active NOTAM overlaps (military-only excluded)"
+          >
+            ⧉ {overlapCount} overlap{overlapCount === 1 ? '' : 's'}
+          </button>
+        )}
+        {meta && (
+          <button
             className={`btn quality-btn${flaggedCount > 0 ? ' flagged' : ''}`}
             onClick={() => setShowQuality(true)}
             title="Data quality — items the parser flagged for review"
@@ -91,6 +109,7 @@ export function App(): JSX.Element {
         </Suspense>
       )}
       {showQuality && <QualityPanel onClose={() => setShowQuality(false)} />}
+      {showOverlaps && <OverlapsPanel onClose={() => setShowOverlaps(false)} />}
     </div>
   );
 }
