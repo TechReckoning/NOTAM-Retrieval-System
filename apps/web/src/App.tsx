@@ -120,18 +120,28 @@ function MapBody(): JSX.Element {
   const filters = useStore((s) => s.filters);
   const opTime = useStore((s) => s.opTime);
   const activeOnly = useStore((s) => s.activeOnly);
-  const { visible, hiddenNoGeometry } = useMemo(() => {
+  const { visible, hiddenNoGeometry, lrUnallocated } = useMemo(() => {
     const r = applyFilters(notams, filters);
     if (!activeOnly) return r;
-    return { ...r, visible: r.visible.filter((n) => statusFor(n, opTime) === 'active') };
+    const isActive = (n: typeof notams[number]) => statusFor(n, opTime) === 'active';
+    return {
+      ...r,
+      visible: r.visible.filter(isActive),
+      lrUnallocated: r.lrUnallocated.filter((x) => isActive(x.notam)),
+    };
   }, [notams, filters, activeOnly, opTime]);
   return (
     <>
       <main className="map-area">
-        <MapView visible={visible} opTime={opTime} />
+        <MapView visible={visible} lrUnallocated={lrUnallocated} opTime={opTime} />
       </main>
       <aside className="list-area">
-        <NotamList visible={visible} hiddenNoGeometry={hiddenNoGeometry} opTime={opTime} />
+        <NotamList
+          visible={visible}
+          lrUnallocated={lrUnallocated}
+          hiddenNoGeometry={hiddenNoGeometry}
+          opTime={opTime}
+        />
       </aside>
     </>
   );

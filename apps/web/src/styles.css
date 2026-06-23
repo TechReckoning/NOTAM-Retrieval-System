@@ -400,6 +400,60 @@ body {
   color: var(--accent);
   border: 1px dashed var(--accent);
 }
+/* unallocated LR zone present in/near the TMA — awareness only (amber, muted) */
+.basis-badge.lr {
+  margin-left: auto;
+  color: #d8a23a;
+  border: 1px dashed #d8a23a;
+  white-space: nowrap;
+}
+
+/* "Not-allocated LR present" section (List View column + Map View list) */
+.lr-section {
+  list-style: none;
+  border-top: 2px solid #d8a23a55;
+  margin-top: 6px;
+}
+.lr-map-section {
+  border-top: 2px solid #d8a23a55;
+}
+.lr-section-head,
+.lr-map-section .lr-section-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  padding: 8px 14px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d8a23a;
+  letter-spacing: 0.3px;
+}
+.lr-section-count {
+  background: #d8a23a;
+  color: #1a1205;
+  border-radius: 10px;
+  padding: 0 8px;
+  font-size: 11px;
+}
+.lr-section-hint {
+  flex-basis: 100%;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.lr-section-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* muted styling for awareness-only rows/cards */
+.notam-card.lr-present,
+.notam-row.lr-present {
+  opacity: 0.82;
+  background: #d8a23a0a;
+}
 .card-head .card-caret {
   margin-left: 6px;
 }

@@ -13,16 +13,29 @@ interface Props {
   basis?: Basis;
   status?: ActivationStatus;
   overlapCount?: number;
+  /**
+   * Marks this card as an unallocated LRTRA/LRTSA/LRD zone that physically reaches
+   * the TMA ('in') or its 5 NM buffer ('buffer') — awareness only, not relevant.
+   */
+  lrPresent?: 'in' | 'buffer';
 }
 
 /** A NOTAM row for List View Mode that expands inline to show full detail. */
-export function NotamCard({ notam: n, basis, status, overlapCount = 0 }: Props): JSX.Element {
+export function NotamCard({
+  notam: n,
+  basis,
+  status,
+  overlapCount = 0,
+  lrPresent,
+}: Props): JSX.Element {
   const [open, setOpen] = useState(false);
   const color = areaColor(n.areaType);
 
   return (
     <li
-      className={`notam-card${open ? ' open' : ''}${status ? ` status-${status}` : ''}`}
+      className={`notam-card${open ? ' open' : ''}${status ? ` status-${status}` : ''}${
+        lrPresent ? ' lr-present' : ''
+      }`}
       style={{ borderLeftColor: color }}
     >
       <button className="card-head" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
@@ -37,6 +50,14 @@ export function NotamCard({ notam: n, basis, status, overlapCount = 0 }: Props):
           {n.id}
         </span>
         <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+        {lrPresent && (
+          <span
+            className="basis-badge lr"
+            title="LRTRA/LRTSA/LRD zone physically present but NOT allocated to this TMA — awareness only, not counted as relevant"
+          >
+            Not allocated LR {lrPresent === 'in' ? 'in TMA' : 'within 5 NM'}
+          </span>
+        )}
         {basis === 'allocated' && (
           <span className="basis-badge allocated" title="Allocated to this TMA (outside its boundary)">
             allocated

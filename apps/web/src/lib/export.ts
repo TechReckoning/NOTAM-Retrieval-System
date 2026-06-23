@@ -8,6 +8,8 @@ export interface TmaColumn {
   /** Vertical band label, e.g. "2000 ft – FL185". */
   band?: string;
   notams: LoadedNotam[];
+  /** Unallocated LRTRA/LRTSA/LRD zones present in/near the TMA — awareness only. */
+  lrUnallocated?: { notam: LoadedNotam; where: 'in' | 'buffer' }[];
 }
 
 /** Human-readable summary of the active filters, for the export header. */

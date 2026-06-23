@@ -14,6 +14,8 @@ import { getStyle, INITIAL_VIEW } from './style';
 
 interface Props {
   visible: LoadedNotam[];
+  /** Unallocated LRTRA/LRTSA/LRD zones present in the active TMA — awareness only. */
+  lrUnallocated: { notam: LoadedNotam; where: 'in' | 'buffer' }[];
   opTime: string;
 }
 
@@ -31,6 +33,21 @@ function toFeatureCollection(notams: LoadedNotam[], opTime: string): FeatureColl
         active: statusFor(n, opTime) === 'active',
       },
       geometry: n.geometry!,
+    }));
+  return { type: 'FeatureCollection', features };
+}
+
+/** GeoJSON for the unallocated-LR awareness zones (those that have geometry). */
+function toLrFeatureCollection(
+  items: { notam: LoadedNotam; where: 'in' | 'buffer' }[],
+): FeatureCollection {
+  const features: Feature[] = items
+    .filter((x) => x.notam.geometry)
+    .map((x) => ({
+      type: 'Feature',
+      id: x.notam.uid,
+      properties: { uid: x.notam.uid, id: x.notam.id, where: x.where },
+      geometry: x.notam.geometry!,
     }));
   return { type: 'FeatureCollection', features };
 }
@@ -59,7 +76,7 @@ function popupHtml(n: LoadedNotam): string {
     </div>`;
 }
 
-export function MapView({ visible, opTime }: Props): JSX.Element {
+export function MapView({ visible, lrUnallocated, opTime }: Props): JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const popupRef = useRef<maplibregl.Popup | null>(null);
@@ -70,6 +87,8 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
   // Keep refs to the current values for event handlers (avoid stale closures).
   const visibleRef = useRef<LoadedNotam[]>(visible);
   visibleRef.current = visible;
+  const lrRef = useRef(lrUnallocated);
+  lrRef.current = lrUnallocated;
   const opTimeRef = useRef<string>(opTime);
   opTimeRef.current = opTime;
 
@@ -88,8 +107,27 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
 
     map.on('load', () => {
       map.addSource('notams', { type: 'geojson', data: emptyFc(), promoteId: 'uid' });
+      map.addSource('lr-unalloc', { type: 'geojson', data: emptyFc() });
       map.addSource('aoi', { type: 'geojson', data: emptyFc() });
       map.addSource('tma-boundary', { type: 'geojson', data: emptyFc() });
+
+      // Unallocated LR zones present in the TMA — muted grey, dashed; not relevant.
+      map.addLayer({
+        id: 'lr-unalloc-fill',
+        type: 'fill',
+        source: 'lr-unalloc',
+        paint: { 'fill-color': '#8b93a3', 'fill-opacity': 0.06 },
+      });
+      map.addLayer({
+        id: 'lr-unalloc-line',
+        type: 'line',
+        source: 'lr-unalloc',
+        paint: {
+          'line-color': '#8b93a3',
+          'line-width': 1.25,
+          'line-dasharray': [3, 2],
+        },
+      });
 
       map.addLayer({
         id: 'notam-fill',
@@ -145,6 +183,9 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
       (map.getSource('notams') as maplibregl.GeoJSONSource).setData(
         toFeatureCollection(visibleRef.current, opTimeRef.current),
       );
+      (map.getSource('lr-unalloc') as maplibregl.GeoJSONSource).setData(
+        toLrFeatureCollection(lrRef.current),
+      );
     });
 
     // Click a NOTAM -> select + popup.
@@ -184,7 +225,10 @@ export function MapView({ visible, opTime }: Props): JSX.Element {
     (map.getSource('notams') as maplibregl.GeoJSONSource | undefined)?.setData(
       toFeatureCollection(visible, opTime),
     );
-  }, [visible, opTime]);
+    (map.getSource('lr-unalloc') as maplibregl.GeoJSONSource | undefined)?.setData(
+      toLrFeatureCollection(lrUnallocated),
+    );
+  }, [visible, lrUnallocated, opTime]);
 
   // --- reflect selection: highlight + fly to ---
   const selectedUid = useStore((s) => s.selectedUid);

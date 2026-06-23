@@ -5,9 +5,16 @@
 
 import booleanIntersects from '@turf/boolean-intersects';
 import { feature } from '@turf/helpers';
-import { bandsOverlap, type Activity, type AreaType } from '@notam/parser';
+import {
+  bandsOverlap,
+  classifyTmaMembership,
+  isLrManagedZone,
+  type Activity,
+  type AreaType,
+} from '@notam/parser';
 import type { Feature, Polygon } from 'geojson';
 import { isAllocatedTo } from './allocations';
+import { findTma } from './tma';
 import type { LoadedNotam } from './types';
 
 export interface FilterState {
@@ -74,41 +81,89 @@ function timeOverlaps(n: LoadedNotam, from: string, to: string): boolean {
   });
 }
 
+/** An unallocated LRTRA/LRTSA/LRD zone physically present in the active TMA. */
+export interface LrPresent {
+  notam: LoadedNotam;
+  where: 'in' | 'buffer';
+}
+
 export interface FilterResult {
   visible: LoadedNotam[];
   /** NOTAMs excluded purely because they lack geometry under a spatial filter. */
   hiddenNoGeometry: number;
+  /**
+   * Awareness set (TMA preset only): LRTRA/LRTSA/LRD zones that physically reach the
+   * active TMA but are NOT allocated to it — surfaced separately, not "relevant".
+   */
+  lrUnallocated: LrPresent[];
+}
+
+function altFeet(n: LoadedNotam): [number, number] {
+  const low = Number.isFinite(n.lower.feet) ? n.lower.feet : FL_FLOOR;
+  const high = Number.isFinite(n.upper.feet) ? n.upper.feet : FL_CEILING;
+  return [low, high];
 }
 
 export function applyFilters(notams: LoadedNotam[], f: FilterState): FilterResult {
   let hiddenNoGeometry = 0;
+  const lrUnallocated: LrPresent[] = [];
   const area: Feature<Polygon> | null = f.drawnArea ? feature(f.drawnArea) : null;
+  // True (unbuffered) boundary of the active TMA preset, for the in/buffer split.
+  const tmaTrue = f.areaTmaId ? findTma(f.areaTmaId)?.geometry : undefined;
+  const trueFeat = tmaTrue ? feature(tmaTrue) : null;
 
   const visible = notams.filter((n) => {
+    // --- non-spatial filters (apply to everything, including the LR awareness set) ---
     if (f.areaTypes.size > 0 && !f.areaTypes.has(n.areaType)) return false;
     if (f.activities.size > 0 && !n.activities.some((a) => f.activities.has(a))) return false;
     if (!altitudeOverlaps(n, f.flMin, f.flMax)) return false;
     if (!timeOverlaps(n, f.timeFrom, f.timeTo)) return false;
-    if (area) {
-      // A NOTAM allocated to the active TMA is relevant by decree — it passes the
-      // area test regardless of geometry (even if it lies outside the boundary).
-      const allocated = f.areaTmaId ? isAllocatedTo(n, f.areaTmaId) : false;
-      if (!allocated) {
-        if (!n.geometry) {
-          hiddenNoGeometry++;
-          return false;
-        }
-        if (!booleanIntersects(area, feature(n.geometry))) return false;
-        // Vertical test for TMA presets (3-D); custom drawn areas have no slab.
-        if (f.areaFloorFt != null && f.areaCeilingFt != null) {
-          const low = Number.isFinite(n.lower.feet) ? n.lower.feet : FL_FLOOR;
-          const high = Number.isFinite(n.upper.feet) ? n.upper.feet : FL_CEILING;
-          if (!bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt)) return false;
-        }
+    if (!area) return true;
+
+    const allocated = f.areaTmaId ? isAllocatedTo(n, f.areaTmaId) : false;
+
+    // --- TMA preset: apply the AIP-managed-zone rule + capture awareness set ---
+    if (f.areaTmaId) {
+      // 3-D geometric facts against the buffer (lateral) and true boundary.
+      let inBuffer = false;
+      let inTrue = false;
+      if (n.geometry) {
+        const nf = feature(n.geometry);
+        const [low, high] = altFeet(n);
+        const vert =
+          f.areaFloorFt == null || f.areaCeilingFt == null
+            ? true
+            : bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt);
+        inBuffer = booleanIntersects(area, nf) && vert;
+        inTrue = inBuffer && !!trueFeat && booleanIntersects(trueFeat, nf);
       }
+      const rel = classifyTmaMembership({
+        isLr: isLrManagedZone(n),
+        allocated,
+        inBuffer,
+        inTrue,
+      });
+      if (rel.kind === 'relevant') return true;
+      if (rel.kind === 'lr-present') {
+        lrUnallocated.push({ notam: n, where: rel.where });
+        return false;
+      }
+      if (!n.geometry) hiddenNoGeometry++; // unplaceable, not allocated → hidden count
+      return false;
+    }
+
+    // --- Custom drawn area (no TMA): pure geometric, lateral (+ slab if set) ---
+    if (!n.geometry) {
+      hiddenNoGeometry++;
+      return false;
+    }
+    if (!booleanIntersects(area, feature(n.geometry))) return false;
+    if (f.areaFloorFt != null && f.areaCeilingFt != null) {
+      const [low, high] = altFeet(n);
+      if (!bandsOverlap(low, high, f.areaFloorFt, f.areaCeilingFt)) return false;
     }
     return true;
   });
 
-  return { visible, hiddenNoGeometry };
+  return { visible, hiddenNoGeometry, lrUnallocated };
 }

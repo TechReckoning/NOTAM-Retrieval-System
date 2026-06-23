@@ -9,11 +9,18 @@ import { useStore } from '../state/store';
 
 interface Props {
   visible: LoadedNotam[];
+  /** Unallocated LRTRA/LRTSA/LRD zones present in the active TMA — awareness only. */
+  lrUnallocated?: { notam: LoadedNotam; where: 'in' | 'buffer' }[];
   hiddenNoGeometry: number;
   opTime: string;
 }
 
-export function NotamList({ visible, hiddenNoGeometry, opTime }: Props): JSX.Element {
+export function NotamList({
+  visible,
+  lrUnallocated = [],
+  hiddenNoGeometry,
+  opTime,
+}: Props): JSX.Element {
   const selectedUid = useStore((s) => s.selectedUid);
   const select = useStore((s) => s.select);
   const hover = useStore((s) => s.hover);
@@ -100,6 +107,45 @@ export function NotamList({ visible, hiddenNoGeometry, opTime }: Props): JSX.Ele
         })}
         {visible.length === 0 && <li className="empty">No NOTAMs match the current filters.</li>}
       </ul>
+      {lrUnallocated.length > 0 && (
+        <div className="lr-map-section">
+          <div className="lr-section-head">
+            Not-allocated LR present <span className="lr-section-count">{lrUnallocated.length}</span>
+            <span className="lr-section-hint">LRTRA/LRTSA/LRD in/near TMA, not allocated</span>
+          </div>
+          <ul className="lr-section-list">
+            {lrUnallocated.map(({ notam: n, where }) => {
+              const color = areaColor(n.areaType);
+              const status = statusFor(n, opTime);
+              return (
+                <li
+                  key={n.uid}
+                  className={`notam-row lr-present status-${status}`}
+                  style={{ borderLeftColor: color }}
+                  onMouseEnter={() => hover(n.uid)}
+                  onMouseLeave={() => hover(null)}
+                >
+                  <div className="row-top">
+                    <span className="row-id" style={{ background: color }}>
+                      {n.id}
+                    </span>
+                    <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+                    <span className="basis-badge lr" title="Present but not allocated to this TMA">
+                      {where === 'in' ? 'in TMA' : 'within 5 NM'}
+                    </span>
+                  </div>
+                  <div className="row-meta">
+                    <span>{n.activities.map((a) => ACTIVITY_LABELS[a] ?? a).join(', ')}</span>
+                    <span className="row-limits">
+                      {n.lower.raw} – {n.upper.raw}
+                    </span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

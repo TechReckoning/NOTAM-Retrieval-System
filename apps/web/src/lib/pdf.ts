@@ -120,12 +120,54 @@ export async function buildTmaPdfDoc(columns: TmaColumn[], meta: Meta, filters: 
     return finalY();
   };
 
+  /** The "Not-allocated LR present" awareness sub-table (No · Where · columns). */
+  const lrTable = (
+    list: { notam: LoadedNotam; where: 'in' | 'buffer' }[],
+    startY: number,
+  ): number => {
+    autoTable(doc, {
+      startY,
+      head: [[`Not-allocated LR present (awareness only — not relevant)  —  ${list.length}`]],
+      body: [],
+      theme: 'plain',
+      headStyles: { fontStyle: 'bold', fontSize: 9, textColor: [120, 80, 20] },
+      margin: { left: margin, right: margin },
+    });
+    // In-TMA first, then 5 NM buffer.
+    const sorted = [...list].sort((a, b) => (a.where === b.where ? 0 : a.where === 'in' ? -1 : 1));
+    autoTable(doc, {
+      startY: finalY() + 0.5,
+      head: [['No', 'Where', ...COLUMNS]],
+      body: sorted.length
+        ? sorted.map((x, i) => [
+            String(i + 1),
+            x.where === 'in' ? 'in TMA' : 'within 5 NM',
+            ...rowFor(x.notam),
+          ])
+        : [['', '—', '', '—', '', '', '', '', '', '']],
+      styles: { fontSize: 7.5, cellPadding: 1.4, overflow: 'linebreak', valign: 'top' },
+      headStyles: { fillColor: [120, 80, 20], textColor: 255, fontSize: 8 },
+      alternateRowStyles: { fillColor: [248, 244, 236] },
+      columnStyles: {
+        0: { cellWidth: 9, halign: 'right' },
+        1: { cellWidth: 20 },
+        2: { cellWidth: 18, fontStyle: 'bold' },
+        5: { cellWidth: 20 },
+        6: { cellWidth: 20 },
+        7: { cellWidth: 46 },
+      },
+      margin: { left: margin, right: margin },
+    });
+    return finalY();
+  };
+
   let startY = 33;
   for (const col of columns) {
     const bandText = col.band ? `  (${ascii(col.band)})` : '';
     // Split: military corridors (M-series) vs the rest.
     const corridors = col.notams.filter((n) => n.series === 'M');
     const rest = col.notams.filter((n) => n.series !== 'M');
+    const lrUnalloc = col.lrUnallocated ?? [];
 
     autoTable(doc, {
       startY,
@@ -137,7 +179,9 @@ export async function buildTmaPdfDoc(columns: TmaColumn[], meta: Meta, filters: 
     });
     startY = finalY() + 1.5;
     startY = subTable('Areas & zones', rest, startY) + 4;
-    startY = subTable('Military corridors (M-series)', corridors, startY) + 8;
+    startY = subTable('Military corridors (M-series)', corridors, startY) + 4;
+    if (lrUnalloc.length > 0) startY = lrTable(lrUnalloc, startY) + 8;
+    else startY += 4;
   }
 
   // ---- footer on every page: disclaimer + page numbers ----

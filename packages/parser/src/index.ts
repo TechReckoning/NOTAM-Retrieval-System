@@ -37,6 +37,12 @@ export {
 } from './zones.js';
 export { bucketByAreas, type AreaPolygon, type BucketResult } from './spatial.js';
 export {
+  isLrManagedZone,
+  classifyTmaMembership,
+  type TmaBasis,
+  type TmaRelation,
+} from './membership.js';
+export {
   buildAllocationIndex,
   allocatedTmas,
   type AllocationTable,
