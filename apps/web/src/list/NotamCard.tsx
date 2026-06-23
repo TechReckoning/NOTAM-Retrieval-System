@@ -73,6 +73,19 @@ export function NotamCard({ notam: n, basis, status, overlapCount = 0 }: Props):
           <table>
             <tbody>
               <tr>
+                <th>Limits</th>
+                <td>
+                  {n.lower.raw} – {n.upper.raw}
+                  {(n.lower.original || n.upper.original) && (
+                    <span className="detail-src">
+                      {' '}
+                      (source: {n.lower.original ?? n.lower.raw} –{' '}
+                      {n.upper.original ?? n.upper.raw})
+                    </span>
+                  )}
+                </td>
+              </tr>
+              <tr>
                 <th>Schedule</th>
                 <td>
                   {n.schedules.map((s) => `${s.rawFrom}–${s.rawTo}`).join(', ') || '—'} UTC

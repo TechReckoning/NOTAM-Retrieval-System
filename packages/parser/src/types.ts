@@ -30,10 +30,13 @@ export type Activity =
 /** A vertical limit, normalized to feet (AMSL) for range filtering. */
 export interface VerticalLimit {
   kind: 'GND' | 'FL' | 'FT_AMSL' | 'FT_AGL' | 'UNLIMITED' | 'UNKNOWN';
-  /** Raw text as printed, e.g. "FL 280", "3.000 FT AMSL", "GND". */
+  /** Display text, e.g. "FL 280", "3.000 FT AMSL", "GND". For metres input this is
+   *  the converted feet value (e.g. "656 FT AGL"). */
   raw: string;
   /** Normalized altitude in feet AMSL. GND = 0. NaN if unknown. */
   feet: number;
+  /** Original printed text when it was converted (e.g. "200 M AGL"). */
+  original?: string;
 }
 
 /** An absolute UTC activation window. */

@@ -557,6 +557,10 @@ body {
   line-height: 1.45;
   white-space: pre-wrap;
 }
+.detail-src {
+  color: var(--muted);
+  font-style: italic;
+}
 .detail-warn {
   margin-top: 6px;
   color: #e6932b;

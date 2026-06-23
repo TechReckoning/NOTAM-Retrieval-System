@@ -13196,9 +13196,10 @@
       ],
       "activityRaw": "ZBOR DE\nANTR. CU\nAERON. MIL",
       "lower": {
-        "kind": "UNKNOWN",
-        "raw": "300 M AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "984 FT AGL",
+        "feet": 984,
+        "original": "300 M AGL"
       },
       "upper": {
         "kind": "FL",
@@ -13473,9 +13474,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "lower limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "M3183",
@@ -13492,9 +13491,10 @@
       ],
       "activityRaw": "ZBOR DE\nANTR. CU\nAERON. MIL",
       "lower": {
-        "kind": "UNKNOWN",
-        "raw": "300 M AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "984 FT AGL",
+        "feet": 984,
+        "original": "300 M AGL"
       },
       "upper": {
         "kind": "FL",
@@ -13811,9 +13811,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "lower limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "M3184",
@@ -13830,9 +13828,10 @@
       ],
       "activityRaw": "ZBOR DE\nANTR. CU\nAERON. MIL",
       "lower": {
-        "kind": "UNKNOWN",
-        "raw": "300 M AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "984 FT AGL",
+        "feet": 984,
+        "original": "300 M AGL"
       },
       "upper": {
         "kind": "FL",
@@ -14193,9 +14192,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "lower limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "M3185",
@@ -14212,9 +14209,10 @@
       ],
       "activityRaw": "ZBOR DE\nANTR. CU\nAERON. MIL",
       "lower": {
-        "kind": "UNKNOWN",
-        "raw": "300 M AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "984 FT AGL",
+        "feet": 984,
+        "original": "300 M AGL"
       },
       "upper": {
         "kind": "FL",
@@ -14543,9 +14541,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "lower limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "M3186",
@@ -24223,9 +24219,10 @@
         "feet": 0
       },
       "upper": {
-        "kind": "UNKNOWN",
-        "raw": "600 M\n AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "1969 FT AGL",
+        "feet": 1969,
+        "original": "600 M\n AGL"
       },
       "schedules": [
         {
@@ -24269,9 +24266,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "upper limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "F6006",
@@ -24293,9 +24288,10 @@
         "feet": 0
       },
       "upper": {
-        "kind": "UNKNOWN",
-        "raw": "600 M\n AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "1969 FT AGL",
+        "feet": 1969,
+        "original": "600 M\n AGL"
       },
       "schedules": [
         {
@@ -24339,9 +24335,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "upper limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "F6007",
@@ -24363,9 +24357,10 @@
         "feet": 0
       },
       "upper": {
-        "kind": "UNKNOWN",
-        "raw": "600 M\n AGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "1969 FT AGL",
+        "feet": 1969,
+        "original": "600 M\n AGL"
       },
       "schedules": [
         {
@@ -24409,9 +24404,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "upper limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "F5890",
@@ -24433,9 +24426,10 @@
         "feet": 0
       },
       "upper": {
-        "kind": "UNKNOWN",
-        "raw": "400 M\nAGL",
-        "feet": null
+        "kind": "FT_AGL",
+        "raw": "1312 FT AGL",
+        "feet": 1312,
+        "original": "400 M\nAGL"
       },
       "schedules": [
         {
@@ -24483,9 +24477,7 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": [
-        "upper limit unparsed"
-      ]
+      "warnings": []
     },
     {
       "id": "Zona TM2 LUNGA",

@@ -38,6 +38,24 @@ describe('parseVerticalLimit', () => {
     expect(parseVerticalLimit('910 FTAMSL').feet).toBe(910);
   });
 
+  it('200 M AGL => 656 ft AGL (metres converted)', () => {
+    const v = parseVerticalLimit('200 M AGL');
+    expect(v.kind).toBe('FT_AGL');
+    expect(v.feet).toBe(656); // 200 / 0.3048
+    expect(v.raw).toBe('656 FT AGL');
+    expect(v.original).toBe('200 M AGL');
+  });
+
+  it('1.500 M AMSL => 4921 ft AMSL', () => {
+    const v = parseVerticalLimit('1.500 M AMSL');
+    expect(v.kind).toBe('FT_AMSL');
+    expect(v.feet).toBe(4921); // 1500 / 0.3048
+  });
+
+  it('does not treat "3.000 FT AMSL" as metres', () => {
+    expect(parseVerticalLimit('3.000 FT AMSL').feet).toBe(3000);
+  });
+
   it('unknown text => NaN', () => {
     expect(Number.isNaN(parseVerticalLimit('???').feet)).toBe(true);
   });
