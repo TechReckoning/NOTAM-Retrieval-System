@@ -88,9 +88,45 @@ export async function buildTmaPdfDoc(columns: TmaColumn[], meta: Meta, filters: 
     27,
   );
 
+  const finalY = () => (doc as any).lastAutoTable.finalY as number;
+  const emptyRow = ['', '—', '', '', '', '', '', '', ''];
+
+  /** A numbered NOTAM table under a sub-heading. */
+  const subTable = (title: string, list: LoadedNotam[], startY: number): number => {
+    autoTable(doc, {
+      startY,
+      head: [[`${title}  —  ${list.length}`]],
+      body: [],
+      theme: 'plain',
+      headStyles: { fontStyle: 'bold', fontSize: 9, textColor: [60, 70, 90] },
+      margin: { left: margin, right: margin },
+    });
+    autoTable(doc, {
+      startY: finalY() + 0.5,
+      head: [['No', ...COLUMNS]],
+      body: list.length ? list.map((n, i) => [String(i + 1), ...rowFor(n)]) : [emptyRow],
+      styles: { fontSize: 7.5, cellPadding: 1.4, overflow: 'linebreak', valign: 'top' },
+      headStyles: { fillColor: [27, 37, 64], textColor: 255, fontSize: 8 },
+      alternateRowStyles: { fillColor: [244, 246, 250] },
+      columnStyles: {
+        0: { cellWidth: 9, halign: 'right' },
+        1: { cellWidth: 18, fontStyle: 'bold' },
+        4: { cellWidth: 20 },
+        5: { cellWidth: 20 },
+        6: { cellWidth: 52 },
+      },
+      margin: { left: margin, right: margin },
+    });
+    return finalY();
+  };
+
   let startY = 33;
   for (const col of columns) {
     const bandText = col.band ? `  (${ascii(col.band)})` : '';
+    // Split: military corridors (M-series) vs the rest.
+    const corridors = col.notams.filter((n) => n.series === 'M');
+    const rest = col.notams.filter((n) => n.series !== 'M');
+
     autoTable(doc, {
       startY,
       head: [[`${ascii(col.name)}${bandText}  —  ${col.notams.length} NOTAM(s)`]],
@@ -99,22 +135,9 @@ export async function buildTmaPdfDoc(columns: TmaColumn[], meta: Meta, filters: 
       headStyles: { fontStyle: 'bold', fontSize: 11, textColor: [11, 16, 32] },
       margin: { left: margin, right: margin },
     });
-    autoTable(doc, {
-      startY: (doc as any).lastAutoTable.finalY + 1,
-      head: [COLUMNS],
-      body: col.notams.length ? col.notams.map(rowFor) : [['—', '', '', '', '', '', '', '']],
-      styles: { fontSize: 7.5, cellPadding: 1.4, overflow: 'linebreak', valign: 'top' },
-      headStyles: { fillColor: [27, 37, 64], textColor: 255, fontSize: 8 },
-      alternateRowStyles: { fillColor: [244, 246, 250] },
-      columnStyles: {
-        0: { cellWidth: 18, fontStyle: 'bold' },
-        3: { cellWidth: 20 },
-        4: { cellWidth: 20 },
-        5: { cellWidth: 52 },
-      },
-      margin: { left: margin, right: margin },
-    });
-    startY = (doc as any).lastAutoTable.finalY + 8;
+    startY = finalY() + 1.5;
+    startY = subTable('Areas & zones', rest, startY) + 4;
+    startY = subTable('Military corridors (M-series)', corridors, startY) + 8;
   }
 
   // ---- footer on every page: disclaimer + page numbers ----
