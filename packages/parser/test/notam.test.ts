@@ -40,3 +40,44 @@ describe('assembleNotam id fallback (rows with no NOTAM number)', () => {
     expect(n.series).toBe('C');
   });
 });
+
+describe('assembleNotam id from the type cell (merged/shifted rows)', () => {
+  it('uses the NOTAM number in the type cell, not a zone designator in the description', () => {
+    // Real bug: "Zona C213 SUD" — the number D1001 sits in the type cell, not Nr.
+    // The id must be D1001 (the NOTAM number), with the zone name kept in the title.
+    const cells = [
+      '',
+      'ZONA AVERTISM.\nD1001',
+      'Zona C213 SUD, de coordonate:\n44 57 00N/027 29 00E – 44 57 00N/026 13 00E – 45 10 00N/026 13 00E – 45 10 00N/027 29 00E—44 57 00N/027 29 00E.',
+      'ZBOR AEROFOTO',
+      'FL 130',
+      'FL 160',
+      'DD 04.30',
+      'DD 08.00',
+      '',
+    ];
+    const n = assembleNotam({ cells }, DEFAULT_COLUMNS, META)!;
+    expect(n.id).toBe('D1001');
+    expect(n.series).toBe('D');
+    expect(n.title).toContain('C213 SUD');
+    expect(n.warnings.join(' ')).not.toMatch(/no NOTAM number/);
+  });
+
+  it('works for any series — corridor waypoint in the body does not win over the number', () => {
+    // Real bug: id came out "E028" (a waypoint) instead of M3196 (the number).
+    const cells = [
+      '',
+      'TRAIECT\nAVERTISM.\nM3196',
+      'Traiect, de coordonate: PCT E028(45 00 00N/025 00 00E) – PCT F021(46 00 00N/026 00 00E).',
+      'ZBOR UAV',
+      'FL 100',
+      'FL 200',
+      'DD 05.00',
+      'DD 20.00',
+      '',
+    ];
+    const n = assembleNotam({ cells }, DEFAULT_COLUMNS, META)!;
+    expect(n.id).toBe('M3196');
+    expect(n.series).toBe('M');
+  });
+});

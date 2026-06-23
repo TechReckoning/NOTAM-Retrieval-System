@@ -17643,14 +17643,14 @@
       "warnings": []
     },
     {
-      "id": "E028",
-      "series": "E",
+      "id": "M3196",
+      "series": "M",
       "bulletinNr": 327,
       "bulletinDate": "2026-06-17",
       "areaType": "WARNING",
       "areaTypeRaw": "TRAIECT\nAVERTISM.\nM3196",
       "zoneRefs": [],
-      "title": "LRFT(44 23 32N/027 43 36E) – RASOV(44 12 40N/027 57 55E) – MANGALIA(43 49 00N/028 38 00E) – TUZLA(43 59 00N/028 41 00E) – CONSTANŢA(44 12 00N/028 42 00E) - HOLD1(N 44 50 00/ 56 00) - TGT(N 44 51 12/E 028 53 08)-CETUL(44 41 51N/028 37 37E) –TOPAL(44 33 00N/028 02 00E) - LRFT(44 23 32N/027 43 36E), 5 NM S/D.",
+      "title": "LRFT(44 23 32N/027 43 36E) – RASOV(44 12 40N/027 57 55E) – MANGALIA(43 49 00N/028 38 00E) – TUZLA(43 59 00N/028 41 00E) – CONSTANŢA(44 12 00N/028 42 00E) - HOLD1(N 44 50 00/E028 56 00) - TGT(N 44 51 12/E 028 53 08)-CETUL(44 41 51N/028 37 37E) –TOPAL(44 33 00N/028 02 00E) - LRFT(44 23 32N/027 43 36E), 5 NM S/D.",
       "description": "LRFT(44 23 32N/027 43 36E) – RASOV(44 12 40N/027 57 55E) – MANGALIA(43 49 00N/028 38 00E) – TUZLA(43 59 00N/028 41 00E) – CONSTANŢA(44 12 00N/028 42 00E) - HOLD1(N 44 50 00/E028 56 00) - TGT(N 44 51 12/E 028 53 08)-CETUL(44 41 51N/028 37 37E) –TOPAL(44 33 00N/028 02 00E) - LRFT(44 23 32N/027 43 36E), 5 NM S/D.",
       "activities": [
         "MIL_TRAINING"
@@ -23056,14 +23056,14 @@
       "warnings": []
     },
     {
-      "id": "C213",
-      "series": "C",
+      "id": "D1001",
+      "series": "D",
       "bulletinNr": 327,
       "bulletinDate": "2026-06-17",
       "areaType": "WARNING",
       "areaTypeRaw": "ZONA AVERTISM.\nD1001",
       "zoneRefs": [],
-      "title": "Zona  SUD, de coordonate:",
+      "title": "Zona C213 SUD, de coordonate:",
       "description": "Zona C213 SUD, de coordonate:\n 44 57 00N/027 29 00E – 44 57 00N/026 13 00E – 45 10 00N/026 13 00E – 45 10 00N/027 29 00E—44 57 00N/027 29 00E.",
       "activities": [
         "AERIAL_PHOTO"

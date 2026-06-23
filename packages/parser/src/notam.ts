@@ -92,8 +92,17 @@ export function assembleNotam(row: RawRow, cols: ColumnMap, meta: BulletinMeta):
   const descCell = cell(cols.desc);
   const obsCell = cell(cols.obs);
 
+  // The NOTAM number lives in the structured left columns: the Nr column, or the
+  // type cell, which in some rows absorbs the number when the row's cells are
+  // merged/shifted. Prefer those over the free-text description — there a zone
+  // designator ("Zona C213 SUD") or a corridor waypoint can otherwise be mistaken
+  // for the number. The description/full-row scan stays as a last resort for rows
+  // whose number sits only in the body. Works for any series (letter + 3–4 digits).
   const idInfo =
-    extractNotamId(cell(cols.nr)) ?? extractNotamId(descCell) ?? extractNotamId(allText);
+    extractNotamId(cell(cols.nr)) ??
+    extractNotamId(tipCell) ??
+    extractNotamId(descCell) ??
+    extractNotamId(allText);
 
   let areaType = classifyAreaType(tipCell);
   let areaTypeRaw = tipCell;
