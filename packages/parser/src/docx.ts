@@ -6,18 +6,20 @@
  * header text, and {@link assembleNotam} normalizes each data row.
  */
 
+import { classifyBulletinDoc } from './bundle.js';
 import { htmlNonTableText, htmlTablesToRows } from './html.js';
 import { assembleNotam, detectColumns, type ColumnMap } from './notam.js';
-import type { Bulletin, Notam } from './types.js';
+import type { Bulletin, BulletinKind, Notam } from './types.js';
 
-/** Parse the bulletin header (number, validity date, issue date, source office). */
+/** Parse the bulletin header (kind, number, validity date, issue date, source office). */
 export function parseHeader(text: string): {
   bulletinNr: number | null;
   bulletinDate: string | null;
   issuedDate: string | null;
   source: string | null;
+  kind: BulletinKind;
+  sequence: number | null;
 } {
-  const nr = /NOTAM\s*NR\.?\s*(\d+)/i.exec(text);
   const valid = /PENTRU\s+(\d{2})\.(\d{2})\.(\d{4})/i.exec(text);
   const issued = /EMIS[ĂA]?\s*LA\s+(\d{2})\.(\d{2})\.(\d{4})/i.exec(text);
   const iso = (m: RegExpExecArray | null): string | null =>
@@ -25,11 +27,14 @@ export function parseHeader(text: string): {
   // Source office: a short all-caps token on the first non-empty line (e.g. "BNLR").
   const firstLine = text.split(/\r?\n/).find((l) => l.trim().length > 0)?.trim() ?? null;
   const source = firstLine && /^[A-Z]{2,6}$/.test(firstLine) ? firstLine : null;
+  const cls = classifyBulletinDoc(text);
   return {
-    bulletinNr: nr ? Number(nr[1]) : null,
+    bulletinNr: cls.baseNr,
     bulletinDate: iso(valid),
     issuedDate: iso(issued),
     source,
+    kind: cls.kind,
+    sequence: cls.sequence,
   };
 }
 

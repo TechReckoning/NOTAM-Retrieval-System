@@ -7,6 +7,7 @@
  * whole row where that is safe.
  */
 
+import { extractEntryMarkers } from './bundle.js';
 import {
   classifyActivities,
   classifyAreaType,
@@ -180,5 +181,6 @@ export function assembleNotam(row: RawRow, cols: ColumnMap, meta: BulletinMeta):
     geometrySource,
     circle: geom.circle,
     warnings,
+    markers: extractEntryMarkers(descCell),
   };
 }

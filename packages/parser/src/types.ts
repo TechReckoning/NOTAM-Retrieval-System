@@ -8,6 +8,24 @@
 
 import type { Feature, Geometry, Polygon } from 'geojson';
 
+/**
+ * Kind of bulletin document, derived from its printed header (never the filename):
+ * a base bulletin, or an amendment that supplements (COMPLETARE) or modifies
+ * (MODIFICARE) a base.
+ */
+export type BulletinKind = 'BASE' | 'COMPLETARE' | 'MODIFICARE';
+
+/**
+ * An inline supersession marker found inside an entry's text, e.g. "(MODIFICAT
+ * P0061)" on a base entry. `ref` is the NOTAM number it names, when present.
+ * These are SURFACED for operator review — never used to auto-drop an entry.
+ */
+export interface EntryMarker {
+  kind: 'MODIFICAT' | 'ANULAT' | 'COMPLETAT' | 'INLOCUIT' | 'SUSPENDAT' | 'PRELUNGIT';
+  ref: string | null;
+  raw: string;
+}
+
 /** Type of airspace activation, from the bulletin's "Tip" column. */
 export type AreaType =
   | 'TEMP_RESERVED' // ZONA TEMP. REZ.
@@ -88,15 +106,23 @@ export interface Notam {
   circle?: { centerLon: number; centerLat: number; radiusMeters: number };
   /** Non-fatal parse / validation flags, surfaced in the review UI. */
   warnings: string[];
+  /** Inline supersession markers found in the entry text (e.g. "(MODIFICAT P0061)"). */
+  markers?: EntryMarker[];
 }
 
 /** A parsed bulletin: header metadata + the NOTAM records. */
 export interface Bulletin {
+  /** Base bulletin number referenced by the header (advisory — may be wrong/typo'd). */
   bulletinNr: number | null;
+  /** Operational ("PENTRU") date, ISO "YYYY-MM-DD" — the reliable grouping key. */
   bulletinDate: string | null;
   issuedDate: string | null;
   /** Originating office / FIR header, e.g. "BNLR". */
   source: string | null;
+  /** Document kind from its printed header (base vs supplement vs modification). */
+  kind: BulletinKind;
+  /** n in "COMPLETARE n" / "MODIFICARE n"; null for a base. */
+  sequence: number | null;
   notams: Notam[];
 }
 

@@ -42,6 +42,15 @@ export {
   type TmaBasis,
   type TmaRelation,
 } from './membership.js';
+export { classifyBulletinDoc, extractEntryMarkers, type BulletinClass } from './bundle.js';
+export {
+  consolidateBulletins,
+  type EntryState,
+  type ConsolidatedEntry,
+  type ConsolidatedBundle,
+  type BundleDocument,
+  type ConsolidationResult,
+} from './consolidate.js';
 export {
   buildAllocationIndex,
   allocatedTmas,
