@@ -1,6 +1,7 @@
 import type { Activity, AreaType } from '@notam/parser';
 import type { Polygon } from 'geojson';
 import { create } from 'zustand';
+import type { BundleSummary } from '../lib/bundle';
 import { defaultFilters, type FilterState } from '../lib/filter';
 import type { LoadedNotam } from '../lib/types';
 
@@ -15,6 +16,8 @@ export type ViewMode = 'map' | 'list';
 interface AppState {
   notams: LoadedNotam[];
   meta: BulletinMeta | null;
+  /** Consolidated-bundle summary (documents, warnings, set-aside entries), or null. */
+  bundle: BundleSummary | null;
   /** Map View (map + synchronized list) or List View (per-TMA briefing lists). */
   viewMode: ViewMode;
   filters: FilterState;
@@ -29,7 +32,7 @@ interface AppState {
   /** When true, hide NOTAMs that are not active at the operational time. */
   activeOnly: boolean;
 
-  setData: (notams: LoadedNotam[], meta: BulletinMeta) => void;
+  setData: (notams: LoadedNotam[], meta: BulletinMeta, bundle?: BundleSummary | null) => void;
   setViewMode: (mode: ViewMode) => void;
   setOpTime: (iso: string) => void;
   setActiveOnly: (on: boolean) => void;
@@ -66,6 +69,7 @@ function defaultOpTime(bulletinDate: string | null): string {
 export const useStore = create<AppState>((set) => ({
   notams: [],
   meta: null,
+  bundle: null,
   viewMode: 'map',
   filters: defaultFilters(),
   selectedUid: null,
@@ -75,8 +79,8 @@ export const useStore = create<AppState>((set) => ({
   opTime: defaultOpTime(null),
   activeOnly: false,
 
-  setData: (notams, meta) =>
-    set({ notams, meta, selectedUid: null, opTime: defaultOpTime(meta.bulletinDate) }),
+  setData: (notams, meta, bundle = null) =>
+    set({ notams, meta, bundle, selectedUid: null, opTime: defaultOpTime(meta.bulletinDate) }),
   setViewMode: (mode) => set({ viewMode: mode }),
   setOpTime: (iso) => set({ opTime: iso }),
   setActiveOnly: (on) => set({ activeOnly: on }),

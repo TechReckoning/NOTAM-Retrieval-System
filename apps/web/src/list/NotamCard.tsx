@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { areaColor } from '../lib/colors';
 import { STATUS_COLOR, STATUS_LABEL } from '../lib/status';
 import type { LoadedNotam } from '../lib/types';
+import { CurrencyBadge } from '../currency/CurrencyBadge';
 
 /** Why a NOTAM appears in a TMA column: inside the boundary, within the 5 NM
  *  buffer, or allocated by decree. */
@@ -50,6 +51,7 @@ export function NotamCard({
           {n.id}
         </span>
         <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+        <CurrencyBadge n={n} />
         {lrPresent && (
           <span
             className="basis-badge lr"

@@ -3,6 +3,8 @@
   "bulletinDate": "2026-06-17",
   "issuedDate": "2026-06-16",
   "source": "BNLR",
+  "kind": "BASE",
+  "sequence": null,
   "notams": [
     {
       "id": "C9517",
@@ -153,7 +155,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9518",
@@ -272,7 +275,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9519",
@@ -374,7 +378,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9520",
@@ -487,7 +492,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9521",
@@ -678,7 +684,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9522",
@@ -745,7 +752,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9523",
@@ -810,7 +818,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9524",
@@ -879,7 +888,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9525",
@@ -948,7 +958,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9526",
@@ -1035,7 +1046,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9527",
@@ -1260,7 +1272,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9528",
@@ -1415,7 +1428,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9529",
@@ -1556,7 +1570,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9530",
@@ -1685,7 +1700,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9531",
@@ -1829,7 +1845,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9532",
@@ -1982,7 +1999,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9533",
@@ -2063,7 +2081,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9534",
@@ -2189,7 +2208,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9535",
@@ -2258,7 +2278,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9536",
@@ -2358,7 +2379,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9537",
@@ -2511,7 +2533,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9538",
@@ -2664,7 +2687,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9539",
@@ -2742,7 +2766,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9540",
@@ -2853,7 +2878,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9541",
@@ -3034,7 +3060,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9542",
@@ -3214,7 +3241,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9543",
@@ -3308,7 +3336,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9544",
@@ -3465,7 +3494,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9545",
@@ -4305,7 +4335,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9546",
@@ -4613,7 +4644,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9547",
@@ -5187,7 +5219,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9548",
@@ -5255,7 +5288,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9549",
@@ -5320,7 +5354,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9550",
@@ -5439,7 +5474,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9551",
@@ -5551,7 +5587,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9552",
@@ -5685,7 +5722,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9553",
@@ -5820,7 +5858,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9554",
@@ -5942,7 +5981,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9555",
@@ -6079,7 +6119,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9556",
@@ -6196,7 +6237,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9557",
@@ -6401,7 +6443,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9558",
@@ -6534,7 +6577,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9559",
@@ -6618,7 +6662,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9560",
@@ -6750,7 +6795,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9561",
@@ -6860,7 +6906,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9562",
@@ -7065,7 +7112,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9563",
@@ -7194,7 +7242,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9564",
@@ -7323,7 +7372,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9565",
@@ -7631,7 +7681,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9566",
@@ -7706,7 +7757,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9567",
@@ -7775,7 +7827,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9568",
@@ -7840,7 +7893,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9569",
@@ -8145,7 +8199,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9570",
@@ -8450,7 +8505,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9571",
@@ -8527,7 +8583,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9572",
@@ -8835,7 +8892,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9573",
@@ -9142,7 +9200,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9574",
@@ -9447,7 +9506,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9575",
@@ -9752,7 +9812,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9576",
@@ -9817,7 +9878,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9577",
@@ -9937,7 +9999,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "C9578",
@@ -10248,7 +10311,8 @@
         "centerLat": 46.5025,
         "radiusMeters": 11112
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7205",
@@ -10557,7 +10621,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7206",
@@ -10869,7 +10934,8 @@
         "centerLat": 44.13166666666667,
         "radiusMeters": 5556
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7207",
@@ -11182,7 +11248,8 @@
         "centerLat": 44.13166666666667,
         "radiusMeters": 5556
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7208",
@@ -11493,7 +11560,8 @@
         "centerLat": 43.809444444444445,
         "radiusMeters": 3704
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3178",
@@ -11804,7 +11872,8 @@
         "centerLat": 46.52194444444444,
         "radiusMeters": 27780
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3179",
@@ -12216,7 +12285,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3180",
@@ -12705,7 +12775,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3181",
@@ -13179,7 +13250,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3182",
@@ -13474,7 +13546,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3183",
@@ -13811,7 +13884,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3184",
@@ -14192,7 +14266,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3185",
@@ -14541,7 +14616,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3186",
@@ -14757,7 +14833,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3187",
@@ -15143,7 +15220,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3188",
@@ -15389,7 +15467,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3189",
@@ -15697,7 +15776,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3190",
@@ -16260,7 +16340,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3191",
@@ -16508,7 +16589,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3192",
@@ -16804,7 +16886,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3193",
@@ -17026,7 +17109,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3194",
@@ -17294,7 +17378,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3195",
@@ -17640,7 +17725,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3196",
@@ -17952,7 +18038,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3197",
@@ -18484,7 +18571,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3198",
@@ -18970,7 +19058,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3199",
@@ -19325,7 +19414,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3200",
@@ -19623,7 +19713,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3201",
@@ -20105,7 +20196,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3202",
@@ -20345,7 +20437,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3203",
@@ -20657,7 +20750,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3204",
@@ -20721,7 +20815,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "M3205",
@@ -21097,7 +21192,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7209",
@@ -21171,7 +21267,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7210",
@@ -21243,7 +21340,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7211",
@@ -21310,7 +21408,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7212",
@@ -21375,7 +21474,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7213",
@@ -21458,7 +21558,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7214",
@@ -21541,7 +21642,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7215",
@@ -21620,7 +21722,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7216",
@@ -21697,7 +21800,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7217",
@@ -21762,7 +21866,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7218",
@@ -21827,7 +21932,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7219",
@@ -21896,7 +22002,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7220",
@@ -21964,7 +22071,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7221",
@@ -22032,7 +22140,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7222",
@@ -22099,7 +22208,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7223",
@@ -22406,7 +22516,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7224",
@@ -22715,7 +22826,8 @@
         "centerLat": 45.57694444444445,
         "radiusMeters": 37040
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D0996",
@@ -22781,7 +22893,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D0997",
@@ -22845,7 +22958,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D0998",
@@ -22909,7 +23023,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D0999",
@@ -22985,7 +23100,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1000",
@@ -23053,7 +23169,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1001",
@@ -23117,7 +23234,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7225",
@@ -23181,7 +23299,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7226",
@@ -23241,7 +23360,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7227",
@@ -23550,7 +23670,8 @@
         "centerLat": 45.693888888888885,
         "radiusMeters": 11112
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6001",
@@ -23620,7 +23741,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "LRD 04 A",
@@ -23688,7 +23810,8 @@
       "geometrySource": "gazetteer",
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "F6002",
@@ -23754,7 +23877,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6003",
@@ -23820,7 +23944,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F4914",
@@ -23888,7 +24013,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6004",
@@ -24197,7 +24323,8 @@
         "centerLat": 46.90694444444444,
         "radiusMeters": 5000
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6005",
@@ -24266,7 +24393,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6006",
@@ -24335,7 +24463,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6007",
@@ -24404,7 +24533,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F5890",
@@ -24477,7 +24607,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "Zona TM2 LUNGA",
@@ -24543,7 +24674,8 @@
       "geometrySource": "inline",
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "Zona TM3 JIMBOLIA",
@@ -24609,7 +24741,8 @@
       "geometrySource": "inline",
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "Zona TM4 CRUCENI",
@@ -24675,7 +24808,8 @@
       "geometrySource": "inline",
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "F6012",
@@ -24739,7 +24873,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6013",
@@ -24803,7 +24938,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6014",
@@ -24871,7 +25007,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6015",
@@ -24935,7 +25072,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6016",
@@ -24999,7 +25137,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6017",
@@ -25075,7 +25214,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6018",
@@ -25143,7 +25283,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6019",
@@ -25215,7 +25356,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6020",
@@ -25295,7 +25437,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6021",
@@ -25359,7 +25502,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6022",
@@ -25427,7 +25571,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6023",
@@ -25495,7 +25640,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F5983",
@@ -25571,7 +25717,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6024",
@@ -25880,7 +26027,8 @@
         "centerLat": 45.259166666666665,
         "radiusMeters": 9260
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "Zona GEOAGIU (HUNEDOARA)",
@@ -26191,7 +26339,8 @@
       },
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "F6042",
@@ -26500,7 +26649,8 @@
         "centerLat": 46.843333333333334,
         "radiusMeters": 5000
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "Zona ROZAVLEA(MARAMURES)",
@@ -26811,7 +26961,8 @@
       },
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "F6044",
@@ -27120,7 +27271,8 @@
         "centerLat": 45.275277777777774,
         "radiusMeters": 6482
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6026",
@@ -27184,7 +27336,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6027",
@@ -27256,7 +27409,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6028",
@@ -27328,7 +27482,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6029",
@@ -27400,7 +27555,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6030",
@@ -27472,7 +27628,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6031",
@@ -27536,7 +27693,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6032",
@@ -27612,7 +27770,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6032",
@@ -27686,7 +27845,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "F6034",
@@ -27760,7 +27920,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7075",
@@ -28067,7 +28228,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7076",
@@ -28379,7 +28541,8 @@
         "centerLat": 44.3,
         "radiusMeters": 11112
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7077",
@@ -28691,7 +28854,8 @@
         "centerLat": 44.3,
         "radiusMeters": 11112
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7228",
@@ -28758,7 +28922,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7229",
@@ -28825,7 +28990,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "LRD 106 A",
@@ -28901,7 +29067,8 @@
       "geometrySource": "gazetteer",
       "warnings": [
         "no NOTAM number in bulletin — labelled by zone/name"
-      ]
+      ],
+      "markers": []
     },
     {
       "id": "B7230",
@@ -29208,7 +29375,8 @@
         ]
       },
       "geometrySource": "gazetteer",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7231",
@@ -29273,7 +29441,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7232",
@@ -29357,7 +29526,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7233",
@@ -29667,7 +29837,8 @@
         "centerLat": 46.53333333333333,
         "radiusMeters": 5000
       },
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "B7234",
@@ -29740,7 +29911,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1002",
@@ -29808,7 +29980,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1003",
@@ -29872,7 +30045,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1004",
@@ -29936,7 +30110,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1005",
@@ -30000,7 +30175,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1006",
@@ -30064,7 +30240,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1007",
@@ -30128,7 +30305,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     },
     {
       "id": "D1008",
@@ -30192,7 +30370,8 @@
         ]
       },
       "geometrySource": "inline",
-      "warnings": []
+      "warnings": [],
+      "markers": []
     }
   ]
 }

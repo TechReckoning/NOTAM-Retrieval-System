@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo, useState } from 'react';
 import { Filters } from './filters/Filters';
 import { AREA_COLORS } from './lib/colors';
 import { applyFilters } from './lib/filter';
+import { CurrencyPanel } from './currency/CurrencyPanel';
 import { buildOverlaps, overlapScopeSet } from './lib/overlaps';
 import { buildQualityReport } from './lib/quality';
 import { STATUS_COLOR, STATUS_LABEL, statusFor } from './lib/status';
@@ -25,9 +26,13 @@ export function App(): JSX.Element {
   const setViewMode = useStore((s) => s.setViewMode);
   const filters = useStore((s) => s.filters);
   const opTime = useStore((s) => s.opTime);
+  const bundle = useStore((s) => s.bundle);
   const [showIngest, setShowIngest] = useState(true);
   const [showQuality, setShowQuality] = useState(false);
   const [showOverlaps, setShowOverlaps] = useState(false);
+  const [showCurrency, setShowCurrency] = useState(false);
+
+  const currencyFlags = bundle ? bundle.warnings.length + bundle.setAside.length : 0;
 
   const flaggedCount = useMemo(() => buildQualityReport(notams).flaggedCount, [notams]);
   const overlapCount = useMemo(
@@ -80,6 +85,15 @@ export function App(): JSX.Element {
             ⧉ {overlapCount} overlap{overlapCount === 1 ? '' : 's'}
           </button>
         )}
+        {bundle && (
+          <button
+            className={`btn currency-btn${currencyFlags > 0 ? ' flagged' : ''}`}
+            onClick={() => setShowCurrency(true)}
+            title="Bundle currency — source documents, integrity, and set-aside (superseded/cancelled) entries"
+          >
+            {currencyFlags > 0 ? `⚑ ${currencyFlags} currency` : '✓ Currency'}
+          </button>
+        )}
         {meta && (
           <button
             className={`btn quality-btn${flaggedCount > 0 ? ' flagged' : ''}`}
@@ -110,6 +124,7 @@ export function App(): JSX.Element {
       )}
       {showQuality && <QualityPanel onClose={() => setShowQuality(false)} />}
       {showOverlaps && <OverlapsPanel onClose={() => setShowOverlaps(false)} />}
+      {showCurrency && <CurrencyPanel onClose={() => setShowCurrency(false)} />}
     </div>
   );
 }
@@ -150,6 +165,7 @@ function MapBody(): JSX.Element {
 /** Operational-time control: time cursor + Now + Active-only + status legend + freshness. */
 function StatusBar(): JSX.Element {
   const meta = useStore((s) => s.meta);
+  const bundle = useStore((s) => s.bundle);
   const opTime = useStore((s) => s.opTime);
   const setOpTime = useStore((s) => s.setOpTime);
   const activeOnly = useStore((s) => s.activeOnly);
@@ -198,6 +214,12 @@ function StatusBar(): JSX.Element {
       {stale && (
         <span className="freshness-warn" title="The loaded bulletin is not for today's date">
           ⚠ Bulletin is for {meta!.bulletinDate}, not today ({today}) — verify currency
+        </span>
+      )}
+      {bundle && bundle.documents.length > 1 && (
+        <span className="bundle-chip" title="Consolidated from multiple documents — see Currency">
+          ⚑ bundle of {bundle.documents.length}
+          {bundle.warnings.length > 0 ? ` · ${bundle.warnings.length} issue(s)` : ''}
         </span>
       )}
     </div>

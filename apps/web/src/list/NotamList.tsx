@@ -1,5 +1,6 @@
 import { ACTIVITY_LABELS, AREA_TYPE_LABELS } from '@notam/parser';
 import { useEffect, useMemo, useRef } from 'react';
+import { CurrencyBadge } from '../currency/CurrencyBadge';
 import { tmasForNotam } from '../lib/allocations';
 import { areaColor } from '../lib/colors';
 import { buildOverlaps } from '../lib/overlaps';
@@ -72,6 +73,7 @@ export function NotamList({
                   {n.id}
                 </span>
                 <span className="row-type">{AREA_TYPE_LABELS[n.areaType] ?? n.areaType}</span>
+                <CurrencyBadge n={n} />
                 {tmas.map((t) => (
                   <span key={t.id} className="tma-tag" title={`Allocated to ${t.name}`}>
                     {t.name}
